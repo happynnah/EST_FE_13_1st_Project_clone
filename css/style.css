@@ -1,0 +1,157 @@
+:root {
+  /* =========================
+   COLORS
+  ========================= */
+
+  --primary: #1e4ed8;
+  --primary-hover: #436de5;
+  --primary-active: #94abf0;
+  --primary-10: #0034c51a;
+
+  --secondary: #4f7cff;
+  --secondary-hover: #6b91ff;
+  --secondary-active: #8aa8ff;
+
+  --secondary-30: #4f7cff4d;
+  --secondary-10: #4f7cff1a;
+
+  --near-black: #0f172a;
+  --title-black: #1a1c1f;
+  --main-black: #434657;
+
+  --dark-gray: #475569;
+  --medium-gray: #94a3b8;
+
+  --gray: #e1e3e4;
+  --gray-50: #e1e3e480;
+
+  --light-gray: #f3f3f7;
+  --super-light-gray: #f8fafc;
+
+  --sky-blue: #f1f5f9;
+
+  --white: #ffffff;
+  --white-hover: #dbdbdb;
+  --white-active: #9e9e9e;
+
+  --white-70: #ffffffb3;
+  --white-60: #ffffff99;
+  --white-20: #ffffff33;
+  --white-10: #ffffff1a;
+
+  --bright-blue: #0046ff;
+
+  --current-page: #2563eb;
+
+  --crimson: #cc0000;
+
+  --button-container: #747688;
+  --button-container-hover: #9495a3;
+  --button-container-active: #c5c6ce;
+
+  --main-button: #e8e8ec;
+  --main-button-50: #e8e8ec80;
+  --main-button-hover: #d2d2da;
+  --main-button-active: #bcbcc8;
+
+  /* =========================
+   GRADIENT
+  ========================= */
+
+  --glass-effect: linear-gradient(
+    45deg,
+    #1e4ed8b3 0%,
+    #1e4ed866 24.52%,
+    #1e4ed840 50%,
+    #1e4ed81a 75%,
+    #1e4ed80d 94.72%
+  );
+
+  /* =========================
+   SHADOW
+  ========================= */
+
+  --shadow-elevated: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+
+  --shadow-default: 5px 10px 30px -10px #00000040;
+
+  --button-shadow: inset 0 0 12px 0 #00000099;
+
+  /* =========================
+   FONT FAMILY
+  ========================= */
+
+  --font-gmarket: "Gmarket Sans TTF", sans-serif;
+  --font-pretendard: "Pretendard", sans-serif;
+
+  /* =========================
+   FONT SIZE
+  ========================= */
+
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-36: 36px;
+  --font-size-48: 48px;
+
+  /* =========================
+   LINE HEIGHT
+  ========================= */
+
+  --line-height-100: 100%;
+  --line-height-27: 27px;
+  --line-height-32: 32px;
+  --line-height-48: 48px;
+  --line-height-64: 64px;
+
+  --line-height-auto: normal;
+
+  /* =========================
+   LETTER SPACING
+  ========================= */
+
+  --letter-spacing-0: 0;
+  --letter-spacing-2: 2px;
+
+  /* =========================
+   FONT WEIGHT
+  ========================= */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* =========================
+   RADIUS (추천 추가)
+  ========================= */
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* =========================
+   TYPOGRAPHY
+  ========================= */
+
+  --heading-l: 500 36px/64px var(--font-gmarket);
+
+  --heading-m: 500 24px/48px var(--font-gmarket);
+
+  --heading-s: 500 18px/32px var(--font-gmarket);
+
+  --body-l: 500 18px/32px var(--font-pretendard);
+
+  --body-m: 400 16px/27px var(--font-pretendard);
+
+  --caption-m: 500 12px/27px var(--font-pretendard);
+
+  --caption-s: 500 10px/27px var(--font-pretendard);
+
+  --display-700: 700 48px/64px var(--font-gmarket);
+
+  --display-500: 500 48px/64px var(--font-gmarket);
+}
