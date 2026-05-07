@@ -129,9 +129,11 @@
    RADIUS (추천 추가)
   ========================= */
 
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-s: 8px;
+  --radius-s-plus: 12px;
+  --radius-m: 16px;
+  --radius-m-plus: 20px;
+  --radius-l: 24px;
 
   /* =========================
    TYPOGRAPHY

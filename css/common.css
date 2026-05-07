@@ -47,11 +47,14 @@
 }
 
 /* =========================
-  Accordion */
+  Accordion (Checkbox) - 배정호 작업 */
 
 .accordion {
-  width: 500px;
+  width: 486px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .accordion-input {
@@ -63,28 +66,35 @@
 .accordion-question {
   width: 100%;
   height: auto;
-  display: block;
+  padding: 12px 20px;
   cursor: pointer;
   border: 1px solid var(--gray);
-  border-radius: 12px;
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  justify-content: space-between;
 }
 
-.accordion-question p{
-  font: var(  --body-m-plus-400);
+.accordion-question p {
+  font: var(--body-m-plus-400);
 }
 
 .accordion-answer {
   width: 100%;
   height: auto;
+  padding: 24px 20px;
   display: none;
   border: 1px solid var(--gray);
-  border-radius: 12px;
+  border-radius: var(--radius-s-plus);
 }
 
-
+.accordion-answer p {
+  font: var(--body-m-400);
+}
 
 .accordion-input:checked ~ .accordion-answer {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .accordion-input:checked + .accordion-question {
@@ -92,5 +102,5 @@
 }
 
 .accordion-input:checked + .accordion-question p {
-  font: var(  --body-m-plus-500);
+  font: var(--body-m-plus-500);
 }
