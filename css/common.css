@@ -113,6 +113,7 @@
 .accordion-input:checked + .accordion-question span {
   transform: rotate(180deg);
   color: var(--title-black);
+  
 }
 
 .accordion-input:checked + .accordion-question p {
