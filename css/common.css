@@ -1,7 +1,6 @@
-
- /* =========================
+/* =========================
    PRETENDARD */
-   
+
 @font-face {
   font-family: "Pretendard";
   src: url("../fonts/Pretendard-Light.woff2") format("woff2");
@@ -30,8 +29,7 @@
   font-style: normal;
 }
 
-
- /* =========================
+/* =========================
    GMARKET SANS */
 
 @font-face {
@@ -48,3 +46,51 @@
   font-style: normal;
 }
 
+/* =========================
+  Accordion */
+
+.accordion {
+  width: 500px;
+  height: 300px;
+}
+
+.accordion-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.accordion-question {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+}
+
+.accordion-question p{
+  font: var(  --body-m-plus-400);
+}
+
+.accordion-answer {
+  width: 100%;
+  height: auto;
+  display: none;
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+}
+
+
+
+.accordion-input:checked ~ .accordion-answer {
+  display: block;
+}
+
+.accordion-input:checked + .accordion-question {
+  background: var(--super-light-gray);
+}
+
+.accordion-input:checked + .accordion-question p {
+  font: var(  --body-m-plus-500);
+}
