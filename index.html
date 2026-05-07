@@ -14,6 +14,7 @@
   </head>
 
   <body>
+
     <main>
       <!-- Hero Section - 최예빈 작업 -->
       <section class="hero">
@@ -233,16 +234,16 @@
             <input type="radio" name="category" id="filter-all" class="filter-input" checked />
             <label for="filter-all" class="item-filter">전체</label>
 
-            <input type="radio" name="category" id="filter-frontend" class="filter-input"/>
+            <input type="radio" name="category" id="filter-frontend" class="filter-input" />
             <label for="filter-frontend" class="item-filter">프론트엔드</label>
 
-            <input type="radio" name="category" id="filter-backend" class="filter-input"/>
+            <input type="radio" name="category" id="filter-backend" class="filter-input" />
             <label for="filter-backend" class="item-filter">백엔드</label>
 
-            <input type="radio" name="category" id="filter-ai" class="filter-input"/>
+            <input type="radio" name="category" id="filter-ai" class="filter-input" />
             <label for="filter-ai" class="item-filter">AI</label>
 
-            <input type="radio" name="category" id="filter-devops" class="filter-input"/>
+            <input type="radio" name="category" id="filter-devops" class="filter-input" />
             <label for="filter-devops" class="item-filter">인프라/DevOps</label>
           </nav>
 
@@ -577,11 +578,11 @@
                 <article class="requirements-card">
                   <h3>졸업 또는 졸업예정자</h3>
 
-                  <ul class="graduation-requirement-list">
-                    <li>4년제 - 2학년 2학기 종료 시부터 지원 가능</li>
-                    <li>3년제 - 1학년 2학기 종료 시부터 지원 가능</li>
-                    <li>2년제 - 1학년 입학 시부터 지원 가능</li>
-                  </ul>
+                  <div class="graduation-requirement-list">
+                    <p>4년제 - 2학년 2학기 종료 시부터 지원 가능</p>
+                    <p>3년제 - 1학년 2학기 종료 시부터 지원 가능</p>
+                    <p>2년제 - 1학년 입학 시부터 지원 가능</p>
+                  </div>
                 </article>
               </div>
             </section>
@@ -598,9 +599,11 @@
             <section class="faq-section">
               <h2>자주 묻는 질문</h2>
 
-              <!-- FAQ 질답1 -->
+              <!-- FAQ 리스트 -->
 
               <ul class="faq-list">
+                <!-- FAQ 질답1 -->
+
                 <li class="faq-item">
                   <h3 class="faq-question">
                     <span>Q. 지원 자격이 있나요?</span>
@@ -845,7 +848,20 @@
           </div>
         </div>
       </section>
+
       <!--최종 CTA 최예빈 작업끝-->
+
+      <!-- 고정 버튼 - 배정호 작업 -->
+
+      <div class="fixed-ui">
+        <div class="contact-us-button fixed-button">
+          <a href="#" class="fixed-text material-icons">chat</a>
+        </div>
+
+        <div class="top-button fixed-button">
+          <a href="#" class="fixed-text material-icons">keyboard_arrow_up</a>
+        </div>
+      </div>
     </main>
   </body>
 </html>
