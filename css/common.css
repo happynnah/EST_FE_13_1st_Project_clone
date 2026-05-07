@@ -78,13 +78,22 @@
   font: var(--body-m-plus-400);
 }
 
+.accordion-question span {
+  color: var(--medium-gray);
+}
+
 .accordion-answer {
   width: 100%;
-  height: auto;
-  padding: 24px 20px;
-  display: none;
+  height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  opacity: 0;
   border: 1px solid var(--gray);
   border-radius: var(--radius-s-plus);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: 0.3s ease-out;
 }
 
 .accordion-answer p {
@@ -92,13 +101,19 @@
 }
 
 .accordion-input:checked ~ .accordion-answer {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  height: auto;
+  padding: 24px 20px;
+  opacity: 1;
 }
 
 .accordion-input:checked + .accordion-question {
   background: var(--super-light-gray);
+}
+
+.accordion-input:checked + .accordion-question span {
+  transform: rotate(180deg);
+  color: var(--title-black);
+  
 }
 
 .accordion-input:checked + .accordion-question p {
