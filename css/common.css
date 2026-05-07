@@ -49,7 +49,6 @@
 /*  buttom compnents-이민호 작성 */
 /* =========================
   Button Base Component
-========================= */
 
 .btn {
   display: inline-flex;
@@ -122,4 +121,368 @@
 .btn-fixed .material-icons {
   font-size: 48px;
   line-height: 100%;
+/* 기본 카드 컴포넌트 - 김해나 작업 */
+.heading-m {
+  font: var(--heading-m);
+}
+
+.description-plus {
+  font: var(--body-m-plus-400);
+  color: var(--main-black);
+}
+
+.description-70 {
+  font: var(--body-m-plus-400);
+  color: var(--white-alpha-70);
+}
+
+.description {
+  font: var(--body-m);
+  color: var(--main-black);
+  font-size: var(--font-size-14);
+}
+
+.testimonial-description {
+  font: var(--body-m-plus-400);
+  color: var(--main-black);
+}
+
+h3 {
+  font: var(--heading-s);
+  font-size: var(--font-size-18);
+}
+
+/* 1*1 카드 */
+
+.iconcard-1-1 {
+  width: 384px;
+  height: 288px;
+  box-sizing: border-box;
+  background: var(--white);
+  padding: 72px 40px;
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 2*1 카드 */
+.iconcard-2-1 {
+  display: flex;
+  width: 792px;
+  height: 288px;
+  box-sizing: border-box;
+  background: var(--white);
+  padding: 60px 40px;
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+  align-items: center;
+  gap: 32px;
+}
+
+.iconcard-2-1 .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  color: var(--primary);
+  background: var(--secondary-alpha-10);
+  border-radius: 16px;
+}
+
+.iconcard-2-1 .text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.iconcard-2-1 .material-icons {
+  font-size: 40px;
+}
+
+/* 1*2 파란색 카드 */
+.iconcard-1-2 {
+  position: relative;
+  width: 384px;
+  height: 600px;
+  background: var(--primary);
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.iconcard-1-2 .icon-box-big {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.iconcard-1-2 .material-icons {
+  font-size: 125px;
+  color: var(--white-alpha-10);
+}
+
+.iconcard-1-2 .text-group {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+/* 커리큘럼 섹션 - 아이콘 카드 */
+.icon-vertical-card-tag {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 282px;
+  height: 320px;
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+  background: var(--white);
+  padding: 32px;
+  gap: var(--line-height-27);
+  box-sizing: border-box;
+}
+
+.icon-box-small {
+  width: 48px;
+  height: 48px;
+  color: var(--primary);
+  background: var(--secondary-alpha-10);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-vertical-card-tag .text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icon-box-small .material-icons {
+  font-size: 24px;
+}
+
+.icon-vertical-card-tag .list-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.icon-vertical-card-tag .list-group li {
+  padding: 0 8px;
+  background: var(--main-button-alpha-50);
+  border-radius: 4px;
+  font: var(--caption-s);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 전체 교육 과정 섹션 - 아이콘 카드 */
+.icon-vertical-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 384px;
+  min-height: 288px;
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+  background: var(--white);
+  padding: 32px;
+  gap: var(--line-height-27);
+  box-sizing: border-box;
+}
+
+.icon-vertical-card .text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon-vertical-card .list-status ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--caption-m);
+}
+
+/* 수료생 후기 - 아이콘 카드 */
+.testimonial-card {
+  width: 384px;
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+  background: var(--white);
+  padding: 32px;
+  gap: var(--line-height-27);
+  box-sizing: border-box;
+}
+
+.student-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rating-icons {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.testimonial-card .material-icons {
+  color: var(--secondary);
+}
+
+.rating-comment ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rating-comment img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.rating-comment li:nth-child(2) {
+  line-height: var(--line-height-27);
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-comment span {
+  font: var(--caption-m);
+  color: var(--main-black);
+  line-height: var(--line-height-27);
+}
+/* =========================
+  Accordion (Checkbox) - 배정호 작업 */
+
+.accordion {
+  width: 486px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.accordion-question {
+  width: 100%;
+  height: auto;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-question p {
+  font: var(--body-m-plus-400);
+}
+
+.accordion-question span {
+  color: var(--medium-gray);
+}
+
+.accordion-answer {
+  width: 100%;
+  height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  opacity: 0;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: 0.3s ease-out;
+}
+
+.accordion-answer p {
+  font: var(--body-m-400);
+}
+
+.accordion-input:checked ~ .accordion-answer {
+  height: auto;
+  padding: 24px 20px;
+  opacity: 1;
+}
+
+.accordion-input:checked + .accordion-question {
+  background: var(--super-light-gray);
+}
+
+.accordion-input:checked + .accordion-question span {
+  transform: rotate(180deg);
+  color: var(--title-black);
+}
+
+.accordion-input:checked + .accordion-question p {
+  font: var(--body-m-plus-500);
+}
+
+/* hidden 클래스 추가 - 배정호 작업 */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+
+  border: 0;
+}
+
+/* 고정버튼 - 배정호 작업 */
+
+.fixed-ui {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.fixed-button {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+/* top 이동시 스크롤 부드럽게 */
+html {
+  scroll-behavior: smooth;
 }
