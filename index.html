@@ -97,7 +97,7 @@
           <h2>왜 이스트캠프인가요?</h2>
           <h3>단순 코딩을 넘어 성장을 지원하는 핵심 가치</h3>
           <div>
-            <span> groups (구글아이콘) </span>
+            <span class="material-icons"> groups </span>
             <h4>실전 팀 프로젝트</h4>
             <p>
               기획부터 배포까지, 현업과 동일한 스택으로 실제 서비스를 구축하며 팀워크를 배웁니다.
@@ -152,7 +152,7 @@
       </section>
       <!-- 프로그램 그룹 - 오예은 작업 -->
       <hr />
-      <section class="programs">
+      <section class="programs group">
         <div class="container">
           <!-- 제목 영역을 header로 구분 -->
           <header class="section-header">
@@ -230,11 +230,20 @@
 
           <!-- 2. 카테고리 필터 (탭 메뉴) -->
           <nav class="category-filter">
-            <a href="#" class="item-filter active">전체</a>
-            <a href="#" class="item-filter">프론트엔드</a>
-            <a href="#" class="item-filter">백엔드</a>
-            <a href="#" class="item-filter">AI</a>
-            <a href="#" class="item-filter">인프라/DevOps</a>
+            <input type="radio" name="category" id="filter-all" class="filter-input" checked />
+            <label for="filter-all" class="item-filter">전체</label>
+
+            <input type="radio" name="category" id="filter-frontend" class="filter-input"/>
+            <label for="filter-frontend" class="item-filter">프론트엔드</label>
+
+            <input type="radio" name="category" id="filter-backend" class="filter-input"/>
+            <label for="filter-backend" class="item-filter">백엔드</label>
+
+            <input type="radio" name="category" id="filter-ai" class="filter-input"/>
+            <label for="filter-ai" class="item-filter">AI</label>
+
+            <input type="radio" name="category" id="filter-devops" class="filter-input"/>
+            <label for="filter-devops" class="item-filter">인프라/DevOps</label>
           </nav>
 
           <!-- 3. 프로그램 카드 리스트 (3개 구성) -->
@@ -578,20 +587,19 @@
             </section>
           </div>
         </section>
-        <hr class="container">
+        <hr class="container" />
 
         <!-- FAQ / NEWS 섹션 -->
 
         <section class="faq-news-section">
           <div class="container">
-
             <!-- FAQ 섹션 -->
 
             <section class="faq-section">
               <h2>자주 묻는 질문</h2>
 
               <!-- FAQ 질답1 -->
-              
+
               <ul class="faq-list">
                 <li class="faq-item">
                   <h3 class="faq-question">
@@ -632,8 +640,8 @@
                   </div>
                 </li>
 
-              <!-- FAQ 질답2 -->
-                
+                <!-- FAQ 질답2 -->
+
                 <li class="faq-item">
                   <h3 class="faq-question">
                     <span>Q. 다른 기관에서 교육을 받았는데 신청 가능할까요?</span>
@@ -658,9 +666,9 @@
                   </div>
                 </li>
 
-              <!-- FAQ 질답3 -->
+                <!-- FAQ 질답3 -->
 
-              <li class="faq-item">
+                <li class="faq-item">
                   <h3 class="faq-question">
                     <span>Q. 학교, 직장 등과 병행이 가능한가요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
@@ -680,9 +688,9 @@
                   </div>
                 </li>
 
-              <!-- FAQ 질답4 -->
+                <!-- FAQ 질답4 -->
 
-              <li class="faq-item">
+                <li class="faq-item">
                   <h3 class="faq-question">
                     <span>Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
@@ -701,9 +709,9 @@
                   </div>
                 </li>
 
-              <!-- FAQ 질답5 -->
+                <!-- FAQ 질답5 -->
 
-              <li class="faq-item">
+                <li class="faq-item">
                   <h3 class="faq-question">
                     <span>Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
@@ -732,7 +740,6 @@
               <!-- NEWS 리스트 -->
 
               <ul class="news-list">
-
                 <!-- 뉴스1 -->
 
                 <li class="news-item">
