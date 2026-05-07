@@ -295,4 +295,76 @@ h3 {
   font: var(--caption-m);
   color: var(--main-black);
   line-height: var(--line-height-27);
+/* =========================
+  Accordion (Checkbox) - 배정호 작업 */
+
+.accordion {
+  width: 486px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.accordion-question {
+  width: 100%;
+  height: auto;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-question p {
+  font: var(--body-m-plus-400);
+}
+
+.accordion-question span {
+  color: var(--medium-gray);
+}
+
+.accordion-answer {
+  width: 100%;
+  height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  opacity: 0;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: 0.3s ease-out;
+}
+
+.accordion-answer p {
+  font: var(--body-m-400);
+}
+
+.accordion-input:checked ~ .accordion-answer {
+  height: auto;
+  padding: 24px 20px;
+  opacity: 1;
+}
+
+.accordion-input:checked + .accordion-question {
+  background: var(--super-light-gray);
+}
+
+.accordion-input:checked + .accordion-question span {
+  transform: rotate(180deg);
+  color: var(--title-black);
+  
+}
+
+.accordion-input:checked + .accordion-question p {
+  font: var(--body-m-plus-500);
 }

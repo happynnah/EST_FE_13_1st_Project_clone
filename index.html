@@ -17,18 +17,17 @@
     <main>
       <!-- Hero Section - 최예빈 작업 -->
       <section class="hero">
-        <div class="hero-container">
+        <div class="container">
           <!-- 1. 왼쪽 콘텐츠 영역: 텍스트와 버튼들이 세로로 배치되는 구간 -->
           <div class="hero-content">
-            <span class="hero-badge">NEXT GENERATION BOOTCAMP</span>
+            <span class="hero-badge">next generation bootcamp</span>
 
-            <h1 class="hero-title">
-              커리어의 시작과 성장,<br />
-              <span class="point-color">이스트캠프</span>와 함께
-            </h1>
+            <h2 class="hero-title">
+              커리어의 시작과 성장, <em class="point-color">이스트캠프</em>와 함께
+            </h2>
 
             <p class="hero-subtitle">
-              <span class="point-color">4개월</span> 만에 취업 가능한 실무 커리큘럼
+              <em class="point-color">4개월</em> 만에 취업 가능한 실무 커리큘럼
             </p>
 
             <p class="hero-description">
@@ -37,8 +36,10 @@
             </p>
 
             <div class="hero-btn-group">
-              <button type="button" class="btn-fill">교육 과정 살펴보기</button>
-              <button type="button" class="btn-outline">커리큘럼 보기 &rarr;</button>
+              <a href="#" class="cta-btn-main">교육 과정 살펴보기</a>
+              <a href="#" class="btn-normal"
+                >커리큘럼 보기<span class="material-icons">arrow_right_alt</span></a
+              >
             </div>
           </div>
 
@@ -64,7 +65,7 @@
       <!-- Hero Section 끝 -->
       <!-- 신뢰 그룹 - 김해나 작업 -->
 
-      <section>
+      <section class="trust-group">
         <div>
           <h2>숫자로 증명하는 결과</h2>
           <h3>수강생 경험과 성과를 수치로 확인해보세요</h3>
@@ -96,7 +97,7 @@
           <h2>왜 이스트캠프인가요?</h2>
           <h3>단순 코딩을 넘어 성장을 지원하는 핵심 가치</h3>
           <div>
-            <span> groups (구글아이콘) </span>
+            <span class="material-icons"> groups </span>
             <h4>실전 팀 프로젝트</h4>
             <p>
               기획부터 배포까지, 현업과 동일한 스택으로 실제 서비스를 구축하며 팀워크를 배웁니다.
@@ -151,7 +152,7 @@
       </section>
       <!-- 프로그램 그룹 - 오예은 작업 -->
       <hr />
-      <section>
+      <section class="programs group">
         <div class="container">
           <!-- 제목 영역을 header로 구분 -->
           <header class="section-header">
@@ -185,8 +186,7 @@
                     </li>
                   </ul>
                 </div>
-
-                <button type="button" class="cta-button">과정 자세히 보기</button>
+                <a href="#" class="cta-btn-main">과정 자세히 보기</a>
               </div>
             </article>
 
@@ -215,8 +215,7 @@
                     </li>
                   </ul>
                 </div>
-
-                <button type="button" class="cta-button">과정 자세히 보기</button>
+                <a href="#" class="cta-btn-main">과정 자세히 보기</a>
               </div>
             </article>
           </div>
@@ -231,11 +230,20 @@
 
           <!-- 2. 카테고리 필터 (탭 메뉴) -->
           <nav class="category-filter">
-            <button type="button" class="tab-item active">전체</button>
-            <button type="button" class="tab-item">프론트엔드</button>
-            <button type="button" class="tab-item">백엔드</button>
-            <button type="button" class="tab-item">AI</button>
-            <button type="button" class="tab-item">인프라/DevOps</button>
+            <input type="radio" name="category" id="filter-all" class="filter-input" checked />
+            <label for="filter-all" class="item-filter">전체</label>
+
+            <input type="radio" name="category" id="filter-frontend" class="filter-input"/>
+            <label for="filter-frontend" class="item-filter">프론트엔드</label>
+
+            <input type="radio" name="category" id="filter-backend" class="filter-input"/>
+            <label for="filter-backend" class="item-filter">백엔드</label>
+
+            <input type="radio" name="category" id="filter-ai" class="filter-input"/>
+            <label for="filter-ai" class="item-filter">AI</label>
+
+            <input type="radio" name="category" id="filter-devops" class="filter-input"/>
+            <label for="filter-devops" class="item-filter">인프라/DevOps</label>
           </nav>
 
           <!-- 3. 프로그램 카드 리스트 (3개 구성) -->
@@ -295,7 +303,7 @@
 
           <!-- 4. 하단 전체보기 버튼 -->
           <div class="section-footer">
-            <button type="button" class="btn-more">전체 과정 보기</button>
+            <a href="#" class="cta-btn-main">전체 과정 보기</a>
           </div>
         </div>
         <hr />
@@ -389,14 +397,18 @@
 
       <!-- 전환 보조 자료 그룹 - 배정호 작업 -->
       <section class="conversion-support-group">
+        <!-- 후기 섹션 -->
         <section class="testimonial-section">
           <div class="container">
+            <!-- 후기 섹션 제목 -->
             <div class="section-header">
               <h2>수료생 리얼 후기</h2>
               <p>앞서 이스트캠프를 경험한 수료생들의 실제 후기를 확인해보세요</p>
             </div>
 
             <ul class="testimonial-list">
+              <!-- 후기 섹션 카드1 -->
+
               <li class="testimonial-item">
                 <article class="testimonial-card">
                   <div class="testimonial-content">
@@ -424,6 +436,8 @@
                   </div>
                 </article>
               </li>
+
+              <!-- 후기 섹션 카드2 -->
 
               <li class="testimonial-item">
                 <article class="testimonial-card">
@@ -454,6 +468,8 @@
                 </article>
               </li>
 
+              <!-- 후기 섹션 카드3 -->
+
               <li class="testimonial-item">
                 <article class="testimonial-card">
                   <div class="testimonial-content">
@@ -483,13 +499,23 @@
               </li>
             </ul>
 
+            <!-- 후기 섹션 CTA -->
+
             <a href="#" class="testimonial-cta">더 많은 후기 보러가기</a>
           </div>
         </section>
+
+        <!-- 후기 섹션 끝 -->
+
         <hr class="container" />
-        <section class="requirements-section">
+
+        <!-- 지원자격 섹션 -->
+
+        <section class="requirements section">
           <div class="container">
-            <div class="requirements-intro">
+            <!-- 지원자격 섹션 텍스트 박스 -->
+
+            <section class="requirements-intro">
               <div class="section-header">
                 <h2>지원 자격</h2>
                 <p>
@@ -497,6 +523,8 @@
                   있습니다. 수강료 전액은 내일배움카드를 통해 국비 지원됩니다.
                 </p>
               </div>
+
+              <!-- 지원자격 섹션 체크1 -->
 
               <ul class="requirements-summary-list">
                 <li class="requirements-summary-item">
@@ -508,6 +536,8 @@
                   </div>
                 </li>
 
+                <!-- 지원자격 섹션 체크2 -->
+
                 <li class="requirements-summary-item">
                   <span class="material-icons">check</span>
 
@@ -517,33 +547,33 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </section>
 
-            <div class="requirements-visual"></div>
+            <!-- 지원자격 섹션 카드 리스트 세로 -->
 
-            <ul class="requirements-card-list">
-              <li class="requirements-card-item">
+            <section class="requirements-card-list vertical">
+              <!-- 카드 박스 가로 -->
+
+              <div class="requirements-card-box horizontal">
                 <article class="requirements-card">
                   <h3>내일배움카드</h3>
                   <p>국민내일배움카드 발급이 가능하신 분</p>
                 </article>
-              </li>
 
-              <li class="requirements-card-item">
                 <article class="requirements-card">
                   <h3>지원 조건</h3>
                   <p>5년 이내 K-디지털 트레이닝 과정 수강 이력이 없는 분</p>
                 </article>
-              </li>
+              </div>
 
-              <li class="requirements-card-item">
+              <div class="requirements-card-box horizontal">
                 <article class="requirements-card">
                   <h3>Full-time Class</h3>
                   <p>평일 오전 9시부터 오후 6시까지 교육 참여가 가능한 분</p>
                 </article>
-              </li>
 
-              <li class="requirements-card-item">
+                <!-- 카드 박스 가로 -->
+
                 <article class="requirements-card">
                   <h3>졸업 또는 졸업예정자</h3>
 
@@ -553,22 +583,29 @@
                     <li>2년제 - 1학년 입학 시부터 지원 가능</li>
                   </ul>
                 </article>
-              </li>
-            </ul>
+              </div>
+            </section>
           </div>
         </section>
         <hr class="container" />
+
+        <!-- FAQ / NEWS 섹션 -->
+
         <section class="faq-news-section">
-          <div class="container faq-news-container">
+          <div class="container">
+            <!-- FAQ 섹션 -->
+
             <section class="faq-section">
               <h2>자주 묻는 질문</h2>
 
+              <!-- FAQ 질답1 -->
+
               <ul class="faq-list">
                 <li class="faq-item">
-                  <button class="faq-question" type="button">
+                  <h3 class="faq-question">
                     <span>Q. 지원 자격이 있나요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
-                  </button>
+                  </h3>
 
                   <div class="faq-answer">
                     <p>
@@ -603,11 +640,13 @@
                   </div>
                 </li>
 
+                <!-- FAQ 질답2 -->
+
                 <li class="faq-item">
-                  <button class="faq-question" type="button">
+                  <h3 class="faq-question">
                     <span>Q. 다른 기관에서 교육을 받았는데 신청 가능할까요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
-                  </button>
+                  </h3>
 
                   <div class="faq-answer">
                     <p>
@@ -627,11 +666,13 @@
                   </div>
                 </li>
 
+                <!-- FAQ 질답3 -->
+
                 <li class="faq-item">
-                  <button class="faq-question" type="button">
+                  <h3 class="faq-question">
                     <span>Q. 학교, 직장 등과 병행이 가능한가요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
-                  </button>
+                  </h3>
 
                   <div class="faq-answer">
                     <p>
@@ -647,11 +688,13 @@
                   </div>
                 </li>
 
+                <!-- FAQ 질답4 -->
+
                 <li class="faq-item">
-                  <button class="faq-question" type="button">
+                  <h3 class="faq-question">
                     <span>Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
-                  </button>
+                  </h3>
 
                   <div class="faq-answer">
                     <p>
@@ -666,11 +709,13 @@
                   </div>
                 </li>
 
+                <!-- FAQ 질답5 -->
+
                 <li class="faq-item">
-                  <button class="faq-question" type="button">
+                  <h3 class="faq-question">
                     <span>Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</span>
                     <span class="material-icons">keyboard_arrow_down</span>
-                  </button>
+                  </h3>
 
                   <div class="faq-answer">
                     <p>
@@ -687,15 +732,20 @@
               </ul>
             </section>
 
+            <!-- NEWS 섹션 -->
+
             <section class="news-section">
               <h2>새소식</h2>
 
+              <!-- NEWS 리스트 -->
+
               <ul class="news-list">
+                <!-- 뉴스1 -->
+
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
                       <img src="" alt="" class="news-thumbnail" />
-
                       <div class="news-content">
                         <p class="news-category">Notice</p>
                         <h3 class="news-title">2026 하반기 신규 부트캠프 라인업 공개</h3>
@@ -705,11 +755,12 @@
                   </article>
                 </li>
 
+                <!-- 뉴스2 -->
+
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
                       <img src="" alt="" class="news-thumbnail" />
-
                       <div class="news-content">
                         <p class="news-category">Story</p>
                         <h3 class="news-title">주요 IT 기업 채용 연계 파트너십 체결 소식</h3>
@@ -719,11 +770,12 @@
                   </article>
                 </li>
 
+                <!-- 뉴스3 -->
+
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
                       <img src="" alt="" class="news-thumbnail" />
-
                       <div class="news-content">
                         <p class="news-category">Interview</p>
                         <h3 class="news-title">
@@ -735,11 +787,12 @@
                   </article>
                 </li>
 
+                <!-- 뉴스4 -->
+
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
                       <img src="" alt="" class="news-thumbnail" />
-
                       <div class="news-content">
                         <p class="news-category">Article</p>
                         <h3 class="news-title">
@@ -750,6 +803,8 @@
                     </a>
                   </article>
                 </li>
+
+                <!-- 뉴스5 -->
 
                 <li class="news-item">
                   <article class="news-card">
@@ -772,27 +827,25 @@
 
       <!--최종 CTA 최예빈 작업시작-->
       <section class="final-cta">
-  <div class="cta-container">
-    
-    <!-- 다른 섹션과 구분되는 최종 강조 박스 -->
-    <div class="final-cta-box">
-      
-      <h2 class="final-cta-title">Ready to start your journey?</h2>
+        <div class="container">
+          <!-- 다른 섹션과 구분되는 최종 강조 박스 -->
+          <div class="final-cta-box">
+            <h2 class="final-cta-title">Ready to start your journey?</h2>
 
-      <p class="final-cta-text">
-        당신의 꿈이 현실이 되는 곳, 이스트캠프에서 최고의 동료들과 함께 성장을 시작하세
-        요. 지금 지원하시면 커리어 상담 기회도 드립니다
-      </p>
-      
-      <!-- 버튼 영역 -->
-      <div class="final-cta-buttons">
-        <button type="button" class="btn-primary-large">나에게 맞는 과정 찾기</button>
-        <button type="button" class="btn-outline-large">브로셔 다운로드</button>
-      </div>
-    </div>
-  </div>
-</section>
-<!--최종 CTA 최예빈 작업끝-->
+            <p class="final-cta-text">
+              당신의 꿈이 현실이 되는 곳, 이스트캠프에서 최고의 동료들과 함께 성장을 시작하세 요.
+              지금 지원하시면 커리어 상담 기회도 드립니다
+            </p>
+
+            <!-- 버튼 영역 -->
+            <div class="final-cta-buttons">
+              <a href="#" class="cta-btn-main">나에게 맞는 과정 찾기</a>
+              <a href="#" class="btn-normal">브로셔 다운로드</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--최종 CTA 최예빈 작업끝-->
     </main>
   </body>
 </html>
