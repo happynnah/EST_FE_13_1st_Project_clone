@@ -19,7 +19,7 @@
         <div class="container">
           <h1>
             <a href="index.html">
-              <img src="images/EST Logo Base.png" alt="est logo" />
+              <img src="images/logo.png" alt="est logo" />
               <span class="visually-hidden">EST Camp</span>
             </a>
           </h1>
@@ -47,7 +47,7 @@
       </header>
 
       <!-- Hero Section - 최예빈 작업 -->
-      <section class="hero">
+      <section class="hero-section">
         <div class="container">
           <!-- 1. 왼쪽 콘텐츠 영역: 텍스트와 버튼들이 세로로 배치되는 구간 -->
           <div class="hero-content">
@@ -99,7 +99,7 @@
       <section class="trust-group">
         <div>
           <h2>숫자로 증명하는 결과</h2>
-          <h3>수강생 경험과 성과를 수치로 확인해보세요</h3>
+          <p>수강생 경험과 성과를 수치로 확인해보세요</p>
           <div>
             <ul>
               <li>
@@ -126,7 +126,7 @@
 
         <div>
           <h2>왜 이스트캠프인가요?</h2>
-          <h3>단순 코딩을 넘어 성장을 지원하는 핵심 가치</h3>
+          <p>단순 코딩을 넘어 성장을 지원하는 핵심 가치</p>
           <div>
             <span class="material-icons"> groups </span>
             <h4>실전 팀 프로젝트</h4>
@@ -153,37 +153,31 @@
 
         <hr />
 
-        <div>
-          <h2>수료생 주요 취업 현황</h2>
-          <h3>실무 역량을 입증한 많은 수료생들이 IT업계에서 활약하고 있습니다.</h3>
-          <div>
-            <ul>
-              <li>
-                <div>
-                  <a href="#"><img src="" alt="" /></a>
-                  <a href="#"><img src="" alt="" /></a>
-                  <a href="#"><img src="" alt="" /></a>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <a href="#"><img src="" alt="" /></a>
-                  <a href="#"><img src="" alt="" /></a>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <a href="#"><img src="" alt="" /></a>
-                  <a href="#"><img src="" alt="" /></a>
-                </div>
-              </li>
-            </ul>
+        <section class="employment-status-section">
+          <div class="text-group">
+            <h2>수료생 주요 취업 현황</h2>
+            <p>실무 역량을 입증한 많은 수료생들이 IT업계에서 활약하고 있습니다.</p>
           </div>
-        </div>
+          <div class="container vertical">
+            <div class="employment-status-column horizontal">
+              <img src="images/Est Logo.png" alt="est 로고">
+              <img src="images/Inbody Logo.png" alt="Inbody 로고">
+              <img src="images/Tridge Logo.png" alt="Tridge 로고">
+            </div>
+            <div class="employment-status-column horizontal">
+              <img src="images/Naver Cloud Logo.png" alt="naver cloud 로고">
+              <img src="images/Hyundai Logo.png" alt="Hyundai 로고">
+            </div>
+            <div class="employment-status-column horizontal">
+              <img src="images/Thanks Carbon Logo.png" alt="thanks carbon 로고">
+              <img src="images/Weniv Logo.png" alt="weniv 로고">
+            </div>
+          </div>
+        </section>
       </section>
       <!-- 프로그램 그룹 - 오예은 작업 -->
       <hr />
-      <section class="programs group">
+      <section class="programs-group">
         <div class="container">
           <!-- 제목 영역을 header로 구분 -->
           <header class="section-header">
@@ -264,16 +258,16 @@
             <input type="radio" name="category" id="filter-all" class="filter-input" checked />
             <label for="filter-all" class="item-filter">전체</label>
 
-            <input type="radio" name="category" id="filter-frontend" class="filter-input"/>
+            <input type="radio" name="category" id="filter-frontend" class="filter-input" />
             <label for="filter-frontend" class="item-filter">프론트엔드</label>
 
-            <input type="radio" name="category" id="filter-backend" class="filter-input"/>
+            <input type="radio" name="category" id="filter-backend" class="filter-input" />
             <label for="filter-backend" class="item-filter">백엔드</label>
 
-            <input type="radio" name="category" id="filter-ai" class="filter-input"/>
+            <input type="radio" name="category" id="filter-ai" class="filter-input" />
             <label for="filter-ai" class="item-filter">AI</label>
 
-            <input type="radio" name="category" id="filter-devops" class="filter-input"/>
+            <input type="radio" name="category" id="filter-devops" class="filter-input" />
             <label for="filter-devops" class="item-filter">인프라/DevOps</label>
           </nav>
 
@@ -542,7 +536,7 @@
 
         <!-- 지원자격 섹션 -->
 
-        <section class="requirements section">
+        <section class="requirements-section">
           <div class="container">
             <!-- 지원자격 섹션 텍스트 박스 -->
 
@@ -629,9 +623,11 @@
             <section class="faq-section">
               <h2>자주 묻는 질문</h2>
 
-              <!-- FAQ 질답1 -->
+              <!-- FAQ 리스트 -->
 
               <ul class="faq-list">
+                <!-- FAQ 질답1 -->
+
                 <li class="faq-item">
                   <h3 class="faq-question">
                     <span>Q. 지원 자격이 있나요?</span>
@@ -776,7 +772,7 @@
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
-                      <img src="" alt="" class="news-thumbnail" />
+                      <img src="images/workspace.jpg" alt="workspace" class="news-thumbnail" />
                       <div class="news-content">
                         <p class="news-category">Notice</p>
                         <h3 class="news-title">2026 하반기 신규 부트캠프 라인업 공개</h3>
@@ -791,7 +787,7 @@
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
-                      <img src="" alt="" class="news-thumbnail" />
+                      <img src="images/handshaking.jpg" alt="handshaking" class="news-thumbnail" />
                       <div class="news-content">
                         <p class="news-category">Story</p>
                         <h3 class="news-title">주요 IT 기업 채용 연계 파트너십 체결 소식</h3>
@@ -806,7 +802,7 @@
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
-                      <img src="" alt="" class="news-thumbnail" />
+                      <img src="images/working-boardroom.jpg" alt="working-boardroom" class="news-thumbnail" />
                       <div class="news-content">
                         <p class="news-category">Interview</p>
                         <h3 class="news-title">
@@ -823,7 +819,7 @@
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
-                      <img src="" alt="" class="news-thumbnail" />
+                      <img src="images/coders.jpg" alt="coders" class="news-thumbnail" />
                       <div class="news-content">
                         <p class="news-category">Article</p>
                         <h3 class="news-title">
@@ -840,7 +836,7 @@
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
-                      <img src="" alt="" class="news-thumbnail" />
+                      <img src="images/AI image.webp" alt="AI image" class="news-thumbnail" />
 
                       <div class="news-content">
                         <p class="news-category">Interview</p>
@@ -857,7 +853,7 @@
       </section>
 
       <!--최종 CTA 최예빈 작업시작-->
-      <section class="final-cta">
+      <section class="final-cta-section">
         <div class="container">
           <!-- 다른 섹션과 구분되는 최종 강조 박스 -->
           <div class="final-cta-box">
@@ -881,6 +877,8 @@
         </div>
       </section>
       <!--최종 CTA 최예빈 작업끝-->
+      
+    </main>
 
       <!-- 푸터 - 배정호 작업 -->
 
@@ -901,7 +899,7 @@
               </div>
             </div>
             <div class="footer-nav-program vertical">
-              <h3>Program</h3>
+              <h3>program</h3>
               <div class="vertical">
                 <a href="#">Frontend Track</a>
                 <a href="#">Backend Track</a>
@@ -910,7 +908,7 @@
               </div>
             </div>
             <div class="footer-nav-company vertical">
-              <h3>Program</h3>
+              <h3>company</h3>
               <div class="vertical">
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
@@ -919,7 +917,7 @@
               </div>
             </div>
             <div class="footer-nav-follow-us vertical">
-              <h3>Program</h3>
+              <h3>follow us</h3>
               <div class="vertical">
                 <div class="horizontal">
                   <span class="material-icons">insert_link</span>
@@ -950,7 +948,7 @@
           </div>
         </div>
       </footer>
-    </main>
+
 
     <!-- 고정 버튼 - 배정호 작업 -->
 

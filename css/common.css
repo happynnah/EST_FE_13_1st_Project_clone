@@ -46,6 +46,84 @@
   font-style: normal;
 }
 
+/*  buttom compnents-이민호 작성 */
+/* =========================
+  Button Base Component
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* 크기 */
+.btn-md {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font: var(--label-l);
+}
+
+.btn-tab {
+  padding: 8px 24px;
+  border-radius: 50px;
+  font: var(--body-m-plus-500);
+}
+
+.btn-logo {
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.btn-fixed {
+  width: 75px;
+  height: 75px;
+  padding: 0;
+  border-radius: 20px;
+}
+
+/* 색상 */
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-white-primary {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.btn-gray {
+  background: var(--main-button);
+  color: var(--title-black);
+}
+
+.btn-dark-gray {
+  background: var(--button-container);
+  color: var(--white);
+}
+
+/* 아이콘 포함 버튼 */
+.btn-icon {
+  gap: 8px;
+}
+
+.btn-icon .material-icons {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* fixed 아이콘 */
+.btn-fixed .material-icons {
+  font-size: 48px;
+  line-height: 100%;
+}
+  
+  
 /* 기본 카드 컴포넌트 - 김해나 작업 */
 .heading-m {
   font: var(--heading-m);
@@ -363,7 +441,6 @@ h3 {
 .accordion-input:checked + .accordion-question span {
   transform: rotate(180deg);
   color: var(--title-black);
-  
 }
 
 .accordion-input:checked + .accordion-question p {
