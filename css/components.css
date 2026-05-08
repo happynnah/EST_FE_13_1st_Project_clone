@@ -191,255 +191,96 @@ header nav ul {
   box-shadow: 0 3px 0 0 var(--white); /* 밑줄효과 border-bottom은 inside처럼 나타남 */
 }
 
+/* 네비 컴포넌트 종료 */
+
 /* 기본 카드 컴포넌트 - 김해나 작업 */
-.heading-m {
-  font: var(--heading-m);
-}
+/* 카드 컴포넌트 - 배정호 수정 */
 
-.description-plus {
-  font: var(--body-m-plus-400);
-  color: var(--main-black);
-}
+/* =======================
+   카드 컴포넌트 베이스
+======================= */
 
-.description-70 {
-  font: var(--body-m-plus-400);
-  color: var(--white-alpha-70);
-}
+.card {
+  display: flex;
 
-.description {
-  font: var(--body-m);
-  color: var(--main-black);
-  font-size: var(--font-size-14);
-}
-
-.testimonial-description {
-  font: var(--body-m-plus-400);
-  color: var(--main-black);
-}
-
-h3 {
-  font: var(--heading-s);
-  font-size: var(--font-size-18);
-}
-
-/* 1*1 카드 */
-
-.iconcard-1-1 {
-  width: 384px;
-  height: 288px;
   box-sizing: border-box;
-  background: var(--white);
-  padding: 72px 40px;
-  border: 2px solid var(--secondary-alpha-30);
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-/* 2*1 카드 */
-.iconcard-2-1 {
-  display: flex;
-  width: 792px;
-  height: 288px;
-  box-sizing: border-box;
-  background: var(--white);
-  padding: 60px 40px;
-  border: 2px solid var(--secondary-alpha-30);
-  border-radius: 24px;
-  align-items: center;
-  gap: 32px;
-}
-
-.iconcard-2-1 .icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  color: var(--primary);
-  background: var(--secondary-alpha-10);
-  border-radius: 16px;
-}
-
-.iconcard-2-1 .text-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: left;
-}
-
-.iconcard-2-1 .material-icons {
-  font-size: 40px;
-}
-
-/* 1*2 파란색 카드 */
-.iconcard-1-2 {
-  position: relative;
-  width: 384px;
-  height: 600px;
-  background: var(--primary);
-  border: 2px solid var(--secondary-alpha-30);
-  border-radius: 24px;
-  padding: 60px 40px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
-}
-
-.iconcard-1-2 .icon-box-big {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-}
-
-.iconcard-1-2 .material-icons {
-  font-size: 125px;
-  color: var(--white-alpha-10);
-}
-
-.iconcard-1-2 .text-group {
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  text-align: left;
-}
-
-/* 커리큘럼 섹션 - 아이콘 카드 */
-.icon-vertical-card-tag {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 282px;
-  height: 320px;
-  border: 2px solid var(--secondary-alpha-30);
-  border-radius: 24px;
-  background: var(--white);
   padding: 32px;
+
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+
+  background: var(--white);
+
   gap: var(--line-height-27);
-  box-sizing: border-box;
 }
 
-.icon-box-small {
-  width: 48px;
-  height: 48px;
-  color: var(--primary);
-  background: var(--secondary-alpha-10);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* =======================
+   카드 크기 배치 (부모에게 flex 필요)
+======================= */
+
+.card-grow-1 {
+  flex: 1;
+  min-width: 192px;
 }
 
-.icon-vertical-card-tag .text-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
+.card-grow-2 {
+  flex: 2;
+  min-width: 384px;
 }
 
-.icon-box-small .material-icons {
+.card-grow-3 {
+  flex: 3;
+  min-width: 576px;
+}
+
+.card-grow-4 {
+  flex: 4;
+  min-width: 768;
+}
+
+/* =======================
+   카드 높이
+======================= */
+
+.card-extra-short {
+  height: 192px;
+}
+
+.card-short {
+  height: 288px;
+}
+
+.card-medium {
+  height: 320px;
+}
+
+.card-tall {
+  height: 600px;
+}
+
+.card-extra-tall {
+  height: 640px;
+}
+
+.card-auto {
+  height: auto;
+}
+
+/* =======================
+   카드 폰트 아이콘 크기
+======================= */
+
+.card-icon-small {
   font-size: 24px;
 }
 
-.icon-vertical-card-tag .list-group ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.card-icon {
+  font-size: 40px;
 }
 
-.icon-vertical-card-tag .list-group li {
-  padding: 0 8px;
-  background: var(--main-button-alpha-50);
-  border-radius: 4px;
-  font: var(--caption-s);
-  color: var(--secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 전체 교육 과정 섹션 - 아이콘 카드 */
-.icon-vertical-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 384px;
-  min-height: 288px;
-  border: 2px solid var(--secondary-alpha-30);
-  border-radius: 24px;
-  background: var(--white);
-  padding: 32px;
-  gap: var(--line-height-27);
-  box-sizing: border-box;
-}
-
-.icon-vertical-card .text-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.icon-vertical-card .list-status ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font: var(--caption-m);
-}
-
-/* 수료생 후기 - 아이콘 카드 */
-.testimonial-card {
-  width: 100%;
-  border: 2px solid var(--secondary-alpha-30);
-  border-radius: 24px;
-  background: var(--white);
-  padding: 32px;
-  gap: var(--line-height-27);
-  box-sizing: border-box;
-}
-
-.testimonial-student-info {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.rating-icons {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 16px;
-}
-
-.testimonial-card .material-icons {
-  color: var(--secondary);
-}
-
-.rating-comment ul {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.rating-comment img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-}
-
-.rating-comment li:nth-child(2) {
-  line-height: var(--line-height-27);
-  display: flex;
-  flex-direction: column;
-}
-
-.rating-comment span {
-  font: var(--caption-m);
-  color: var(--main-black);
-  line-height: var(--line-height-27);
+.card-icon-big {
+  font-size: 125px;
 }
 
 /* 이미지 카드 - 오예은 작업 */
