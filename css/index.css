@@ -1,26 +1,45 @@
+/* #region Header */
+
 /* =======================
 header작성 - 이민호 작성
+======================= */
 
 header {
   width: 100%;
   background: var(--secondary);
 }
 
-header .container { height: 64px; margin: 0 auto; justify-content: space-between; align-items: center; }
+header .container {
+  height: 64px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* LOGO */
 
-.logo img { display: block; height: 24px; }
+.logo img {
+  display: block;
+  height: 24px;
+}
 
 /* NAVIGATION */
-nav .list { gap: 24px; }
+nav .list {
+  gap: 24px;
+}
 
 /* NAV */
 
-nav a:hover { color: var(--white); }
+nav a:hover {
+  color: var(--white);
+}
 
 /* CTA BUTTON */
-header .btn { height: 40px; box-shadow: var(--button-shadow); transition: 0.2s ease; }
+header .btn {
+  height: 40px;
+  box-shadow: var(--button-shadow);
+  transition: 0.2s ease;
+}
 
 /* CTA BUTTON */
 
@@ -42,87 +61,106 @@ header .cta-btn-sub:active {
   background: var(--white-active);
 }
 
-/* hero 그룹 스타일 - 최예빈 */
+/* =======================
+header 종료
+======================= */
+
+/* #endregion */
+
+/* #region Hero */
+
+/* =======================
+hero-section 최예빈 작업
+======================= */
+
 /* 1. 기본 레이아웃 클래스 */
-.horizontal { display: flex; flex-direction: row; }
-.vertical { display: flex; flex-direction: column; }
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
 
 /* 2. 히어로 섹션 전체 설정 */
 .hero-section {
-    width: 100%;
-    background-color: var(--white); 
-    padding: 180px 0 100px 0; 
-    overflow: visible; 
+  width: 100%;
+  background-color: var(--white);
+  /* ★ 헤더 밑으로 내리기: 상단 패딩을 160px~180px 정도로 넉넉히 줍니다 */
+  padding: 180px 0 100px 0;
+  overflow: visible;
 }
 
 .hero-container.horizontal {
-    max-width: 1200px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    gap: 78px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 78px;
 }
 
 /* 4. 왼쪽 텍스트 박스 */
 .hero-content-box.vertical {
-    width: 553px;
-    gap: 32px;
-    position: relative;
-    z-index: 10;
+  width: 553px;
+  gap: 32px;
+  position: relative;
+  z-index: 10;
 }
 
 /* 뱃지 스타일 */
-.hero-content-box span:first-child {
-    display: inline-flex;
-    align-items: center;
-    height: 32px;
-    padding: 0 16px;
-    background-color: var(--primary-alpha-10);
-    color: var(--primary);
-    font: var(--body-m-plus-400);
-    border-radius: 50px;
-    width: fit-content;
+.hero-content-box > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 16px;
+  background-color: var(--primary-alpha-10);
+  color: var(--primary);
+  font: var(--body-m-plus-400);
+  border-radius: 50px;
+  width: fit-content;
+  text-transform: uppercase;
 }
 
 .hero-title {
-    width: 553px;
-    font: var(--display-500);
-    color: var(--title-black);
-    margin: 0;
+  width: 553px;
+  font: var(--display-500);
+  color: var(--title-black);
+  margin: 0;
 }
 
 .hero-subtitle {
-    font: var(--heading-m);
-    color: var(--main-black);
+  font: var(--heading-m);
+  color: var(--main-black);
 }
 
 .hero-description {
-    font: var(--lead-m);
-    color: var(--main-black);
+  font: var(--lead-m);
+  color: var(--main-black);
 }
 
 .point-color {
-    color: var(--primary);
-    font-style: normal;
+  color: var(--primary);
+  font-style: normal;
 }
 
 /* 5. 버튼 그룹 */
 .hero-cta-buttons.horizontal {
-    align-items: center;
-    gap: 12px;
-    margin-top: 0;
+  align-items: center;
+  gap: 12px;
+  margin-top: 0;
 }
 
 .cta-btn-main {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 10px 32px;
-    border-radius: var(--radius-s-plus);
-    font: var(--label-l);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 10px 32px;
+  border-radius: var(--radius-s-plus);
+  font: var(--label-l);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta-btn-main:hover {
     background-color: var(--primary-hover);
@@ -131,15 +169,15 @@ header .cta-btn-sub:active {
     background-color: var(--primary-active);
 }
 .btn-sub {
-    background: var(--main-button);
-    color: var(--title-black);
-    padding: 10px 32px;
-    border-radius: var(--radius-s-plus);
-    font: var(--label-l);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+  background: var(--main-button);
+  color: var(--title-black);
+  padding: 10px 32px;
+  border-radius: var(--radius-s-plus);
+  font: var(--label-l);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .btn-sub:hover {
     background: var(--main-button-hover);
@@ -150,143 +188,149 @@ header .cta-btn-sub:active {
 
 /* 아이콘 폰트 스타일 추가 */
 .hero-section .btn-sub span.material-icons {
-    background: transparent;
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    color: var(--title-black);
-    font-family: 'Material Icons';
-    font-size: var(--font-size-24);
-    line-height: var(--line-height-32);
-    display: inline-block;
+  background: transparent;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: var(--title-black);
+  font-family: "Material Icons";
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-32);
+  display: inline-block;
 }
 
 .image-box {
-    width: 520px;
-    min-width: 520px;
-    height: 450px;
-    position: relative; /* ★ 자식들이 이 안에서 움직이게 기준점 설정 */
-    border-radius: var(--radius-l);
-    box-sizing: border-box;
-    box-shadow: var(--shadow-default);
-    flex-shrink: 0;
-    overflow: visible; /* 통계 카드가 삐져나와야 하므로 유지 */
+  width: 520px;
+  min-width: 520px;
+  height: 450px;
+  position: relative; /* ★ 자식들이 이 안에서 움직이게 기준점 설정 */
+  border-radius: var(--radius-l);
+  box-sizing: border-box;
+  box-shadow: var(--shadow-default);
+  flex-shrink: 0;
+  overflow: visible; /* 통계 카드가 삐져나와야 하므로 유지 */
 }
 
 /* 2. 이미지 (유리보다 아래에 배치) */
 .image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: calc(var(--radius-l) - 1px);
-    display: block;
-    
-    /* ★ 유리가 위에 올라올 수 있게 레이어 순서 낮춤 */
-    position: relative;
-    z-index: 1; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(var(--radius-l) - 1px);
+  display: block;
+
+  /* ★ 유리가 위에 올라올 수 있게 레이어 순서 낮춤 */
+  position: relative;
+  z-index: 1;
 }
 
 /* 3. ★ 유리 속성 튀어나오게 하기 (사진 위로 얹기) */
 .image-box::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    
-    /* ★ 사진보다 위에 오도록 z-index 설정 */
-    z-index: 2; 
-    
-    /* 배경 라운드 값과 일치 */
-    border-radius: var(--radius-l);
-    
-    /* ★ 피그마 Linear 70% 반영 그라데이션 (Overlay) */
-    background: var(--glass-effect);
-    
-    /* 뒤 배경 블러 효과 (사진을 유리판처럼 흐릿하게 만듦) */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    
-    /* 유리 질감을 더해주는 은은한 테두리 */
-    border: 1px solid var(--medium-gray);
-    pointer-events: none; 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  /* ★ 사진보다 위에 오도록 z-index 설정 */
+  z-index: 2;
+
+  /* 배경 라운드 값과 일치 */
+  border-radius: var(--radius-l);
+
+  /* ★ 피그마 Linear 70% 반영 그라데이션 (Overlay) */
+  background: var(--glass-effect);
+
+  /* 뒤 배경 블러 효과 (사진을 유리판처럼 흐릿하게 만듦) */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  /* 유리 질감을 더해주는 은은한 테두리 */
+  border: 1px solid var(--medium-gray);
+  pointer-events: none;
 }
 
 /* 7. 통계 카드 */
 .hero-stats-card {
-    position: absolute;
-    left: -44px; /* 이미지 밖으로 튀어나오는 위치 */
-    bottom: -20px;
-    background-color: var(--white-alpha-60);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--white-alpha-20);
-    box-shadow: var(--shadow-elevated);
-    padding: 24px;
-    border-radius: var(--radius-m);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    z-index: 20;
+  position: absolute;
+  left: -44px; /* 이미지 밖으로 튀어나오는 위치 */
+  bottom: -20px;
+  background-color: var(--white-alpha-60);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--white-alpha-20);
+  box-shadow: var(--shadow-elevated);
+  padding: 24px;
+  border-radius: var(--radius-m);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 20;
 }
 
 .card-icon {
-    width: 64px; 
-    height: 64px;
-    background-color: var(--secondary);
-    border-radius: 50px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
+  width: 64px;
+  height: 64px;
+  background-color: var(--secondary);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
 }
 
 .card-icon .material-icons {
-    font-size: 32px;
-    line-height: var(--line-height-full); /* 카드 내 아이콘은 크게 */
+  font-size: 32px;
+  line-height: var(--line-height-full); /* 카드 내 아이콘은 크게 */
 }
 
 /* 8. 카드 내부 텍스트 정렬 */
 .card-text.vertical {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: flex-start;  
-    justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .card-text strong {
-    display: block;
-    font-family: var(--font-gmarket); 
-    font-size: var(--font-size-36);
-    line-height: var(--line-height-32);
-    color: var(--near-black);
-    font-weight: bold;
+  display: block;
+  font-family: var(--font-gmarket);
+  font-size: var(--font-size-36);
+  line-height: var(--line-height-32);
+  color: var(--near-black);
+  font-weight: bold;
 }
 
 .card-text span {
-    font: var(--heading-x-x-s);
-    color: var(--main-black);
+  font: var(--heading-x-x-s);
+  color: var(--main-black);
 }
-/* 전환 보조 자료 그룹 스타일 - 배정호 */
-header .btn:active { background: var(--primary-active); }
+
+header .btn:active {
+  background: var(--primary-active);
+}
+
+/* #endregion */
+
+/* #region Support */
 
 /* =======================
 전환 보조 자료 그룹 스타일 - 배정호
+======================= */
+
+/* 후기 섹션 */
 
 .conversion-support-group > section {
   display: flex;
   flex-direction: column;
 }
 
-.testimonial-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
+.testimonial-section .testimonial-list {
+  height: 100%;
 }
 
 .testimonial-section .section-header {
@@ -302,15 +346,225 @@ header .btn:active { background: var(--primary-active); }
 .testimonial-section .testimonial-list {
   display: flex;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .testimonial-section .testimonial-item {
   flex: 1 1 0;
 }
 
+.testimonial-section {
+  margin-bottom: 96px;
+}
+
+/* 지원자격 섹션 */
+
+.requirements-intro {
+  margin-right: 24px;
+}
+
+.requirements-section .requirements-summary-list {
+  width: 100%;
+}
+
+.requirements-summary-item span {
+  padding: 4px;
+  font-size: 24px;
+  border-radius: 50px;
+  color: var(--primary);
+  background: var(--primary-alpha-10);
+  text-align: center;
+}
+
+.requirements-card.card {
+  padding: 40px 30px;
+  justify-content: center;
+}
+
+.requirements-card-layout h3 {
+  font: var(--heading-s);
+}
+.requirements-card-layout p {
+  font: var(--body-m-plus-400);
+}
+.requirements-card li {
+  font: var(--caption-m);
+}
+
+/* FAQ 섹션 */
+
+.faq-news-section h2 {
+  font: var(--heading-l);
+  color: var(--title-black);
+  width: 100%;
+}
+
+.faq-section {
+  align-items: start;
+}
+
+/* News 섹션 */
+
+.news-section {
+  align-items: start;
+}
+
+.news-section h2 {
+  padding-left: 16px;
+}
+
+.news-section .news-list {
+  padding-left: 32px;
+}
+
+.news-list img {
+  border-radius: 16px;
+}
+
+.news-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--medium-gray-30);
+}
+
+
+.news-item .news-link {
+  gap: 24px;
+}
+.news-item .news-category {
+  color: var(--crimson);
+}
+.news-item .news-title {
+  color: var(--primary);
+}
+.news-item .news-date {
+  color: var(--medium-gray);
+}
+
+.news-content {
+  gap: 4px;
+}
+
+.news-item:first-of-type {
+  padding-top: 0;
+}
+
+.news-item:last-of-type {
+  border: none;
+}
+
+
+
 /* =======================
 전환 보조 자료 그룹 종료 
 ======================= */
+
+/* #endregion */
+
+/* #region Final CTA */
+
+/* 최종 CTA css - 최예빈작성 */
+
+.final-cta-section {
+  width: 100%;
+  padding: 96px 0;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.final-cta-container.vertical {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 59px 60px;
+  box-sizing: border-box;
+  background: var(--bright-blue);
+  border-radius: 40px;
+}
+
+/* 내부 콘텐츠 정렬 */
+.final-cta-content.vertical {
+  align-items: center;
+  gap: 64px;
+}
+
+/* 텍스트 그룹 */
+.text-group.vertical {
+  align-items: center;
+  gap: 32px; /* 타이틀과 설명 사이 간격 */
+}
+
+.text-group h2 {
+  font: var(--heading-m);
+  color: var(--white);
+  text-align: center;
+}
+
+.description-text p {
+  font: var(--lead-m);
+  color: var(--white);
+  opacity: 70%;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* 버튼 그룹 레이아웃 */
+.final-cta-buttons.horizontal {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 개별 버튼 스타일 */
+.final-cta-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 버튼 개별 사이즈 */
+  width: 240px;
+  height: 64px;
+
+  /* 버튼 모서리 곡률 */
+  border-radius: var(--radius-s-plus);
+  font-weight: 600;
+  text-decoration: none;
+
+  /* 색상 변화만 부드럽게 적용 (위로 뜨지 않음) */
+  transition: background 0.1s ease;
+}
+
+/* 메인 버튼 (흰색) */
+.cta-btn-main {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+/* 서브 버튼 (세컨더리) */
+.btn-sub {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+/* 마우스 올렸을 때 (Hover) */
+.final-cta-buttons a:hover {
+  background: var(--button-container-hover);
+}
+
+/* 클릭했을 때 (Active) */
+.final-cta-buttons a:active {
+  background: var(--button-container-active);
+}
+
+/* =======================
+최종 CTA 섹션 종료
+======================= */
+
+/* #endregion */
+
+/* #region Footer */
 
 /* =======================
 footer css작성 - 이민호 작성
@@ -320,6 +574,10 @@ footer {
   width: 100%;
   background: var(--super-light-gray);
   padding: 64px 0 40px;
+}
+
+.differentiator-section .verticlal-card-item {
+  background: var(--primary);
 }
 
 /* 공통 */
@@ -486,12 +744,12 @@ img {
   max-width: 400px;
 }
 /* =======================
-푸터 종료
+Footer 종료
 ======================= */
 
-/* =======================
-hero-section 최예빈 작업
-======================= */
+/* #endregion */
+
+/* #region FixedButton */
 
 /* =======================
 고정 버튼 스타일 - 배정호 작업
@@ -520,3 +778,5 @@ hero-section 최예빈 작업
 /* =======================
 고정 버튼 종료
 ======================= */
+
+/* #endregion */

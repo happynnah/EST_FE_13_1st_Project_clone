@@ -20,236 +20,262 @@
     </style>
   </head>
   <body>
-    <!-- 네비게이션 - 최예빈 작업 -->
-    <header>
-      <div class="container">
-        <nav>
-          <ul>
-            <li class="nav-item">
-              <a href="#">과정소개</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">커리큘럼</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">수강후기</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">신청안내</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">FAQ</a>
-            </li>
-          </ul>
-          <a href="#" class="cta-btn-sub">전체 과정 보기</a>
-        </nav>
-      </div>
-    </header>
+    <main>
+      <!-- 네비게이션 - 최예빈 작업 -->
+      <header>
+        <div class="container">
+          <nav>
+            <ul>
+              <li class="nav-item">
+                <a href="#">과정소개</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">커리큘럼</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">수강후기</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">신청안내</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+            <a href="#" class="cta-btn-sub">전체 과정 보기</a>
+          </nav>
+        </div>
+      </header>
 
-    <article class="image-card-big">
-      <div class="image-frame"></div>
+      <!-- 이미지카드 - 오예은 작업 -->
+      <article class="image-card-big">
+        <div class="image-frame"></div>
 
-      <div class="content">
-        <div class="text-group">
-          <div class="program-information">
-            <span class="badge">Classification</span>
+        <div class="content">
+          <div class="text-group">
+            <div class="program-information">
+              <span class="badge">Classification</span>
 
-            <h3 class="program-title">Program Title</h3>
+              <h3 class="program-title">Program Title</h3>
 
-            <div class="clip-overtext">
-              <p class="text-wrapper">Program Overview</p>
+              <div class="clip-overtext">
+                <p class="text-wrapper">Program Overview</p>
+              </div>
+            </div>
+
+            <ul class="additional-information">
+              <li class="period">
+                <i class="material-icons">calendar_today</i>
+                <span>period</span>
+              </li>
+
+              <li class="class-time">
+                <i class="material-icons">schedule</i>
+                <span>class time</span>
+              </li>
+            </ul>
+          </div>
+
+          <a href="/program-detail" class="cta-button-main"> CTA btn Text </a>
+        </div>
+      </article>
+
+      <!-- 기본 카드 - 김해나 작업 -->
+      <section class="cards">
+        <!-- 1*1 카드 -->
+        <div class="iconcard-1-1 text-group">
+          <p class="heading-m">Card Item Title</p>
+          <p class="description-plus">Card Item Contents</p>
+        </div>
+
+        <!-- 2*1 카드 -->
+        <div class="iconcard-2-1">
+          <div class="icon-box">
+            <span class="material-icons">groups </span>
+          </div>
+          <div class="text-group">
+            <p class="heading-m">Card 1</p>
+            <p class="description-plus">Card Item Contents</p>
+          </div>
+        </div>
+
+        <!-- 1*2 파란색 카드 -->
+        <div class="iconcard-1-2">
+          <div class="icon-box-big">
+            <span class="material-icons">workspace_premium </span>
+          </div>
+          <div class="text-group">
+            <p class="heading-m">Card 4</p>
+            <p class="description-70">Card Item Contents</p>
+          </div>
+        </div>
+
+        <!-- 커리큘럼 섹션 - 아이콘 카드 -->
+        <div class="icon-vertical-card-tag">
+          <div class="icon-box-small">
+            <span class="material-icons">menu_book </span>
+          </div>
+          <div class="text-group">
+            <h3>01. 기초 다지기</h3>
+            <p class="description">프로그래밍의 기본 원리와 언어⋅문법을 탄탄하게 학습합니다.</p>
+          </div>
+          <div class="list-group">
+            <ul>
+              <li>HTML/CSS</li>
+              <li>HTML/CSS</li>
+              <li>JS</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 전체 교육 과정 섹션 - 아이콘 카드 -->
+        <div class="icon-vertical-card">
+          <div class="icon-box-small">
+            <span class="material-icons">view_agenda </span>
+          </div>
+          <div class="text-group">
+            <h3>Program Title</h3>
+            <p class="description">Program Overview</p>
+          </div>
+          <div class="list-status">
+            <ul>
+              <li>2026. 05. 28 개강</li>
+              <li>신청 가능</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 수료생 후기 - 아이콘 카드 -->
+        <div class="testimonial-card">
+          <div class="rating-icons">
+            <span class="material-icons">star </span>
+            <span class="material-icons">star </span>
+            <span class="material-icons">star </span>
+            <span class="material-icons">star </span>
+            <span class="material-icons">star </span>
+          </div>
+
+          <div class="student-content">
+            <div class="text-group">
+              <p class="testimonial-description">
+                "비전공자라 막막했는데, 기초부터 탄탄하게 잡아주셔서 지금은 네이버에서 프론트엔드 개발자로 일하고
+                있습니다. 멘토님들의 실무 팁이 정말 큰 도움이 됐어요."
+              </p>
+            </div>
+
+            <div class="rating-comment">
+              <ul>
+                <li>
+                  <img src="https://dummyimage.com/48x48/000/fff.png" alt="profile" />
+                </li>
+                <li>
+                  김민주 수료생
+                  <span>프론트엔드 5기 | 현 네이버 근무</span>
+                </li>
+              </ul>
             </div>
           </div>
-
-          <ul class="additional-information">
-            <li class="period">
-              <i class="material-icons">calendar_today</i>
-              <span>period</span>
-            </li>
-
-            <li class="class-time">
-              <i class="material-icons">schedule</i>
-              <span>class time</span>
-            </li>
-          </ul>
         </div>
+      </section>
 
-        <a href="/program-detail" class="cta-button-main"> CTA btn Text </a>
-      </div>
-    </article>
-
-    <!-- 기본 카드 - 김해나 작업 -->
-
-    <!-- 1*1 카드 -->
-    <div class="iconcard-1-1 text-group">
-      <p class="heading-m">Card Item Title</p>
-      <p class="description-plus">Card Item Contents</p>
-    </div>
-
-    <!-- 2*1 카드 -->
-    <div class="iconcard-2-1">
-      <div class="icon-box">
-        <span class="material-icons">groups </span>
-      </div>
-      <div class="text-group">
-        <p class="heading-m">Card 1</p>
-        <p class="description-plus">Card Item Contents</p>
-      </div>
-    </div>
-
-    <!-- 1*2 파란색 카드 -->
-    <div class="iconcard-1-2">
-      <div class="icon-box-big">
-        <span class="material-icons">workspace_premium </span>
-      </div>
-      <div class="text-group">
-        <p class="heading-m">Card 4</p>
-        <p class="description-70">Card Item Contents</p>
-      </div>
-    </div>
-
-    <!-- 커리큘럼 섹션 - 아이콘 카드 -->
-    <div class="icon-vertical-card-tag">
-      <div class="icon-box-small">
-        <span class="material-icons">menu_book </span>
-      </div>
-      <div class="text-group">
-        <h3>01. 기초 다지기</h3>
-        <p class="description">프로그래밍의 기본 원리와 언어⋅문법을 탄탄하게 학습합니다.</p>
-      </div>
-      <div class="list-group">
-        <ul>
-          <li>HTML/CSS</li>
-          <li>HTML/CSS</li>
-          <li>JS</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 전체 교육 과정 섹션 - 아이콘 카드 -->
-    <div class="icon-vertical-card">
-      <div class="icon-box-small">
-        <span class="material-icons">view_agenda </span>
-      </div>
-      <div class="text-group">
-        <h3>Program Title</h3>
-        <p class="description">Program Overview</p>
-      </div>
-      <div class="list-status">
-        <ul>
-          <li>2026. 05. 28 개강</li>
-          <li>신청 가능</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 수료생 후기 - 아이콘 카드 -->
-    <div class="testimonial-card">
-      <div class="rating-icons">
-        <span class="material-icons">star </span>
-        <span class="material-icons">star </span>
-        <span class="material-icons">star </span>
-        <span class="material-icons">star </span>
-        <span class="material-icons">star </span>
-      </div>
-
-      <div class="student-content">
-        <div class="text-group">
-          <p class="testimonial-description">
-            "비전공자라 막막했는데, 기초부터 탄탄하게 잡아주셔서 지금은 네이버에서 프론트엔드 개발자로 일하고 있습니다.
-            멘토님들의 실무 팁이 정말 큰 도움이 됐어요."
-          </p>
-        </div>
-
-        <div class="rating-comment">
-          <ul>
-            <li>
-              <img src="https://dummyimage.com/48x48/000/fff.png" alt="profile" />
-            </li>
-            <li>
-              김민주 수료생
-              <span>프론트엔드 5기 | 현 네이버 근무</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- 카드 예시 - 배정호 작업 -->
-    <div class="card-box box horizontal">
-      <div class="card-box box vertical">
-        <article class="card-item box horizontal"></article>
-        <div class="card-box box horizontal">
-          <article class="card-item box vertical"></article>
-          <article class="card-item box vertical"></article>
-        </div>
-      </div>
-      <article class="card-item box vertical">
-        <div class="icon-box box horizontal"></div>
-      </article>
-    </div>
-
-    <!-- 아코디언 - 배정호 작업 -->
-
-    <ul class="accordion">
-      <!-- 아코디언 리스트 아이템1 -->
-
-      <li class="accordion-item">
-        <input type="checkbox" id="faq1" class="accordion-input" />
-
-        <label for="faq1" class="accordion-question">
-          <p>Q. Question</p>
-          <span class="material-icons">keyboard_arrow_down</span>
-        </label>
-
-        <div class="accordion-answer">
-          <p>A. Answer</p>
-          <p>A. Answer</p>
-        </div>
-      </li>
-
-      <!-- 아코디언 리스트 아이템2 -->
-
-      <li class="accordion-item">
-        <input type="checkbox" id="faq2" class="accordion-input" />
-
-        <label for="faq2" class="accordion-question">
-          <p>Q. Question</p>
-          <span class="material-icons">keyboard_arrow_down</span>
-        </label>
-
-        <div class="accordion-answer">
-          <p>A. Answer</p>
-          <p>A. Answer</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="fixed-ui">
-      <div class="contact-us-button fixed-button">
-        <a href="#" class="fixed-text material-icons">chat</a>
-      </div>
-
-      <div class="top-button fixed-button">
-        <a href="#" class="fixed-text material-icons">arrow_upward</a>
-      </div>
-    </div>
-
-    <!-- 뉴스카드 - 최예빈 작업 -->
-    <ul class="news-list-container">
-      <li class="news-list-item">
-        <a href="#" class="news-link-group">
-          <div class="news-thumb-box">
-            <img src="images/news_1.jpg" alt="뉴스 썸네일" />
+      <!-- 카드 섹션 컴포넌트 - 배정호 작업 -->
+      <section class="differentiator-section">
+        <div class="container horizontal gap-m card-tall">
+          <div class="outer-card-box box vertical gap-m grow-2">
+            <article class="horizontal-card-item box horizontal card grow-1 align-center">
+              <span class="material-icons">group</span>
+              <div class="text-box box vertical gap-s">
+                <h3>실전 팀 프로젝트</h3>
+                <p>기획부터 배포까지, 현업과 동일한 스택으로 실제 서비스를 구축하며 팀워크를 배웁니다.</p>
+              </div>
+            </article>
+            <div class="inner-card-box box horizontal gap-m grow-1">
+              <article class="card-item box vertical card grow-1 gap-s">
+                <h3>최신 기술 스택</h3>
+                <p>React, Next.js, Spring Boot 등 트렌디한 스택 적용.</p>
+              </article>
+              <article class="card-item box vertical card grow-1 gap-s">
+                <h3 class="">취업 연계 프로그램</h3>
+                <p class="">국내 유수의 IT 기업과의 채용 매칭 시스템 제공.</p>
+              </article>
+            </div>
           </div>
+          <article class="verticlal-card-item box vertical card grow-1 justify-between">
+            <div class="icon-box box horizontal justify-end">
+              <span class="material-icons">workspace_premium</span>
+            </div>
+            <div class="text-box box vertical gap-xs">
+              <h3>1:1 커리어 멘토링</h3>
+              <p>현업 7년차 이상의 시니어 개발자들이 이력서 피드백부터 모의 면접까지 밀착 케어합니다.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-          <div class="text-group">
-            <p class="news-label">Notice</p>
-            <strong class="news-title">2026 하반기 신규 부트캠프 라인업 공개</strong>
-            <span class="news-date">2026. 04. 20</span>
+      <!-- 아코디언 - 배정호 작업 -->
+
+      <ul class="accordion">
+        <!-- 아코디언 리스트 아이템1 -->
+
+        <li class="accordion-item">
+          <input type="checkbox" id="faq1" class="accordion-input" />
+
+          <label for="faq1" class="accordion-question">
+            <p>Q. Question</p>
+            <span class="material-icons">keyboard_arrow_down</span>
+          </label>
+
+          <div class="accordion-answer">
+            <p>A. Answer</p>
+            <p>A. Answer</p>
           </div>
-        </a>
-      </li>
-    </ul>
+        </li>
+
+        <!-- 아코디언 리스트 아이템2 -->
+
+        <li class="accordion-item">
+          <input type="checkbox" id="faq2" class="accordion-input" />
+
+          <label for="faq2" class="accordion-question">
+            <p>Q. Question</p>
+            <span class="material-icons">keyboard_arrow_down</span>
+          </label>
+
+          <div class="accordion-answer">
+            <p>A. Answer</p>
+            <p>A. Answer</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 고정버튼 - 배정호 작업 -->
+
+      <div class="fixed-ui">
+        <div class="contact-us-button fixed-button">
+          <a href="#" class="fixed-text material-icons">chat</a>
+        </div>
+
+        <div class="top-button fixed-button">
+          <a href="#" class="fixed-text material-icons">arrow_upward</a>
+        </div>
+      </div>
+
+      <!-- 뉴스카드 - 최예빈 작업 -->
+      <ul class="news-list-container">
+        <li class="news-list-item">
+          <a href="#" class="news-link-group">
+            <div class="news-thumb-box">
+              <img src="images/news_1.jpg" alt="뉴스 썸네일" />
+            </div>
+
+            <div class="text-group">
+              <p class="news-label">Notice</p>
+              <strong class="news-title">2026 하반기 신규 부트캠프 라인업 공개</strong>
+              <span class="news-date">2026. 04. 20</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
