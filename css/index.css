@@ -1,5 +1,6 @@
 /* =======================
 header작성 - 이민호 작성
+======================= */
 
 header {
   width: 100%;
@@ -42,7 +43,15 @@ header .cta-btn-sub:active {
   background: var(--white-active);
 }
 
-/* hero 그룹 스타일 - 최예빈 */
+/* =======================
+header 종료
+======================= */
+
+
+/* =======================
+hero-section 최예빈 작업
+======================= */
+
 /* 1. 기본 레이아웃 클래스 */
 .horizontal { display: flex; flex-direction: row; }
 .vertical { display: flex; flex-direction: column; }
@@ -261,54 +270,16 @@ header .cta-btn-sub:active {
     font: var(--heading-x-x-s);
     color: var(--main-black);
 }
-/* 전환 보조 자료 그룹 스타일 - 배정호 */
+
+
 header .btn:active { background: var(--primary-active); }
 
-/* =======================
-차별점 섹션 카드 그룹 스타일 - 배정호
-======================= */
 
-/* 카드섹션 */
 
-.differentiator-section h3 {
-  font: var(--heading-m);
-    color: var(--title-black);
-}
-
-.differentiator-section .verticlal-card-item h3 {
-  color: var(--white);
-}
-
-.differentiator-section p {
-  font: var(--body-m-plus-400);
-  color: var(--main-black);
-}
-
-.differentiator-section .verticlal-card-item p {
-  color: var(--white-alpha-70);
-}
-
-.differentiator-section .icon-box {
-  height: 100%;
-}
-
-.differentiator-section .icon-box .material-icons {
-  user-select: none;
-  font-size: 125px;
-  color: var(--white-alpha-60);
-  opacity: 0.5;
-}
-
-.horizontal-card-item > span {
-  background: var(--secondary-alpha-10);
-  color: var(--primary);
-  font-size: 40px;
-  border-radius: 16px;
-  padding: 20px;
-}
 
 /* =======================
 전환 보조 자료 그룹 스타일 - 배정호
+======================= */
 
 .conversion-support-group > section {
   display: flex;
@@ -344,6 +315,17 @@ header .btn:active { background: var(--primary-active); }
 /* =======================
 전환 보조 자료 그룹 종료 
 ======================= */
+
+/* =======================
+최종 CTA 섹션 - ㅇㅇㅇ 작업
+======================= */
+
+
+
+/* =======================
+최종 CTA 섹션 종료
+======================= */
+
 
 /* =======================
 footer css작성 - 이민호 작성
@@ -523,11 +505,7 @@ img {
   max-width: 400px;
 }
 /* =======================
-푸터 종료
-======================= */
-
-/* =======================
-hero-section 최예빈 작업
+Footer 종료
 ======================= */
 
 /* =======================
