@@ -14,7 +14,7 @@ header .container {
 }
 
 /* =========================
-  LOGO
+  LOGO */
 
 header h1 a {
   display: flex;
@@ -27,7 +27,7 @@ header h1 img {
 }
 
 /* =========================
-  NAV
+  NAV */
 
 header nav {
   display: flex;
@@ -55,7 +55,7 @@ header .nav-item a:hover {
 }
 
 /* =========================
-  CTA BUTTON
+  CTA BUTTON */
 
 header .cta-btn-sub {
   padding: 12px 24px;
@@ -75,7 +75,6 @@ header .cta-btn-sub:active {
   background: var(--white-active);
 }
 
-
 /* 전환 보조 자료 그룹 스타일 - 배정호 */
 
 .conversion-support-group > section {
@@ -94,10 +93,10 @@ header .cta-btn-sub:active {
   text-align: center;
 }
 .testimonial-section .section-header h2 {
-  font:var(--heading-l)
+  font: var(--heading-l);
 }
 .testimonial-section .section-header p {
-  font:var(--heading-s)
+  font: var(--heading-s);
 }
 
 .testimonial-section .testimonial-list {
@@ -108,9 +107,6 @@ header .cta-btn-sub:active {
 .testimonial-section .testimonial-item {
   flex: 1 1 0;
 }
-
-
-
 
 /* 고정 버튼 스타일 - 배정호 작업 */
 
@@ -131,7 +127,7 @@ header .cta-btn-sub:active {
 }
 
 .top-button a {
-  font-size: 96px;
+  font-size: 48px;
 }
 /* footer css작성 - 이민호 작성 */
 footer {
@@ -212,7 +208,7 @@ footer .container {
 }
 
 /* =========================
-  NAV
+  NAV */
 
 .footer-nav-program,
 .footer-nav-company,
@@ -267,7 +263,7 @@ footer .container {
 }
 
 /* =========================
-  LINE
+  LINE */
 
 footer hr {
   width: 100%;
@@ -278,7 +274,7 @@ footer hr {
 }
 
 /* =========================
-  FOOTER BOTTOM
+  FOOTER BOTTOM */
 
 .footer-bottom {
   display: flex;
@@ -304,7 +300,9 @@ footer hr {
 
 .footer-bottom a:hover {
   color: var(--primary);
+}
+
 /* 임시 크기 조정 */
 img {
   max-width: 400px;
-}
+} /* hero-section 최예빈 작업 */
