@@ -1,6 +1,12 @@
-/* button compnents-이민호 작성 */
+/* =======================
+button compnents - 이민호 작성
+버튼 컴포넌트 - 배정호 수정
+======================= */
 
-/* Button Base Component  */
+/* =======================
+Button Base Component 
+======================= */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -11,6 +17,7 @@
 }
 
 /* 크기/모양 */
+
 .btn-md {
   padding: 10px 20px;
   border-radius: var(--radius-s-plus);
@@ -29,44 +36,14 @@
   padding: 0;
   border-radius: var(--radius-m-plus);
 }
-/* 색상 */
-.btn-primary {
-  background: var(--primary);
-  color: var(--white);
-}
-.btn-white-primary {
-  background: var(--white);
-  color: var(--primary);
-}
-.btn-gray {
-  background: var(--main-button);
-  color: var(--title-black);
-}
-.btn-dark-gray {
-  background: var(--button-container);
-  color: var(--white);
-}
-
-/* 아이콘 포함 버튼 */
-.btn-icon {
-  gap: 8px;
-}
-
-.btn-icon .material-icons {
-  font-size: 20px;
-  line-height: 32px;
-}
-
-/* fixed 아이콘 */
-.btn-fixed .material-icons {
-  font-size: 48px;
-  line-height: 100%;
-}
 
 /* =======================
-버튼 종료 */
+버튼 컴포넌트 종료
+======================= */
 
-/* 뉴스카드 컴포넌트 -최예빈 작업 */
+/* =======================
+뉴스카드 컴포넌트 -최예빈 작업
+======================= */
 
 /* 뉴스 리스트 컨테이너 (상단 여백 40) */
 .news-list-container {
@@ -145,9 +122,13 @@
   color: var(--medium-gray); /* Neutral/Medium Gray */
 }
 
-/* 뉴스카드 컴포넌트 -최예빈 작업 끝*/
+/* =======================
+뉴스카드 컴포넌트 -최예빈 작업 끝
+======================= */
 
-/* 네비 컴포넌트 -최예빈 작업 */
+/* =======================
+네비 컴포넌트 -최예빈 작업
+======================= */
 
 /* 네비게이션 그룹 (ul + 버튼) */
 header nav {
@@ -163,11 +144,6 @@ header nav ul {
 }
 
 /*  네비폰트 흰색 -> 가상배경설정 */
-.container {
-  background-color: var(--secondary);
-  width: 1920px;
-  height: 96px;
-}
 
 .nav-item a {
   display: flex;
@@ -191,14 +167,19 @@ header nav ul {
   box-shadow: 0 3px 0 0 var(--white); /* 밑줄효과 border-bottom은 inside처럼 나타남 */
 }
 
-/* 네비 컴포넌트 종료 */
-
-/* 기본 카드 컴포넌트 - 김해나 작업 */
-/* 카드 컴포넌트 - 배정호 수정 */
+/* =======================
+네비 컴포넌트 종료
+======================= */
 
 /* =======================
-   카드 컴포넌트 베이스
+기본 카드 컴포넌트 - 김해나 작업
 ======================= */
+
+/* =======================
+카드 컴포넌트 - 배정호 수정
+======================= */
+
+/* 카드 컴포넌트 베이스 */
 
 .card {
   display: flex;
@@ -215,9 +196,7 @@ header nav ul {
   gap: var(--line-height-27);
 }
 
-/* =======================
-   카드 크기 배치 (부모에게 flex 필요)
-======================= */
+/* 카드 크기 배치 (부모에게 flex 필요) */
 
 .card-grow-1 {
   flex: 1;
@@ -239,9 +218,7 @@ header nav ul {
   min-width: 768;
 }
 
-/* =======================
-   카드 높이
-======================= */
+/* 카드 높이 */
 
 .card-extra-short {
   height: 192px;
@@ -267,9 +244,7 @@ header nav ul {
   height: auto;
 }
 
-/* =======================
-   카드 폰트 아이콘 크기
-======================= */
+/* 카드 폰트 아이콘 크기 */
 
 .card-icon-small {
   font-size: 24px;
@@ -283,7 +258,10 @@ header nav ul {
   font-size: 125px;
 }
 
-/* 이미지 카드 - 오예은 작업 */
+/* =======================
+이미지 카드 - 오예은 작업
+======================= */
+
 
 .image-card-big {
   display: inline-flex;
@@ -450,7 +428,15 @@ header nav ul {
   background-color: var(--white-hover);
 }
 
-/* Accordion (Checkbox) - 배정호 작업 */
+/* =======================
+이미지 카드 컴포넌트 종료
+======================= */
+
+/* =======================
+Accordion (Checkbox) - 배정호 작업
+======================= */
+
+
 
 .accordion {
   width: 486px;
@@ -528,7 +514,14 @@ header nav ul {
   font: var(--body-m-plus-500);
 }
 
-/* 고정버튼 - 배정호 작업 */
+/* =======================
+아코디언 컴포넌트 종료
+======================= */
+
+/* =======================
+고정버튼 - 배정호 작업
+======================= */
+
 
 .fixed-ui {
   position: fixed;
@@ -547,3 +540,7 @@ header nav ul {
   align-items: center;
   border-radius: 20px;
 }
+
+/* =======================
+고정버튼 종료
+======================= */
