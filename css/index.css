@@ -1,3 +1,43 @@
+
+
+/* 전환 보조 자료 그룹 스타일 - 배정호 */
+
+.conversion-support-group > section {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.testimonial-section .section-header {
+  text-align: center;
+}
+.testimonial-section .section-header h2 {
+  font:var(--heading-l)
+}
+.testimonial-section .section-header p {
+  font:var(--heading-s)
+}
+
+.testimonial-section .testimonial-list {
+  display: flex;
+  gap: 24px;
+}
+
+.testimonial-section .testimonial-item {
+  flex: 1 1 0;
+}
+
+
+
+
+/* 고정 버튼 스타일 - 배정호 작업 */
+
 .fixed-text {
   color: var(--white);
 }
@@ -97,7 +137,6 @@ footer .container {
 
 /* =========================
   NAV
-========================= */
 
 .footer-nav-program,
 .footer-nav-company,
@@ -153,7 +192,6 @@ footer .container {
 
 /* =========================
   LINE
-========================= */
 
 footer hr {
   width: 100%;
@@ -165,7 +203,6 @@ footer hr {
 
 /* =========================
   FOOTER BOTTOM
-========================= */
 
 .footer-bottom {
   display: flex;
@@ -191,4 +228,7 @@ footer hr {
 
 .footer-bottom a:hover {
   color: var(--primary);
+/* 임시 크기 조정 */
+img {
+  max-width: 400px;
 }
