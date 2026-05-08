@@ -26,3 +26,171 @@
   display: flex;
   flex-direction: row;
 }
+/* 프로그램 그룹 - 오예은 작업 */
+.programs-group .program-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.programs-group .section-title {
+  font: var(--heading-l);
+  color: var(--title-black);
+}
+.programs-group .section-description {
+  font: var(--heading-s);
+  color: var(--main-black);
+}
+.programs-group .program-card-wrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.image-card-big {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 640px;
+
+  background: #fff;
+  border: 2px solid #dbe4ff;
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+}
+
+/* 이미지 */
+.image-card-big .image-frame {
+  width: 100%;
+  height: 288px;
+
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.image-card-big .image-frame img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  display: block;
+}
+
+/* 컨텐츠 */
+.image-card-big .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 344px;
+
+  padding: 24px 40px 40px;
+
+  box-sizing: border-box;
+}
+
+/* 텍스트 그룹 */
+.image-card-big .text-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* 프로그램 정보 */
+.image-card-big .program-information {
+  display: flex;
+  flex-direction: column;
+
+  width: 405px;
+}
+
+/* 분류 */
+.image-card-big .badge {
+  font: var(--body-m);
+
+  color: var(--primary);
+}
+
+/* 제목 */
+.image-card-big .program-title {
+  font: var(--heading-m);
+
+  color: var(--title-black);
+}
+
+/* 설명 */
+.image-card-big .clip-overtext {
+  display: block;
+
+  width: 405px;
+  height: 63px;
+
+  flex-shrink: 0;
+}
+
+.image-card-big .clip-overtext .text-wrapper {
+  margin: 0;
+
+  font: var(--body-m);
+
+  color: var(--main-black);
+}
+
+/* 추가 정보 */
+.image-card-big .additional-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 405px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* 기간 / 시간 */
+.image-card-big .period,
+.image-card-big .class-time {
+  display: flex;
+  align-items: center;
+  height: 27px;
+
+  gap: 12px;
+
+  font-size: 16px;
+  color: var(--title-black);
+}
+
+/* 아이콘 */
+.image-card-big .material-icons {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+/* 버튼 */
+.image-card-big .cta-button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 405px;
+  height: 64px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: var(--primary);
+  color: var(--white);
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
