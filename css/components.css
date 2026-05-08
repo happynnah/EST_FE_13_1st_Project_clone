@@ -1,3 +1,5 @@
+/* #region button */
+
 /* =======================
 button compnents - 이민호 작성
 버튼 컴포넌트 - 배정호 수정
@@ -40,6 +42,10 @@ Button Base Component
 /* =======================
 버튼 컴포넌트 종료
 ======================= */
+
+/* #endregion */
+
+/* #region NewsCard */
 
 /* =======================
 뉴스카드 컴포넌트 -최예빈 작업
@@ -126,6 +132,10 @@ Button Base Component
 뉴스카드 컴포넌트 -최예빈 작업 끝
 ======================= */
 
+/* #endregion */
+
+/* #region Nav */
+
 /* =======================
 네비 컴포넌트 -최예빈 작업
 ======================= */
@@ -171,6 +181,10 @@ header nav ul {
 네비 컴포넌트 종료
 ======================= */
 
+/* #endregion */
+
+/* #region Card */
+
 /* =======================
 기본 카드 컴포넌트 - 김해나 작업
 ======================= */
@@ -186,34 +200,34 @@ header nav ul {
 
   box-sizing: border-box;
 
-  padding: 32px;
+  padding: 40px;
 
   border: 2px solid var(--secondary-alpha-30);
   border-radius: 24px;
 
   background: var(--white);
 
-  gap: 20px;
+  gap: 24px;
 }
 
 /* 카드 크기 배치 (부모에게 flex 필요) */
 
-.card-grow-1 {
+.grow-1 {
   flex: 1;
   min-width: 192px;
 }
 
-.card-grow-2 {
+.grow-2 {
   flex: 2;
   min-width: 384px;
 }
 
-.card-grow-3 {
+.grow-3 {
   flex: 3;
   min-width: 576px;
 }
 
-.card-grow-4 {
+.grow-4 {
   flex: 4;
   min-width: 768;
 }
@@ -257,6 +271,14 @@ header nav ul {
 .card-icon-big {
   font-size: 125px;
 }
+
+/* =======================
+카드 컴포넌트 종료
+======================= */
+
+/* #endregion */
+
+/* #region ImageCard */
 
 /* =======================
 이미지 카드 - 오예은 작업
@@ -431,6 +453,59 @@ header nav ul {
 이미지 카드 컴포넌트 종료
 ======================= */
 
+/* #endregion */
+
+/* #region CardGrid */
+
+/* =======================
+카드 그리드 스타일 - 배정호
+======================= */
+
+.differentiator-section h3 {
+  font: var(--heading-m);
+  color: var(--title-black);
+}
+
+.differentiator-section .verticlal-card-item h3 {
+  color: var(--white);
+}
+
+.differentiator-section p {
+  font: var(--body-m-plus-400);
+  color: var(--main-black);
+}
+
+.differentiator-section .verticlal-card-item p {
+  color: var(--white-alpha-70);
+}
+
+.differentiator-section .icon-box {
+  height: 100%;
+}
+
+.differentiator-section .icon-box .material-icons {
+  user-select: none;
+  font-size: 125px;
+  color: var(--white-alpha-60);
+  opacity: 0.5;
+}
+
+.horizontal-card-item > span {
+  background: var(--secondary-alpha-10);
+  color: var(--primary);
+  font-size: 40px;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* =======================
+카드 그리드 종료
+======================= */
+
+/* #endregion */
+
+/* #region Accordion */
+
 /* =======================
 Accordion (Checkbox) - 배정호 작업
 ======================= */
@@ -466,6 +541,7 @@ Accordion (Checkbox) - 배정호 작업
 
 .accordion-question span {
   color: var(--medium-gray);
+  user-select: none;
 }
 
 .accordion-answer {
@@ -515,6 +591,10 @@ Accordion (Checkbox) - 배정호 작업
 아코디언 컴포넌트 종료
 ======================= */
 
+/* #endregion */
+
+/* #region FixedButton */
+
 /* =======================
 고정버튼 - 배정호 작업
 ======================= */
@@ -540,3 +620,5 @@ Accordion (Checkbox) - 배정호 작업
 /* =======================
 고정버튼 종료
 ======================= */
+
+/* #endregion */
