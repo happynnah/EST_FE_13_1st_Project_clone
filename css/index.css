@@ -82,7 +82,7 @@ hero-section 최예빈 작업
 }
 
 /* 뱃지 스타일 */
-.hero-content-box span:first-child {
+.hero-content-box > span:first-child {
     display: inline-flex;
     align-items: center;
     height: 32px;
@@ -92,6 +92,7 @@ hero-section 최예빈 작업
     font: var(--body-m-plus-400);
     border-radius: 50px;
     width: fit-content;
+    text-transform: uppercase;
 }
 
 .hero-title {
