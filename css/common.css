@@ -1,3 +1,5 @@
+/* #region FontFace */
+
 /* PRETENDARD */
 
 @font-face {
@@ -43,6 +45,8 @@
   font-weight: 700;
   font-style: normal;
 }
+
+/* #endregion */
 
 /* =======================
 전체 레이아웃 스타일
