@@ -410,6 +410,19 @@ html {
     max-width: 588px;
 }
 
+/*  [새소식] 제목 스타일 (36px / LH 64) */
+.heading-l {
+    font-family:var(--font-pretendard);
+    font-size: 36px;
+    line-height: 64px;
+    font-weight: 700;
+    color: var(--title-black);
+}
+
+/* 뉴스 리스트 컨테이너 (상단 여백 40) */
+.news-list-container {
+    margin-top: 40px; 
+    padding: 0 16px; /* 좌우 여백 16 */
 .news-list {
     padding: 0 16px;
     list-style: none;
