@@ -1,80 +1,30 @@
 /* header작성 - 이민호 작성 */
-header {
-  width: 100%;
-  background: var(--secondary);
-}
+/* header작성 - 이민호 작성 */
+header { width: 100%; background: var(--secondary); }
 
-header .container {
-  max-width: 1200px;
-  height: 64px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+header .container { height: 64px; margin: 0 auto; justify-content: space-between; align-items: center; }
 
-/* =========================
-  LOGO */
+/* LOGO */
+.logo a { display: inline-flex; align-items: center; }
 
-header h1 a {
-  display: flex;
-  align-items: center;
-}
+.logo img { display: block; height: 24px; }
 
-header h1 img {
-  display: block;
-  width: 124px;
-}
+/* NAVIGATION */
+nav .list { gap: 24px; }
 
-/* =========================
-  NAV */
+nav a {display: inline-flex; align-items: center; padding: 8px 0; font: var(--caption-m);
+  color: var(--white-alpha-70); text-decoration: none; transition: 0.2s ease;}
 
-header nav {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-}
+nav a:hover { color: var(--white); }
 
-header nav ul {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/* CTA BUTTON */
+header .btn { height: 40px; box-shadow: var(--button-shadow); transition: 0.2s ease; }
 
-header .nav-item a {
-  font: var(--caption-m);
-  color: var(--white);
-  text-decoration: none;
-  transition: 0.3s;
-}
+header .btn:hover { background: var(--primary-hover); }
 
-header .nav-item a:hover {
-  color: var(--white-alpha-70);
-}
+header .btn:active { background: var(--primary-active); }
 
-/* =========================
-  CTA BUTTON */
-
-header .cta-btn-sub {
-  padding: 12px 24px;
-  border-radius: var(--radius-s-plus);
-  background: var(--white);
-  font: var(--caption-m);
-  color: var(--primary);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-header .cta-btn-sub:hover {
-  background: var(--white-hover);
-}
-
-header .cta-btn-sub:active {
-  background: var(--white-active);
-}
-
+/* header작성-완료-*/
 /* 전환 보조 자료 그룹 스타일 - 배정호 */
 
 .conversion-support-group > section {
