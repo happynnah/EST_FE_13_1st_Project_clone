@@ -48,6 +48,8 @@
 
 /* #endregion */
 
+/* #region Layout Style */
+
 /* =======================
 전체 레이아웃 스타일
 ======================= */
@@ -82,6 +84,10 @@ html {
   padding: 96px 0;
 }
 
+/* #endregion */
+
+/* #region Utility */
+
 /* =======================
 공통 유틸리티 클래스
 ======================= */
@@ -104,14 +110,12 @@ html {
 .justify-between {
   justify-content: space-between;
 }
-.justify-end{
+.justify-end {
   justify-content: end;
 }
 .align-center {
   align-items: center;
 }
-
-
 
 /* ellipsis : 텍스트가 크기 넘어가면 '...'으로 표시 - 배정호 */
 
@@ -140,22 +144,25 @@ html {
 }
 
 /* gap 유틸리티 클래스 - 배정호 */
-.gap-xs{
+.gap-xs {
   gap: 8px;
 }
-.gap-s{
+.gap-s {
   gap: 16px;
 }
-.gap-m{
+.gap-m {
   gap: 24px;
 }
-.gap-l{
+.gap-l {
   gap: 32px;
 }
-.gap-xl{
+.gap-xl {
   gap: 40px;
 }
 
+/* #endregion */
+
+/* #region Typography */
 
 /* TYPOGRAPHY css화-이민호 작성 */
 
@@ -229,6 +236,10 @@ html {
   font: var(--label-m-500);
 }
 
+/* #endregion */
+
+/* #region Color */
+
 /* Color 유틸리티 클래스 - 배정호 */
 
 /* Background */
@@ -292,3 +303,4 @@ html {
 .text-white {
   color: var(--white);
 }
+/* #endregion */
