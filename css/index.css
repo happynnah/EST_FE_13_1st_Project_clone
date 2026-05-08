@@ -316,6 +316,104 @@ header .btn:active { background: var(--primary-active); }
 전환 보조 자료 그룹 종료 
 ======================= */
 
+/* 최종 CTA css - 최예빈작성 */
+
+.final-cta-section {
+    width: 100%;
+    padding: 96px 0;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+}
+
+.final-cta-container.vertical {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 59px 60px; 
+    box-sizing: border-box;
+    background: var(--bright-blue);
+    border-radius: 40px;
+}
+
+/* 내부 콘텐츠 정렬 */
+.final-cta-content.vertical {
+    align-items: center;
+    gap: 64px;
+}
+
+/* 텍스트 그룹 */
+.text-group.vertical {
+    align-items: center;
+    gap: 32px; /* 타이틀과 설명 사이 간격 */
+}
+
+.text-group h2 {
+    font: var(--heading-m);
+    color: var(--white);
+    text-align: center;
+}
+
+.description-text p {
+    font: var(--lead-m);
+    color: var(--white);
+    opacity: 70%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* 버튼 그룹 레이아웃 */
+.final-cta-buttons.horizontal {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 개별 버튼 스타일 */
+.final-cta-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* 버튼 개별 사이즈 */
+    width: 240px;
+    height: 64px;
+    
+    /* 버튼 모서리 곡률 */
+    border-radius: var(--radius-s-plus); 
+    font-weight: 600;
+    text-decoration: none;
+    
+    /* 색상 변화만 부드럽게 적용 (위로 뜨지 않음) */
+    transition: background 0.1s ease;
+}
+
+/* 메인 버튼 (흰색) */
+.cta-btn-main {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+/* 서브 버튼 (세컨더리) */
+.btn-sub {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+/* 마우스 올렸을 때 (Hover) */
+.final-cta-buttons a:hover {
+    background: var(--button-container-hover);
+}
+
+/* 클릭했을 때 (Active) */
+.final-cta-buttons a:active {
+    background: var(--button-container-active);
+}
+
+/* 최종 CTA css - 최예빈작성 끝 */
+
 /* =======================
 최종 CTA 섹션 - ㅇㅇㅇ 작업
 ======================= */
