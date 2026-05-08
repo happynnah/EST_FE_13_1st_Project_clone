@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
 
@@ -14,40 +15,42 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <div class="container">
-          <h1>
-            <a href="index.html">
-              <img src="images/logo.png" alt="est logo" />
-              <span class="visually-hidden">EST Camp</span>
-            </a>
-          </h1>
-          <nav>
-            <ul>
-              <li class="nav-item">
-                <a href="#">과정소개</a>
-              </li>
-              <li class="nav-item">
-                <a href="#">커리큘럼</a>
-              </li>
-              <li class="nav-item">
-                <a href="#">수강후기</a>
-              </li>
-              <li class="nav-item">
-                <a href="#">신청안내</a>
-              </li>
-              <li class="nav-item">
-                <a href="#">FAQ</a>
-              </li>
-            </ul>
-            <a href="#" class="cta-btn-sub">전체 과정 보기</a>
-          </nav>
-        </div>
-      </header>
+    <!-- Header - 배정호 작업 -->
+    <header>
+      <div class="container">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.png" alt="est logo" />
+            <span class="visually-hidden">EST Camp</span>
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <a href="#">과정소개</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">커리큘럼</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">수강후기</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">신청안내</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+          <a href="#" class="cta-btn-sub">전체 과정 보기</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header 종료 -->
 
+    <main>
       <!-- Hero Section - 최예빈 작업 -->
-      <section class="hero-section">
+      <section class="hero-section section-group">
         <div class="container">
           <!-- 1. 왼쪽 콘텐츠 영역: 텍스트와 버튼들이 세로로 배치되는 구간 -->
           <div class="hero-content">
@@ -93,10 +96,10 @@
           </div>
         </div>
       </section>
-      <!-- Hero Section 끝 -->
-      <!-- 신뢰 그룹 - 김해나 작업 -->
+      <!-- Hero Section 종료 -->
 
-      <section class="trust-group">
+      <!-- Trust Group - 김해나 작업 -->
+      <section class="trust-group section-group">
         <div>
           <h2>숫자로 증명하는 결과</h2>
           <p>수강생 경험과 성과를 수치로 확인해보세요</p>
@@ -160,24 +163,25 @@
           </div>
           <div class="container vertical">
             <div class="employment-status-column horizontal">
-              <img src="images/Est Logo.png" alt="est 로고">
-              <img src="images/Inbody Logo.png" alt="Inbody 로고">
-              <img src="images/Tridge Logo.png" alt="Tridge 로고">
+              <img src="images/est logo.png" alt="est 로고" />
+              <img src="images/inbody logo.png" alt="Inbody 로고" />
+              <img src="images/tridge logo.png" alt="Tridge 로고" />
             </div>
             <div class="employment-status-column horizontal">
-              <img src="images/Naver Cloud Logo.png" alt="naver cloud 로고">
-              <img src="images/Hyundai Logo.png" alt="Hyundai 로고">
+              <img src="images/naver cloud logo.png" alt="naver cloud 로고" />
+              <img src="images/hyundai logo.png" alt="Hyundai 로고" />
             </div>
             <div class="employment-status-column horizontal">
-              <img src="images/Thanks Carbon Logo.png" alt="thanks carbon 로고">
-              <img src="images/Weniv Logo.png" alt="weniv 로고">
+              <img src="images/thanks carbon logo.png" alt="thanks carbon 로고" />
+              <img src="images/weniv logo.png" alt="weniv 로고" />
             </div>
           </div>
         </section>
       </section>
-      <!-- 프로그램 그룹 - 오예은 작업 -->
-      <hr />
-      <section class="programs-group">
+      <!-- Trust Group 종료 -->
+
+      <!-- Program Group - 오예은 작업 -->
+      <section class="programs-group section-group">
         <div class="container">
           <!-- 제목 영역을 header로 구분 -->
           <header class="section-header">
@@ -418,26 +422,27 @@
           </ol>
         </div>
       </section>
-      <hr />
+      <!-- Program Group 종료 -->
 
-      <!-- 전환 보조 자료 그룹 - 배정호 작업 -->
-      <section class="conversion-support-group">
+      <!-- Conversion Support Group - 배정호 작업 -->
+      <section class="conversion-support-group section-group vertical">
         <!-- 후기 섹션 -->
-        <section class="testimonial-section">
-          <div class="container">
-            <!-- 후기 섹션 제목 -->
-            <div class="section-header">
-              <h2>수료생 리얼 후기</h2>
-              <p>앞서 이스트캠프를 경험한 수료생들의 실제 후기를 확인해보세요</p>
-            </div>
 
-            <ul class="testimonial-list">
+        <section class="testimonial-section vertical">
+          <!-- 후기 섹션 제목 -->
+          <div class="section-header box vertical">
+            <h2>수료생 리얼 후기</h2>
+            <p>앞서 이스트캠프를 경험한 수료생들의 실제 후기를 확인해보세요</p>
+          </div>
+
+          <div class="container">
+            <ul class="testimonial-list list horizontal">
               <!-- 후기 섹션 카드1 -->
 
               <li class="testimonial-item">
-                <article class="testimonial-card">
-                  <div class="testimonial-content">
-                    <div class="testimonial-rating">
+                <article class="testimonial-card box vertical">
+                  <div class="testimonial-content box vertical">
+                    <div class="testimonial-rating box horizontal">
                       <span class="material-icons">star</span>
                       <span class="material-icons">star</span>
                       <span class="material-icons">star</span>
@@ -451,12 +456,11 @@
                     </p>
                   </div>
 
-                  <div class="testimonial-author">
+                  <div class="testimonial-student box horizontal">
                     <img class="testimonial-portrait" src="" alt="정O익 수료생 프로필 이미지" />
-
-                    <div class="testimonial-author-info">
-                      <span class="student-name">정O익 수료생</span>
-                      <span class="student-description">프론트엔드 5기 | 현 네이버 근무</span>
+                    <div class="testimonial-student-info box vertical">
+                      <p class="student-name item">정O익 수료생</p>
+                      <p class="student-metadata item">프론트엔드 5기 | 현 네이버 근무</p>
                     </div>
                   </div>
                 </article>
@@ -465,9 +469,9 @@
               <!-- 후기 섹션 카드2 -->
 
               <li class="testimonial-item">
-                <article class="testimonial-card">
-                  <div class="testimonial-content">
-                    <div class="testimonial-rating">
+                <article class="testimonial-card box vertical">
+                  <div class="testimonial-content box vertical">
+                    <div class="testimonial-rating box horizontal">
                       <span class="material-icons">star</span>
                       <span class="material-icons">star</span>
                       <span class="material-icons">star</span>
@@ -482,12 +486,11 @@
                     </p>
                   </div>
 
-                  <div class="testimonial-author">
-                    <img class="testimonial-portrait" src="" alt="황O헌 수료생 프로필 이미지" />
-
-                    <div class="testimonial-author-info">
-                      <span class="student-name">황O헌 수료생</span>
-                      <span class="student-description">백엔드 4기 | 현 위니브 근무</span>
+                  <div class="testimonial-student box horizontal">
+                    <img class="testimonial-portrait" src="" alt="정O익 수료생 프로필 이미지" />
+                    <div class="testimonial-student-info box vertical">
+                      <p class="student-name item">황O헌 수료생</p>
+                      <p class="student-metadata item">백엔드 4기 | 현 위니브 근무</p>
                     </div>
                   </div>
                 </article>
@@ -496,9 +499,9 @@
               <!-- 후기 섹션 카드3 -->
 
               <li class="testimonial-item">
-                <article class="testimonial-card">
-                  <div class="testimonial-content">
-                    <div class="testimonial-rating">
+                <article class="testimonial-card box vertical">
+                  <div class="testimonial-content box vertical">
+                    <div class="testimonial-rating box horizontal">
                       <span class="material-icons">star</span>
                       <span class="material-icons">star</span>
                       <span class="material-icons">star</span>
@@ -512,12 +515,11 @@
                     </p>
                   </div>
 
-                  <div class="testimonial-author">
-                    <img class="testimonial-portrait" src="" alt="김O연 수료생 프로필 이미지" />
-
-                    <div class="testimonial-author-info">
-                      <span class="student-name">김O연 수료생</span>
-                      <span class="student-description">AI 퀀트 2기 | 현 지브이랩 근무</span>
+                  <div class="testimonial-student box horizontal">
+                    <img class="testimonial-portrait" src="" alt="정O익 수료생 프로필 이미지" />
+                    <div class="testimonial-student-info box vertical">
+                      <p class="student-name item">김O연 수료생</p>
+                      <p class="student-metadata item">AI 퀀트 2기 | 현 지브이랩 근무</p>
                     </div>
                   </div>
                 </article>
@@ -530,18 +532,18 @@
           </div>
         </section>
 
-        <!-- 후기 섹션 끝 -->
+        <!-- 후기 섹션 종료 -->
 
         <hr class="container" />
 
         <!-- 지원자격 섹션 -->
 
-        <section class="requirements-section">
+        <section class="requirements-section vertical">
           <div class="container">
             <!-- 지원자격 섹션 텍스트 박스 -->
 
-            <section class="requirements-intro">
-              <div class="section-header">
+            <section class="requirements-intro box vertical">
+              <div class="section-header box vertical">
                 <h2>지원 자격</h2>
                 <p>
                   비전공자도 환영합니다. 개발에 대한 열정과 성장의 의지만 있다면 누구나 도전할 수
@@ -551,58 +553,56 @@
 
               <!-- 지원자격 섹션 체크1 -->
 
-              <ul class="requirements-summary-list">
-                <li class="requirements-summary-item">
+              <ul class="requirements-summary-list list vertical">
+                <li class="requirements-summary-item horizontal">
                   <span class="material-icons">check</span>
 
-                  <div class="requirements-summary-content">
-                    <strong>국민내일배움카드 발급 가능자</strong>
+                  <div class="requirements-summary-content box vertical">
+                    <h3>국민내일배움카드 발급 가능자</h3>
                     <p>실업자, 졸업 예정자, 재직자 등 지원 가능</p>
                   </div>
                 </li>
 
                 <!-- 지원자격 섹션 체크2 -->
 
-                <li class="requirements-summary-item">
+                <li class="requirements-summary-item horizontal">
                   <span class="material-icons">check</span>
 
-                  <div class="requirements-summary-content">
-                    <strong>평일 9시-18시 실시간 학습 가능자</strong>
+                  <div class="requirements-summary-content box vertical">
+                    <h3>평일 9시-18시 실시간 학습 가능자</h3>
                     <p>몰입형 교육을 위해 오프라인/온라인 전일 참여 필수</p>
                   </div>
                 </li>
               </ul>
             </section>
 
-            <!-- 지원자격 섹션 카드 리스트 세로 -->
+            <!-- 지원자격 섹션 카드 박스  -->
 
-            <section class="requirements-card-list vertical">
-              <!-- 카드 박스 가로 -->
-
-              <div class="requirements-card-box horizontal">
-                <article class="requirements-card">
+            <section class="requirements-card-layout box vertical">
+              <div class="requirements-card-layout box horizontal">
+                <article class="requirements-card box vertical">
                   <h3>내일배움카드</h3>
                   <p>국민내일배움카드 발급이 가능하신 분</p>
                 </article>
 
-                <article class="requirements-card">
+                <article class="requirements-card box vertical">
                   <h3>지원 조건</h3>
                   <p>5년 이내 K-디지털 트레이닝 과정 수강 이력이 없는 분</p>
                 </article>
               </div>
 
-              <div class="requirements-card-box horizontal">
-                <article class="requirements-card">
+              <div class="requirements-card-layout box horizontal">
+                <article class="requirements-card box vertical">
                   <h3>Full-time Class</h3>
                   <p>평일 오전 9시부터 오후 6시까지 교육 참여가 가능한 분</p>
                 </article>
 
                 <!-- 카드 박스 가로 -->
 
-                <article class="requirements-card">
+                <article class="requirements-card box vertical">
                   <h3>졸업 또는 졸업예정자</h3>
 
-                  <ul class="graduation-requirement-list">
+                  <ul class="graduation-requirement-list list vertical">
                     <li>4년제 - 2학년 2학기 종료 시부터 지원 가능</li>
                     <li>3년제 - 1학년 2학기 종료 시부터 지원 가능</li>
                     <li>2년제 - 1학년 입학 시부터 지원 가능</li>
@@ -612,35 +612,39 @@
             </section>
           </div>
         </section>
+
+        <!-- 지원자격 섹션 종료 -->
+
         <hr class="container" />
 
         <!-- FAQ / NEWS 섹션 -->
 
         <section class="faq-news-section">
-          <div class="container">
+          <div class="container horizontal">
             <!-- FAQ 섹션 -->
 
-            <section class="faq-section">
+            <section class="faq-section vertical">
               <h2>자주 묻는 질문</h2>
 
               <!-- FAQ 리스트 -->
 
-              <ul class="faq-list">
+              <ul class="faq-list list vertical accordion">
                 <!-- FAQ 질답1 -->
 
-                <li class="faq-item">
-                  <h3 class="faq-question">
-                    <span>Q. 지원 자격이 있나요?</span>
-                    <span class="material-icons">keyboard_arrow_down</span>
-                  </h3>
+                <li class="accordion-item box vertical">
+                  <input type="checkbox" id="faq1" class="accordion-input" />
 
-                  <div class="faq-answer">
+                  <label for="faq1" class="accordion-question box horizontal">
+                    <p>Q. 지원 자격이 있나요?</p>
+                    <span class="material-icons">keyboard_arrow_down</span>
+                  </label>
+
+                  <div class="accordion-answer box vertical">
                     <p>
                       내일배움카드를 보유하고 있거나 발급 가능하고, 교육 기간에 온전히 참여하실 수
                       있다면 누구든지 지원 가능합니다. 다만 하루 8시간 동안의 수업에 몰입하여 교육을
                       받기 어려운 경우 진행에 어려움이 있을 수 있습니다.
                     </p>
-
                     <p>
                       ✅ 내일배움카드 발급 받기<br />
                       고용24 검색창 아래의 국민내일배움카드 → 국민내일배움카드 발급 → 발급신청
@@ -650,8 +654,7 @@
                       ✅ 내일배움카드 발급 제외 대상자<br />
                       아래에 해당하시는 분들께서는 내일배움카드 발급 대상자가 아닙니다.
                     </p>
-
-                    <ul class="faq-answer-list">
+                    <ul class="faq-answer-list list vertical">
                       <li>현직 공무원</li>
                       <li>사립학교 교직원</li>
                       <li>졸업예정자 이외 재학생</li>
@@ -659,23 +662,20 @@
                       <li>월 임금 300만원 이상인 대규모 기업 종사자&#40;45세 미만&#41;</li>
                       <li>특수형태근로종사자</li>
                     </ul>
-
-                    <p>
-                      ※ 내일배움카드 발급 가능 여부는 고용노동부 1350 또는 거주지 관할 고용센터에서
-                      확인하여 주시기 바랍니다.
-                    </p>
                   </div>
                 </li>
 
                 <!-- FAQ 질답2 -->
 
-                <li class="faq-item">
-                  <h3 class="faq-question">
-                    <span>Q. 다른 기관에서 교육을 받았는데 신청 가능할까요?</span>
-                    <span class="material-icons">keyboard_arrow_down</span>
-                  </h3>
+                <li class="accordion-item box vertical">
+                  <input type="checkbox" id="faq2" class="accordion-input" />
 
-                  <div class="faq-answer">
+                  <label for="faq2" class="accordion-question box horizontal">
+                    <p>Q. 다른 기관에서 교육을 받았는데 신청 가능할까요?</p>
+                    <span class="material-icons">keyboard_arrow_down</span>
+                  </label>
+
+                  <div class="accordion-answer box vertical">
                     <p>
                       ➡️ 나의 이전 교육과정 조회 방법<br />
                       고용24 로그인 → 나의 정보 → 나의 훈련 이력
@@ -695,13 +695,15 @@
 
                 <!-- FAQ 질답3 -->
 
-                <li class="faq-item">
-                  <h3 class="faq-question">
-                    <span>Q. 학교, 직장 등과 병행이 가능한가요?</span>
-                    <span class="material-icons">keyboard_arrow_down</span>
-                  </h3>
+                <li class="accordion-item box vertical">
+                  <input type="checkbox" id="faq3" class="accordion-input" />
 
-                  <div class="faq-answer">
+                  <label for="faq3" class="accordion-question box horizontal">
+                    <p>Q. 학교, 직장 등과 병행이 가능한가요?</p>
+                    <span class="material-icons">keyboard_arrow_down</span>
+                  </label>
+
+                  <div class="accordion-answer box vertical">
                     <p>
                       저희 과정은 평일 주 5일&#40;공휴일 제외&#41; 9:00 ~ 18:00 풀타임 강의로
                       진행되고 있습니다. 풀타임으로 온전히 참여하실 수 있는 분들을 우선 대상으로
@@ -717,13 +719,15 @@
 
                 <!-- FAQ 질답4 -->
 
-                <li class="faq-item">
-                  <h3 class="faq-question">
-                    <span>Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?</span>
-                    <span class="material-icons">keyboard_arrow_down</span>
-                  </h3>
+                <li class="accordion-item box vertical">
+                  <input type="checkbox" id="faq4" class="accordion-input" />
 
-                  <div class="faq-answer">
+                  <label for="faq4" class="accordion-question box horizontal">
+                    <p>Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?</p>
+                    <span class="material-icons">keyboard_arrow_down</span>
+                  </label>
+
+                  <div class="accordion-answer box vertical">
                     <p>
                       저희는 사전 설문 내용을 토대로 지원자분들의 사전 지식을 고려하여 커리큘럼을
                       구성하고 있습니다.
@@ -738,13 +742,15 @@
 
                 <!-- FAQ 질답5 -->
 
-                <li class="faq-item">
-                  <h3 class="faq-question">
-                    <span>Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</span>
-                    <span class="material-icons">keyboard_arrow_down</span>
-                  </h3>
+                <li class="accordion-item box vertical">
+                  <input type="checkbox" id="faq5" class="accordion-input" />
 
-                  <div class="faq-answer">
+                  <label for="faq5" class="accordion-question box horizontal">
+                    <p>Q. 개인 일정으로 수업에 빠지게 되면 어떡하나요?</p>
+                    <span class="material-icons">keyboard_arrow_down</span>
+                  </label>
+
+                  <div class="accordion-answer box vertical">
                     <p>
                       병원 진료, 면접, 예비군 등의 사유로 수업에 빠질 때에는 증빙 서류 제출 시 출결
                       정정이 가능합니다.
@@ -802,7 +808,11 @@
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
-                      <img src="images/working-boardroom.jpg" alt="working-boardroom" class="news-thumbnail" />
+                      <img
+                        src="images/working-boardroom.jpg"
+                        alt="working-boardroom"
+                        class="news-thumbnail"
+                      />
                       <div class="news-content">
                         <p class="news-category">Interview</p>
                         <h3 class="news-title">
@@ -836,7 +846,7 @@
                 <li class="news-item">
                   <article class="news-card">
                     <a href="#" class="news-link">
-                      <img src="images/AI image.webp" alt="AI image" class="news-thumbnail" />
+                      <img src="images/ai image.webp" alt="AI image" class="news-thumbnail" />
 
                       <div class="news-content">
                         <p class="news-category">Interview</p>
@@ -850,10 +860,13 @@
             </section>
           </div>
         </section>
-      </section>
 
-      <!--최종 CTA 최예빈 작업시작-->
-      <section class="final-cta-section">
+        <!-- FAQ / NEWS 섹션 종료 -->
+      </section>
+      <!-- Conversion Support Group 종료 -->
+
+      <!-- Final CTA Section - 최예빈 작업 -->
+      <section class="final-cta-section section-group">
         <div class="container">
           <!-- 다른 섹션과 구분되는 최종 강조 박스 -->
           <div class="final-cta-box">
@@ -876,82 +889,79 @@
           </div>
         </div>
       </section>
-      <!--최종 CTA 최예빈 작업끝-->
-      
+      <!-- Final CTA Section 종료 -->
     </main>
 
-      <!-- 푸터 - 배정호 작업 -->
+    <!-- Footer - 배정호 작업 -->
+    <footer>
+      <div class="container vertical">
+        <!-- 푸터 상단 -->
 
-      <footer>
-        <div class="container vertical">
-          <!-- 푸터 상단 -->
-
-          <div class="footer-top horizontal">
-            <div class="footer-brand vertical">
-              <div class="logo horizontal">
-                <span class="material-icons">terminal</span>
-                <h2>EST Camp</h2>
-              </div>
-              <p>최고의 IT 교육 파트너,당신의 커리어 성공을 함께합니다.</p>
-              <div class="icons">
-                <span class="material-icons">public</span>
-                <span class="material-icons">alternate_email</span>
-              </div>
+        <div class="footer-top horizontal">
+          <div class="footer-brand vertical">
+            <div class="logo horizontal">
+              <span class="material-icons">terminal</span>
+              <h2>EST Camp</h2>
             </div>
-            <div class="footer-nav-program vertical">
-              <h3>program</h3>
-              <div class="vertical">
-                <a href="#">Frontend Track</a>
-                <a href="#">Backend Track</a>
-                <a href="#">AI Specialist</a>
-                <a href="#">DevOps Wing</a>
-              </div>
-            </div>
-            <div class="footer-nav-company vertical">
-              <h3>company</h3>
-              <div class="vertical">
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
-                <a href="#">Sitemap</a>
-                <a href="#">Privacy Policy</a>
-              </div>
-            </div>
-            <div class="footer-nav-follow-us vertical">
-              <h3>follow us</h3>
-              <div class="vertical">
-                <div class="horizontal">
-                  <span class="material-icons">insert_link</span>
-                  <a href="#">LinkedIn</a>
-                </div>
-                <div class="horizontal">
-                  <span class="material-icons">smart_display</span>
-                  <a href="#">YouTube</a>
-                </div>
-                <div class="horizontal">
-                  <span class="material-icons">article</span>
-                  <a href="#">Blog</a>
-                </div>
-              </div>
+            <p>최고의 IT 교육 파트너,당신의 커리어 성공을 함께합니다.</p>
+            <div class="icons">
+              <span class="material-icons">public</span>
+              <span class="material-icons">alternate_email</span>
             </div>
           </div>
-
-          <hr />
-
-          <!-- 푸터 하단 -->
-
-          <div class="footer-bottom vertical">
-            <p>&copy; 2024 EST Camp. All rights reserved.</p>
+          <div class="footer-nav-program vertical">
+            <h3>program</h3>
             <div class="vertical">
-              <a href="#">Terms of Service</a>
+              <a href="#">Frontend Track</a>
+              <a href="#">Backend Track</a>
+              <a href="#">AI Specialist</a>
+              <a href="#">DevOps Wing</a>
+            </div>
+          </div>
+          <div class="footer-nav-company vertical">
+            <h3>company</h3>
+            <div class="vertical">
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Sitemap</a>
               <a href="#">Privacy Policy</a>
             </div>
           </div>
+          <div class="footer-nav-follow-us vertical">
+            <h3>follow us</h3>
+            <div class="vertical">
+              <div class="horizontal">
+                <span class="material-icons">insert_link</span>
+                <a href="#">LinkedIn</a>
+              </div>
+              <div class="horizontal">
+                <span class="material-icons">smart_display</span>
+                <a href="#">YouTube</a>
+              </div>
+              <div class="horizontal">
+                <span class="material-icons">article</span>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
 
+        <hr />
 
-    <!-- 고정 버튼 - 배정호 작업 -->
+        <!-- 푸터 하단 -->
 
+        <div class="footer-bottom vertical">
+          <p>&copy; 2024 EST Camp. All rights reserved.</p>
+          <div class="vertical">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer 종료 -->
+
+    <!-- Fixed UI - 배정호 작업 -->
     <div class="fixed-ui">
       <div class="contact-us-button fixed-button">
         <a href="#" class="fixed-text material-icons">chat</a>
@@ -961,5 +971,6 @@
         <a href="#" class="fixed-text material-icons">keyboard_arrow_up</a>
       </div>
     </div>
+    <!-- Fixed UI 종료 -->
   </body>
 </html>
