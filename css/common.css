@@ -88,11 +88,9 @@ html {
 
 /* 공통 클래스 */
 
-.container {
-  max-width: 1200px;
-}
+/* 레이아웃 공통 클래스 */
 
-/* vertical, horizontal 클래스 추가 - 배정호 */
+/* flex utility 추가 (vertical, horizontal, jcc, jcsb, acc) - 배정호 */
 
 .vertical {
   display: flex;
@@ -104,43 +102,25 @@ html {
   flex-direction: row;
 }
 
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
 /* ellipsis : 텍스트가 크기 넘어가면 '...'으로 표시 - 배정호 */
 
 .ellipsis {
   overflow: hidden;
-  opacity: 0;
-  border: 1px solid var(--gray);
-  border-radius: var(--radius-s-plus);
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  transition: 0.3s ease-out;
+  white-space: nowrap;      /* 줄바꿈 금지 */
+  text-overflow: ellipsis;  /* ... 표시 */
 }
 
-.accordion-answer p {
-  font: var(--body-m-400);
-}
-
-.accordion-input:checked ~ .accordion-answer {
-  height: auto;
-  padding: 24px 20px;
-  opacity: 1;
-}
-
-.accordion-input:checked + .accordion-question {
-  background: var(--super-light-gray);
-}
-
-.accordion-input:checked + .accordion-question span {
-  transform: rotate(180deg);
-  color: var(--title-black);
-}
-
-.accordion-input:checked + .accordion-question p {
-  font: var(--body-m-plus-500);
-}
-
-/* hidden 클래스 추가 - 배정호 작업 */
+/* visually-hidden 클래스 추가 - 배정호 */
 
 .visually-hidden {
   position: absolute;
@@ -228,4 +208,68 @@ html {
 }
 .label-m-500 {
   font: var(--label-m-500);
+}
+
+/* Color 유틸리티 클래스 - 배정호 */
+
+/* Background */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-title-black {
+  background-color: var(--title-black);
+}
+
+.bg-main-black {
+  background-color: var(--main-black);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.bg-super-light-gray {
+  background-color: var(--super-light-gray);
+}
+
+.bg-main-button {
+  background-color: var(--main-button);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* Color */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-title-black {
+  color: var(--title-black);
+}
+
+.text-main-black {
+  color: var(--main-black);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.text-super-light-gray {
+  color: var(--super-light-gray);
+}
+
+.text-white {
+  color: var(--white);
 }

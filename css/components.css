@@ -29,39 +29,6 @@
   padding: 0;
   border-radius: var(--radius-m-plus);
 }
-/* 색상 */
-.btn-primary {
-  background: var(--primary);
-  color: var(--white);
-}
-.btn-white-primary {
-  background: var(--white);
-  color: var(--primary);
-}
-.btn-gray {
-  background: var(--main-button);
-  color: var(--title-black);
-}
-.btn-dark-gray {
-  background: var(--button-container);
-  color: var(--white);
-}
-
-/* 아이콘 포함 버튼 */
-.btn-icon {
-  gap: 8px;
-}
-
-.btn-icon .material-icons {
-  font-size: 20px;
-  line-height: 32px;
-}
-
-/* fixed 아이콘 */
-.btn-fixed .material-icons {
-  font-size: 48px;
-  line-height: 100%;
-}
 
 /* =======================
 버튼 종료 */
@@ -163,11 +130,6 @@ header nav ul {
 }
 
 /*  네비폰트 흰색 -> 가상배경설정 */
-.container {
-  background-color: var(--secondary);
-  width: 1920px;
-  height: 96px;
-}
 
 .nav-item a {
   display: flex;
@@ -192,10 +154,6 @@ header nav ul {
 }
 
 /* 기본 카드 컴포넌트 - 김해나 작업 */
-.heading-m {
-  font: var(--heading-m);
-}
-
 .description-plus {
   font: var(--body-m-plus-400);
   color: var(--main-black);
@@ -608,6 +566,7 @@ h3 {
 .cta-btn-sub:hover {
   background-color: var(--white-hover);
 }
+
 
 /* Accordion (Checkbox) - 배정호 작업 */
 
