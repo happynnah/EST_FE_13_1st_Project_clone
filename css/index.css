@@ -17,4 +17,12 @@
 .top-button a {
   font-size: 96px;
 }
-
+.programs-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.program-card-wrapper{
+  display: flex;
+  flex-direction: row;
+}
