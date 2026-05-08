@@ -1,9 +1,7 @@
-
- /* =========================
+/* =========================
    MATERIAL ICONS */
 
-:root {  
-
+:root {
   /* =========================
    COLORS
   ========================= */
@@ -131,29 +129,37 @@
    RADIUS (추천 추가)
   ========================= */
 
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+  --radius-s: 8px;
+  --radius-s-plus: 12px;
+  --radius-m: 16px;
+  --radius-m-plus: 20px;
+  --radius-l: 24px;
 
   /* =========================
    TYPOGRAPHY
   ========================= */
-
+  
   --heading-l: 500 36px/64px var(--font-gmarket);
-
+  --heading-l-tight: 500 36px/100% var(--font-gmarket);
   --heading-m: 500 24px/48px var(--font-gmarket);
-
   --heading-s: 500 18px/32px var(--font-gmarket);
+  --heading-x-s: 500 18px/32px var(--font-pretendard);
+  --heading-x-x-s: 500 16px/32px var(--font-pretendard);
 
   --body-l: 500 18px/32px var(--font-pretendard);
-
-  --body-m: 400 16px/27px var(--font-pretendard);
+  --body-m-plus-400: 400 16px/27px var(--font-pretendard);
+  --body-m-plus-500: 500 16px/27px var(--font-pretendard);
+  --body-m-400: 400 14px/27px var(--font-pretendard);
+  --body-m-500: 500 14px/27px var(--font-pretendard);
 
   --caption-m: 500 12px/27px var(--font-pretendard);
-
   --caption-s: 500 10px/27px var(--font-pretendard);
 
   --display-700: 700 48px/64px var(--font-gmarket);
-
   --display-500: 500 48px/64px var(--font-gmarket);
+  --lead-m: 500 18px/27px var(--font-gmarket);
+
+  --label-l: 500 20px/32px var(--font-pretendard);
+  --label-m-700: 700 18px/auto var(--font-pretendard);
+  --label-m-500: 500 16px/auto var(--font-pretendard);
 }

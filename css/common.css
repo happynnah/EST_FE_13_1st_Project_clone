@@ -1,10 +1,5 @@
+/* PRETENDARD */
 
-@import url(reset.css);
-@import url(normalize.css);
-@import url(variables.css);
- /* =========================
-   PRETENDARD */
-   
 @font-face {
   font-family: "Pretendard";
   src: url("../fonts/Pretendard-Light.woff2") format("woff2");
@@ -33,9 +28,7 @@
   font-style: normal;
 }
 
-
- /* =========================
-   GMARKET SANS */
+/* GMARKET SANS */
 
 @font-face {
   font-family: "Gmarket Sans";
@@ -194,3 +187,323 @@
   cursor: pointer;
 }
 
+/* 네비 컴포넌트 -최예빈 작업 */
+
+
+/* 네비게이션 그룹 (ul + 버튼) */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;                 /* 메뉴와 우측 버튼 사이 간격 */
+}
+
+/* 메뉴 리스트 (ul) */
+header nav ul {
+    display: flex;
+    gap: 24px;                 /* 메뉴 아이템 간의 간격 */
+}
+
+
+/*  네비폰트 흰색 -> 가상배경설정 */
+.container{
+  background-color: var(--secondary);
+  width: 1920px;
+  height: 96px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--label-m-500);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-alpha-70);
+    padding: 8px 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+/* .nav-item 상태: hover */
+.nav-item:hover a {
+    font-family: var(--label-m-700);
+    color: var(--white);
+    padding-bottom: 3px;
+    box-shadow: 0 3px 0 0 var(--white); /* 밑줄효과 border-bottom은 inside처럼 나타남 */
+}
+
+/* cta버튼  */
+
+.cta-btn-sub {
+    
+    padding: 10px 20px;        
+    border-radius: var(--radius-s-plus);
+    
+    
+    background-color: var(--white) ;
+    color: var(--primary);           
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.2s ease;
+}
+
+.cta-btn-sub:hover {
+  background-color: var(--white-hover);
+}
+/*  buttom compnents-이민호 작성 */
+/* =========================
+  Button Base Component
+
+/* 전체 레이아웃 스타일 - 배정호 */
+
+/* 아이콘 포함 버튼 */
+.btn-icon {
+  gap: 8px;
+}
+
+.btn-icon .material-icons {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* fixed 아이콘 */
+.btn-fixed .material-icons {
+  font-size: 48px;
+  line-height: 100%;
+}
+
+  
+/* 기본 카드 컴포넌트 - 김해나 작업 */
+.heading-m {
+  font: var(--heading-m);
+}
+
+.description-plus {
+  font: var(--body-m-plus-400);
+  color: var(--main-black);
+}
+
+.description-70 {
+  font: var(--body-m-plus-400);
+  color: var(--white-alpha-70);
+}
+
+.description {
+  font: var(--body-m);
+  color: var(--main-black);
+  font-size: var(--font-size-14);
+}
+
+.testimonial-description {
+  font: var(--body-m-plus-400);
+  color: var(--main-black);
+}
+
+h3 {
+  font: var(--heading-s);
+  font-size: var(--font-size-18);
+}
+
+/* 1*1 카드 */
+
+.iconcard-1-1 {
+  width: 384px;
+  height: 288px;
+  box-sizing: border-box;
+  background: var(--white);
+  padding: 72px 40px;
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* main 공통 스타일 */
+
+.section-group {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 96px 0;
+}
+
+
+/* 전체 스타일 */
+
+/* top 이동시 스크롤 부드럽게 - 배정호 */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* 공통 클래스 */
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal{
+  display: flex;
+  flex-direction: row;
+}
+
+/* ellipsis : 텍스트가 크기 넘어가면 ...으로 표시 - 배정호 */
+
+.ellipsis {
+  overflow: hidden;
+  opacity: 0;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: 0.3s ease-out;
+}
+
+.accordion-answer p {
+  font: var(--body-m-400);
+}
+
+.accordion-input:checked ~ .accordion-answer {
+  height: auto;
+  padding: 24px 20px;
+  opacity: 1;
+}
+
+.accordion-input:checked + .accordion-question {
+  background: var(--super-light-gray);
+}
+
+.accordion-input:checked + .accordion-question span {
+  transform: rotate(180deg);
+  color: var(--title-black);
+}
+
+.accordion-input:checked + .accordion-question p {
+  font: var(--body-m-plus-500);
+}
+
+/* 뉴스카드 컴포넌트 - 최예빈 작업 */
+
+/*  뉴스 섹션 전체 레이아웃 (W 588) */
+.news-section {
+    width: 100%;
+    max-width: 588px;
+}
+
+.news-list {
+    padding: 0 16px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 뉴스 카드 개별 아이템 (.news-card) */
+.news-card {
+    width: 486px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* 마지막 아이템은 밑줄 제거 */
+.news-item:last-child .news-card {
+    border-bottom: none;
+}
+
+/* .news-card 상태: hover (텍스트 밑줄) */
+.news-card:hover .news-title {
+    text-decoration: underline;
+}
+
+/*  링크 및 정렬 영역 */
+.news-link {
+    display: flex;
+    align-items: flex-start; /* 이미지-텍스트 상단 맞춤 */
+    gap: 24px;
+    text-decoration: none;
+}
+
+.news-thumbnail {
+    width: 126px;
+    height: 96px;
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+/* 텍스트 콘텐츠 영역 */
+.news-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* 라벨 (Inter Medium 12 / Crimson) */
+.news-category {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    color: var(--crimson);
+    margin-bottom: 4px;
+}
+
+.news-title {
+    font: var(--body-m-plus-500);
+    color: var(--primary);
+    /* 호버 시 밑줄 애니메이션을 위해 유지 */
+    transition: text-decoration 0.2s ease;
+}
+
+
+.news-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    color: var(--medium-gray);
+}
+/* hidden 클래스 추가 - 배정호 작업 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* hidden 클래스 추가 - 배정호 */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+
+  border: 0;
+}
