@@ -5,17 +5,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   border: none;
   text-decoration: none;
   cursor: pointer;
-  white-space: nowrap;
 }
 
 /* 크기/모양 */
 .btn-md {
   padding: 10px 20px;
-  border-radius: 12px;
+  border-radius: var(--radius-s-plus);
   font: var(--label-l);
 }
 
@@ -29,25 +27,21 @@
   width: 75px;
   height: 75px;
   padding: 0;
-  border-radius: 20px;
+  border-radius: var(--radius-m-plus);
 }
-
 /* 색상 */
 .btn-primary {
   background: var(--primary);
   color: var(--white);
 }
-
 .btn-white-primary {
   background: var(--white);
   color: var(--primary);
 }
-
 .btn-gray {
   background: var(--main-button);
   color: var(--title-black);
 }
-
 .btn-dark-gray {
   background: var(--button-container);
   color: var(--white);
