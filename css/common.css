@@ -43,375 +43,18 @@
   font-weight: 700;
   font-style: normal;
 }
-/* TYPOGRAPHY css화-이민호 작성 */
 
-.heading-l {
-  font: var(--heading-l);
-}
+/* 전체 레이아웃 스타일 */
 
-.heading-l-tight {
-  font: var(--heading-l-tight);
-}
+/* 전체 flex - 배정호 */
 
-.heading-m {
-  font: var(--heading-m);
-}
-
-.heading-s {
-  font: var(--heading-s);
-}
-
-.heading-x-s {
-  font: var(--heading-x-s);
-}
-
-.heading-x-x-s {
-  font: var(--heading-x-x-s);
-}
-
-/* Body */
-
-.body-l {
-  font: var(--body-l);
-}
-
-.body-m-plus-400 {
-  font: var(--body-m-plus-400);
-}
-
-.body-m-plus-500 {
-  font: var(--body-m-plus-500);
-}
-
-.body-m-400 {
-  font: var(--body-m-400);
-}
-
-.body-m-500 {
-  font: var(--body-m-500);
-}
-
-/* Caption */
-
-.caption-m {
-  font: var(--caption-m);
-}
-
-.caption-s {
-  font: var(--caption-s);
-}
-
-/* Display */
-
-.display-700 {
-  font: var(--display-700);
-}
-
-.display-500 {
-  font: var(--display-500);
-}
-
-.lead-m {
-  font: var(--lead-m);
-}
-
-/* Label */
-
-.label-l {
-  font: var(--label-l);
-}
-
-.label-m-700 {
-  font: var(--label-m-700);
-}
-
-.label-m-500 {
-  font: var(--label-m-500);
-}
-/*  buttom compnents-이민호 작성 */
-/* =========================
-  Button Base Component
-/* 이미지 카드 - 오예은 작업 */
-.image-card-big {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  height: 640px;
-
-  background: #fff;
-  border: 2px solid #dbe4ff;
-  border-radius: 24px;
-
-  overflow: hidden;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
-  box-sizing: border-box;
-}
-
-/* 이미지 */
-.image-card-big .image-frame {
-  width: 100%;
-  height: 288px;
-
-  flex-shrink: 0;
-
-  background: url("../images/FE Dev Track Img.png") center/cover no-repeat;
-}
-
-/* 컨텐츠 */
-.image-card-big .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  height: 344px;
-
-  padding: 24px 40px 40px;
-
-  box-sizing: border-box;
-}
-
-/* 텍스트 그룹 */
-.image-card-big .text-group {
-  display: flex;
-  flex-direction: column;
-
-  gap: 24px;
-}
-
-/* 프로그램 정보 */
-.image-card-big .program-information {
-  display: flex;
-  flex-direction: column;
-
-  width: 405px;
-}
-
-/* 분류 */
-.image-card-big .badge {
-  font: var(--body-m);
-
-  color: var(--primary);
-}
-
-/* 제목 */
-.image-card-big .program-title {
-  font: var(--heading-m);
-
-  color: var(--title-black);
-}
-
-/* 설명 */
-.image-card-big .clip-overtext {
-  display: block;
-
-  width: 405px;
-  height: 63px;
-
-  flex-shrink: 0;
-}
-
-.image-card-big .clip-overtext .text-wrapper {
-  margin: 0;
-
-  font: var(--body-m);
-
-  color: var(--main-black);
-}
-
-/* 추가 정보 */
-.image-card-big .additional-information {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 405px;
-
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-}
-
-/* 기간 / 시간 */
-.image-card-big .period,
-.image-card-big .class-time {
-  display: flex;
-  align-items: center;
-  height: 27px;
-
-  gap: 12px;
-
-  font-size: 16px;
-  color: var(--title-black);
-}
-
-/* 아이콘 */
-.image-card-big .material-icons {
-  font-size: 20px;
-  color: var(--primary);
-}
-
-/* 버튼 */
-.image-card-big .cta-button-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 405px;
-  height: 64px;
-
-  border: none;
-  border-radius: 12px;
-
-  background: var(--primary);
-  color: var(--white);
-
-  font-size: 18px;
-  font-weight: 600;
-
-  cursor: pointer;
-}
-
-/* 네비 컴포넌트 -최예빈 작업 */
-
-
-/* 네비게이션 그룹 (ul + 버튼) */
-header nav {
-    display: flex;
-    align-items: center;
-    gap: 40px;                 /* 메뉴와 우측 버튼 사이 간격 */
-}
-
-/* 메뉴 리스트 (ul) */
-header nav ul {
-    display: flex;
-    gap: 24px;                 /* 메뉴 아이템 간의 간격 */
-}
-
-
-/*  네비폰트 흰색 -> 가상배경설정 */
-.container{
-  background-color: var(--secondary);
-  width: 1920px;
-  height: 96px;
-}
-
-.nav-item a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: var(--label-m-500);
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--white-alpha-70);
-    padding: 8px 0;
-    margin: 0;
-    transition: all 0.2s ease;
-}
-
-/* .nav-item 상태: hover */
-.nav-item:hover a {
-    font-family: var(--label-m-700);
-    color: var(--white);
-    padding-bottom: 3px;
-    box-shadow: 0 3px 0 0 var(--white); /* 밑줄효과 border-bottom은 inside처럼 나타남 */
-}
-
-/* cta버튼  */
-
-.cta-btn-sub {
-    
-    padding: 10px 20px;        
-    border-radius: var(--radius-s-plus);
-    
-    
-    background-color: var(--white) ;
-    color: var(--primary);           
-    
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: filter 0.2s ease;
-}
-
-.cta-btn-sub:hover {
-  background-color: var(--white-hover);
-}
-/*  buttom compnents-이민호 작성 */
-/* =========================
-  Button Base Component
-
-/* 전체 레이아웃 스타일 - 배정호 */
-
-/* 아이콘 포함 버튼 */
-.btn-icon {
-  gap: 8px;
-}
-
-.btn-icon .material-icons {
-  font-size: 20px;
-  line-height: 32px;
-}
-
-/* fixed 아이콘 */
-.btn-fixed .material-icons {
-  font-size: 48px;
-  line-height: 100%;
-}
-
-/* 기본 카드 컴포넌트 - 김해나 작업 */
-.heading-m {
-  font: var(--heading-m);
-}
-
-.description-plus {
-  font: var(--body-m-plus-400);
-  color: var(--main-black);
-}
-
-.description-70 {
-  font: var(--body-m-plus-400);
-  color: var(--white-alpha-70);
-}
-
-.description {
-  font: var(--body-m);
-  color: var(--main-black);
-  font-size: var(--font-size-14);
-}
-
-.testimonial-description {
-  font: var(--body-m-plus-400);
-  color: var(--main-black);
-}
-
-h3 {
-  font: var(--heading-s);
-  font-size: var(--font-size-18);
-}
-
-/* 1*1 카드 */
-
-.iconcard-1-1 {
-  width: 384px;
-  height: 288px;
-  box-sizing: border-box;
-  background: var(--white);
-  padding: 72px 40px;
-  border: 2px solid var(--secondary-alpha-30);
-  border-radius: 24px;
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* 섹션 중앙정렬 - 배정호 */
 
 section {
   display: flex;
@@ -419,19 +62,11 @@ section {
   align-items: center;
 }
 
+/* 컨테이너 최대 크기 고정 - 배정호 */
+
 .container {
   max-width: 1200px;
 }
-
-/* main 공통 스타일 */
-
-.section-group {
-  display: flex;
-  flex-direction: column;
-  gap: 96px;
-  padding: 96px 0;
-}
-
 
 /* 전체 스타일 */
 
@@ -440,218 +75,40 @@ html {
   scroll-behavior: smooth;
 }
 
-.rating-comment span {
-  font: var(--caption-m);
-  color: var(--main-black);
-  line-height: var(--line-height-27);
+/* main 공통 스타일 */
+
+/* 섹션그룹 간 갭/패딩 - 배정호 */
+
+.section-group {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 96px 0;
 }
 
 /* 공통 클래스 */
 
-.vertical{
+/* vertical, horizontal 클래스 추가 - 배정호 */
+
+.vertical {
   display: flex;
   flex-direction: column;
 }
 
-.horizontal{
+.horizontal {
   display: flex;
   flex-direction: row;
 }
 
-/* ellipsis : 텍스트가 크기 넘어가면 ...으로 표시 - 배정호 */
+/* ellipsis : 텍스트가 크기 넘어가면 '...'으로 표시 - 배정호 */
 
 .ellipsis {
   overflow: hidden;
-  opacity: 0;
-  border: 1px solid var(--gray);
-  border-radius: var(--radius-s-plus);
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  transition: 0.3s ease-out;
-}
-
-.accordion-answer p {
-  font: var(--body-m-400);
-}
-
-.accordion-input:checked ~ .accordion-answer {
-  height: auto;
-  padding: 24px 20px;
-  opacity: 1;
-}
-
-.accordion-input:checked + .accordion-question {
-  background: var(--super-light-gray);
-}
-
-.accordion-input:checked + .accordion-question span {
-  transform: rotate(180deg);
-  color: var(--title-black);
-}
-
-.accordion-input:checked + .accordion-question p {
-  font: var(--body-m-plus-500);
-}
-
-/* 뉴스카드 컴포넌트 - 최예빈 작업 */
-
-/*  뉴스 섹션 전체 레이아웃 (W 588) */
-.news-section {
-  width: 100%;
-  max-width: 588px;
-}
-
-/*  [새소식] 제목 스타일 (36px / LH 64) */
-.heading-l {
-    font-family:var(--font-pretendard);
-    font-size: 36px;
-    line-height: 64px;
-    font-weight: 700;
-    color: var(--title-black);
-}
-
-/* 뉴스 리스트 컨테이너 (상단 여백 40) */
-.news-list-container {
-  margin-top: 40px;
-  padding: 0 16px; /* 좌우 여백 16 */
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-
-/* 리스트 아이템 & 구분선 (W 486 / Medium Gray 30%) */
-.news-list-item {
-  width: 486px;
-  padding: 24px 0; /* 아이템 간격 24 */
-  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
-}
-
-.news-list-item:last-child {
-  border-bottom: none;
-}
-
-.news-link-group {
-  display: flex;
-  /*  이미지와 글씨 상단 맞춤 정렬 */
-  align-items: flex-start;
-  gap: 24px; /* 이미지와 텍스트 간격 24 */
-  text-decoration: none;
-}
-
-/*  이미지 규격 (126x96 / R 16) */
-.news-thumb-box {
-  width: 126px;
-  height: 96px;
-  border-radius: 16px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.news-thumb-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* 텍스트 영역 (상단 정렬을 위해 padding-top 제거) */
-.text-group {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-/*  라벨 (Inter Medium 12 / Crimson) */
-.news-label {
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 12px;
-  color: #dc143c;
-    margin-top: 40px; 
-    padding: 0 16px; /* 좌우 여백 16 */
-.news-list {
-    padding: 0 16px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-/* 뉴스 카드 개별 아이템 (.news-card) */
-.news-card {
-    width: 486px;
-    padding: 24px 0;
-    border-bottom: 1px solid rgba(160, 160, 160, 0.3);
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-/* 마지막 아이템은 밑줄 제거 */
-.news-item:last-child .news-card {
-    border-bottom: none;
-}
-
-/* .news-card 상태: hover (텍스트 밑줄) */
-.news-card:hover .news-title {
-    text-decoration: underline;
-}
-
-/*  링크 및 정렬 영역 */
-.news-link {
-    display: flex;
-    align-items: flex-start; /* 이미지-텍스트 상단 맞춤 */
-    gap: 24px;
-    text-decoration: none;
-}
-
-.news-thumbnail {
-    width: 126px;
-    height: 96px;
-    border-radius: var(--radius-m);
-    overflow: hidden;
-    flex-shrink: 0;
-    object-fit: cover; /* 이미지 비율 유지 */
-}
-
-/* 텍스트 콘텐츠 영역 */
-.news-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-/* 라벨 (Inter Medium 12 / Crimson) */
-.news-category {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 12px;
-    color: var(--crimson);
-    margin-bottom: 4px;
-}
-
-.news-title {
-    font: var(--body-m-plus-500);
-    color: var(--primary);
-    /* 호버 시 밑줄 애니메이션을 위해 유지 */
-    transition: text-decoration 0.2s ease;
-}
-
-
-.news-date {
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 12px;
-  color: var(--medium-gray); /* Neutral/Medium Gray */
-}
-  
-/* hidden 클래스 추가 - 배정호 작업 */
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-/* hidden 클래스 추가 - 배정호 */
+/* visually-hidden 클래스 추가 - 배정호 */
 
 .visually-hidden {
   position: absolute;
@@ -667,4 +124,76 @@ html {
   white-space: nowrap;
 
   border: 0;
+}
+
+/* TYPOGRAPHY css화-이민호 작성 */
+
+.heading-l {
+  font: var(--heading-l);
+}
+.heading-l-tight {
+  font: var(--heading-l-tight);
+}
+.heading-m {
+  font: var(--heading-m);
+}
+.heading-s {
+  font: var(--heading-s);
+}
+.heading-x-s {
+  font: var(--heading-x-s);
+}
+.heading-x-x-s {
+  font: var(--heading-x-x-s);
+}
+
+/* Body */
+
+.body-l {
+  font: var(--body-l);
+}
+.body-m-plus-400 {
+  font: var(--body-m-plus-400);
+}
+.body-m-plus-500 {
+  font: var(--body-m-plus-500);
+}
+.body-m-400 {
+  font: var(--body-m-400);
+}
+.body-m-500 {
+  font: var(--body-m-500);
+}
+
+/* Caption */
+
+.caption-m {
+  font: var(--caption-m);
+}
+.caption-s {
+  font: var(--caption-s);
+}
+
+/* Display */
+
+.display-700 {
+  font: var(--display-700);
+}
+.display-500 {
+  font: var(--display-500);
+}
+.lead-m {
+  font: var(--lead-m);
+}
+
+/* Label */
+
+.label-l {
+  font: var(--label-l);
+}
+.label-m-700 {
+  font: var(--label-m-700);
+}
+.label-m-500 {
+  font: var(--label-m-500);
 }
