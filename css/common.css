@@ -48,14 +48,6 @@
 전체 레이아웃 스타일
 ======================= */
 
-/* 전체 flex - 배정호 */
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* 섹션 중앙정렬 - 배정호 */
 
 section {
@@ -67,7 +59,9 @@ section {
 /* 컨테이너 최대 크기 고정 - 배정호 */
 
 .container {
+  width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* top 이동시 스크롤 부드럽게 - 배정호 */
@@ -106,9 +100,14 @@ html {
 .justify-between {
   justify-content: space-between;
 }
+.justify-end{
+  justify-content: end;
+}
 .align-center {
   align-items: center;
 }
+
+
 
 /* ellipsis : 텍스트가 크기 넘어가면 '...'으로 표시 - 배정호 */
 
@@ -135,6 +134,24 @@ html {
 
   border: 0;
 }
+
+/* gap 유틸리티 클래스 - 배정호 */
+.gap-xs{
+  gap: 8px;
+}
+.gap-s{
+  gap: 16px;
+}
+.gap-m{
+  gap: 24px;
+}
+.gap-l{
+  gap: 32px;
+}
+.gap-xl{
+  gap: 40px;
+}
+
 
 /* TYPOGRAPHY css화-이민호 작성 */
 

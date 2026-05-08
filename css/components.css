@@ -186,14 +186,14 @@ header nav ul {
 
   box-sizing: border-box;
 
-  padding: 32px;
+  padding: 40px;
 
   border: 2px solid var(--secondary-alpha-30);
   border-radius: 24px;
 
   background: var(--white);
 
-  gap: 20px;
+  gap: 24px;
 }
 
 /* 카드 크기 배치 (부모에게 flex 필요) */
@@ -466,6 +466,7 @@ Accordion (Checkbox) - 배정호 작업
 
 .accordion-question span {
   color: var(--medium-gray);
+  user-select: none;
 }
 
 .accordion-answer {
