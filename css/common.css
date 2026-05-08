@@ -45,7 +45,91 @@
   font-weight: 700;
   font-style: normal;
 }
+/* TYPOGRAPHY css화-이민호 작성 */
 
+.heading-l {
+  font: var(--heading-l);
+}
+
+.heading-l-tight {
+  font: var(--heading-l-tight);
+}
+
+.heading-m {
+  font: var(--heading-m);
+}
+
+.heading-s {
+  font: var(--heading-s);
+}
+
+.heading-x-s {
+  font: var(--heading-x-s);
+}
+
+.heading-x-x-s {
+  font: var(--heading-x-x-s);
+}
+
+/* Body */
+
+.body-l {
+  font: var(--body-l);
+}
+
+.body-m-plus-400 {
+  font: var(--body-m-plus-400);
+}
+
+.body-m-plus-500 {
+  font: var(--body-m-plus-500);
+}
+
+.body-m-400 {
+  font: var(--body-m-400);
+}
+
+.body-m-500 {
+  font: var(--body-m-500);
+}
+
+/* Caption */
+
+.caption-m {
+  font: var(--caption-m);
+}
+
+.caption-s {
+  font: var(--caption-s);
+}
+
+/* Display */
+
+.display-700 {
+  font: var(--display-700);
+}
+
+.display-500 {
+  font: var(--display-500);
+}
+
+.lead-m {
+  font: var(--lead-m);
+}
+
+/* Label */
+
+.label-l {
+  font: var(--label-l);
+}
+
+.label-m-700 {
+  font: var(--label-m-700);
+}
+
+.label-m-500 {
+  font: var(--label-m-500);
+}
 /*  buttom compnents-이민호 작성 */
 /* =========================
   Button Base Component
@@ -122,8 +206,7 @@
   font-size: 48px;
   line-height: 100%;
 }
-  
-  
+
 /* 기본 카드 컴포넌트 - 김해나 작업 */
 .heading-m {
   font: var(--heading-m);
@@ -372,7 +455,8 @@ h3 {
 .rating-comment span {
   font: var(--caption-m);
   color: var(--main-black);
-  line-height: var(--line-height-27);}
+  line-height: var(--line-height-27);
+}
 
 /* =========================
   Accordion (Checkbox) - 배정호 작업 */
@@ -451,94 +535,94 @@ h3 {
 
 /* 뉴스 섹션 전체 레이아웃 (W 588) */
 .news-section {
-    width: 100%;
-    max-width: 588px;
+  width: 100%;
+  max-width: 588px;
 }
 
 /*  [새소식] 제목 스타일 (36px / LH 64) */
 .heading-l {
-    font-family: 'Pretendard', sans-serif;
-    font-size: 36px;
-    line-height: 64px;
-    font-weight: 700;
-    color: var(--title-black); /* Neutral/Title Black */
+  font-family: "Pretendard", sans-serif;
+  font-size: 36px;
+  line-height: 64px;
+  font-weight: 700;
+  color: var(--title-black); /* Neutral/Title Black */
 }
 
 /* 뉴스 리스트 컨테이너 (상단 여백 40) */
 .news-list-container {
-    margin-top: 40px; 
-    padding: 0 16px; /* 좌우 여백 16 */
-    list-style: none;
-    display: flex;
-    flex-direction: column;
+  margin-top: 40px;
+  padding: 0 16px; /* 좌우 여백 16 */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 /* 리스트 아이템 & 구분선 (W 486 / Medium Gray 30%) */
 .news-list-item {
-    width: 486px;
-    padding: 24px 0; /* 아이템 간격 24 */
-    border-bottom: 1px solid rgba(160, 160, 160, 0.3); 
+  width: 486px;
+  padding: 24px 0; /* 아이템 간격 24 */
+  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
 }
 
 .news-list-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .news-link-group {
-    display: flex;
-    /*  이미지와 글씨 상단 맞춤 정렬 */
-    align-items: flex-start; 
-    gap: 24px; /* 이미지와 텍스트 간격 24 */
-    text-decoration: none;
+  display: flex;
+  /*  이미지와 글씨 상단 맞춤 정렬 */
+  align-items: flex-start;
+  gap: 24px; /* 이미지와 텍스트 간격 24 */
+  text-decoration: none;
 }
 
 /*  이미지 규격 (126x96 / R 16) */
 .news-thumb-box {
-    width: 126px;
-    height: 96px;
-    border-radius: 16px;
-    overflow: hidden;
-    flex-shrink: 0;
+  width: 126px;
+  height: 96px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .news-thumb-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 텍스트 영역 (상단 정렬을 위해 padding-top 제거) */
 .text-group {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /*  라벨 (Inter Medium 12 / Crimson) */
 .news-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 12px;
-    color: #DC143C;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #dc143c;
 }
 
 /*  제목 (Pretendard Medium 16 / LH 27 / Primary) */
 .news-title {
-    font-family: 'Pretendard', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 27px;
-    color: var(--primary); /* Brand/Primary */
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  color: var(--primary); /* Brand/Primary */
 }
 
 /*  날짜 (Inter Medium 12 / Medium Gray) */
 .news-date {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 12px;
-    color: var(--medium-gray); /* Neutral/Medium Gray */
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: var(--medium-gray); /* Neutral/Medium Gray */
 }
 /* hidden 클래스 추가 - 배정호 작업 */
 
