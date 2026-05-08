@@ -88,6 +88,10 @@ html {
 
 /* 공통 클래스 */
 
+.container {
+  max-width: 1200px;
+}
+
 /* vertical, horizontal 클래스 추가 - 배정호 */
 
 .vertical {
@@ -135,8 +139,6 @@ html {
 .accordion-input:checked + .accordion-question p {
   font: var(--body-m-plus-500);
 }
-
-
 
 /* hidden 클래스 추가 - 배정호 작업 */
 
