@@ -26,16 +26,18 @@ button compnents - 이민호 작성
 
 .btn-rounded {
   padding: 8px 24px;
+  box-sizing: border-box;
   border-radius: 50px;
   font: var(--body-m-plus-500);
 }
 
 .btn-sm {
-  width: 75px;
-  height: 75px;
   padding: 0;
+  box-sizing: border-box;
   border-radius: var(--radius-m-plus);
   align-items: center;
+  width: 75px;
+  height: 75px;
 }
 
 /* 버튼 호버/액티브 시 밝기 */
@@ -48,7 +50,6 @@ button compnents - 이민호 작성
   filter: brightness(0.7);
   box-shadow: var(--button-shadow);
 }
-
 
 /* 버튼 컴포넌트 종료 */
 

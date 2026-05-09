@@ -23,7 +23,7 @@
 
   --dark-gray: #475569;
   --medium-gray: #94a3b8;
-  --medium-gray-alpha-30: #94A3B84D;
+  --medium-gray-alpha-30: #94a3b84d;
 
   --gray: #e1e3e4;
   --gray-alpha-50: #e1e3e480;
@@ -152,7 +152,7 @@
   --caption-m-tight: 500 12px/100% var(--font-pretendard);
   --caption-m: 500 12px/27px var(--font-pretendard);
   --caption-s: 500 10px/27px var(--font-pretendard);
-  
+
   --display-700: 700 48px/64px var(--font-gmarket);
   --display-500: 500 48px/64px var(--font-gmarket);
   --lead-m: 500 18px/27px var(--font-gmarket);
