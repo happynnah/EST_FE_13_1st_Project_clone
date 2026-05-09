@@ -71,6 +71,7 @@ header 종료
 
 /* =======================
 hero-section 최예빈 작업
+히어로 섹션 - 배정호 수정
 ======================= */
 
 /* 1. 기본 레이아웃 클래스 */
@@ -85,6 +86,9 @@ hero-section 최예빈 작업
 } */
 
 /* 2. 히어로 섹션 전체 설정 */
+
+
+
 .hero-section {
   width: 100%;
   background-color: var(--white);
@@ -146,7 +150,14 @@ hero-section 최예빈 작업
 }
 
 /* 5. 버튼 그룹 */
-.hero-section .hero-cta-buttons.horizontal {
+
+.hero-cta-buttons a {
+  padding: 10px 32px;
+}
+
+/* 컴포넌트 + 패딩 조정으로 대체 */
+
+/* .hero-section .hero-cta-buttons.horizontal {
   align-items: center;
   gap: 12px;
   margin-top: 0;
@@ -185,10 +196,10 @@ hero-section 최예빈 작업
 }
 .hero-section .btn-sub:active {
   background: var(--main-button-active);
-}
+} */
 
 /* 아이콘 폰트 스타일 추가 */
-.hero-section .btn-sub span.material-icons {
+/* .hero-section .btn-sub span.material-icons {
   background: transparent;
   background-color: transparent;
   padding: 0;
@@ -198,7 +209,7 @@ hero-section 최예빈 작업
   font-size: var(--font-size-24);
   line-height: var(--line-height-32);
   display: inline-block;
-}
+} */
 
 .hero-section .image-box {
   width: 520px;

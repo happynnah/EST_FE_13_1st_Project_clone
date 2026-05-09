@@ -82,6 +82,7 @@ button compnents - 이민호 작성
 }
 
 .news-link img {
+  max-width: 128px;
   border-radius: var(--radius-m);
   border: 1px solid var(--medium-gray-alpha-30);
   transition: 0.5s ease;
@@ -91,6 +92,12 @@ button compnents - 이민호 작성
   gap: 4px;
 }
 
+.news-content * {
+  max-width: 384px;
+  overflow: hidden;
+  white-space: nowrap; /* 줄바꿈 금지 */
+  text-overflow: ellipsis; /* ... 표시 */
+}
 .news-content p {
   font: var(--caption-m-tight);
   color: var(--crimson);
