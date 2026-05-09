@@ -5,35 +5,49 @@ button compnents - 이민호 작성
 버튼 컴포넌트 - 배정호 수정
 ======================= */
 
-.btn { display: inline-flex; align-items: center; justify-content: center; border: none; text-decoration: none; cursor: pointer; transition: 0.2s ease; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 /* 크기/모양 */
 
-.btn-md { padding: 10px 20px; border-radius: var(--radius-s-plus); font: var(--label-l); }
+.btn-md {
+  padding: 10px 20px;
+  border-radius: var(--radius-s-plus);
+  font: var(--label-l);
+}
 
-.btn-rounded { padding: 8px 24px; border-radius: 50px; font: var(--body-m-plus-500); }
+.btn-rounded {
+  padding: 8px 24px;
+  border-radius: 50px;
+  font: var(--body-m-plus-500);
+}
 
-.btn-sm { width: 75px; height: 75px; padding: 0; border-radius: var(--radius-m-plus); }
+.btn-sm {
+  width: 75px;
+  height: 75px;
+  padding: 0;
+  border-radius: var(--radius-m-plus);
+  align-items: center;
+}
 
-/* 색상 */
+/* 버튼 호버/액티브 시 밝기 */
 
-.btn-primary { background: var(--primary); color: var(--white); }
+.btn:hover {
+  filter: brightness(0.85);
+}
 
-.btn-primary:hover { background: var(--primary-hover); }
+.btn:active {
+  filter: brightness(0.7);
+  box-shadow: var(--button-shadow);
+}
 
-.btn-primary:active { background: var(--primary-active); }
-
-.btn-sub { background: var(--white); color: var(--primary); }
-
-.btn-sub:hover { background: var(--white-hover); }
-
-.btn-sub:active { background: var(--white-active); }
-
-.btn-ghost { background: var(--main-button); color: var(--title-black); }
-
-.btn-ghost:hover { background: var(--main-button-hover); }
-
-.btn-ghost:active { background: var(--main-button-active); }
 
 /* 버튼 컴포넌트 종료 */
 
@@ -43,87 +57,62 @@ button compnents - 이민호 작성
 
 /* =======================
 뉴스카드 컴포넌트 -최예빈 작업
+뉴스카드 - 배정호 수정
 ======================= */
 
 /* 뉴스 리스트 컨테이너 (상단 여백 40) */
-.news-list-container {
-  margin-top: 40px;
-  padding: 0 16px; /* 좌우 여백 16 */
-  list-style: none;
-  display: flex;
-  flex-direction: column;
+
+.news-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--medium-gray-alpha-30);
+  margin: 0 16px;
 }
 
-/* 리스트 아이템 & 구분선 (W 486 / Medium Gray 30%) */
-.news-list-item {
-  width: 486px;
-  padding: 24px 0; /* 아이템 간격 24 */
-  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+.news-item:first-of-type {
+  padding-top: 0;
 }
-
-.news-list-item:last-child {
+.news-item:last-of-type {
   border-bottom: none;
 }
 
-.news-link-group {
-  display: flex;
-  /*  이미지와 글씨 상단 맞춤 정렬 */
-  align-items: flex-start;
-  gap: 24px; /* 이미지와 텍스트 간격 24 */
-  text-decoration: none;
+.news-link {
+  gap: 24px;
 }
 
-/*  이미지 규격 (126x96 / R 16) */
-.news-thumb-box {
-  width: 126px;
-  height: 96px;
+.news-link img {
   border-radius: var(--radius-m);
-  overflow: hidden;
-  flex-shrink: 0;
+  border: 1px solid var(--medium-gray-alpha-30);
+  transition: 0.5s ease;
 }
 
-.news-thumb-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* 텍스트 영역 (상단 정렬을 위해 padding-top 제거) */
-.text-group {
-  display: flex;
-  flex-direction: column;
+.news-content {
   gap: 4px;
 }
 
-/*  라벨 (Inter Medium 12 / Crimson) */
-.news-label {
-  font-family: var(--font-pretendard); /* Inter에서 변경 */
-  font-size: var(--font-size-12);
-  font-weight: var(--weight-medium);
-  line-height: var(--line--height--full);
+.news-content p {
+  font: var(--caption-m-tight);
   color: var(--crimson);
 }
-
-/*  제목 (Pretendard Medium 16 / LH 27 / Primary) */
-.news-title {
+.news-content h3 {
   font: var(--body-m-plus-500);
-  color: var(--primary); /* Brand/Primary */
+  color: var(--primary);
 }
-.news-title:hover {
+.news-content time {
+  font: var(--caption-m-tight);
+  color: var(--medium-gray);
+}
+
+/* 호버 */
+
+.news-item a:hover img {
+  filter: brightness(0.8);
+}
+.news-item a:hover h3 {
   text-decoration: underline;
 }
 
-/*  날짜 (Inter Medium 12 / Medium Gray) */
-.news-date {
-  font-family: var(--font-pretendard); /* Inter에서 변경 */
-  font-size: var(--font-size-12);
-  font-weight: var(--weight-medium);
-  line-height: var(--line--height--full);
-  color: var(--medium-gray); /* Neutral/Medium Gray */
-}
-
 /* =======================
-뉴스카드 컴포넌트 -최예빈 작업 끝
+뉴스카드 종료
 ======================= */
 
 /* #endregion */
@@ -527,6 +516,7 @@ Accordion (Checkbox) - 배정호 작업
   border-radius: var(--radius-s-plus);
   display: flex;
   justify-content: space-between;
+  background: var(--white);
 }
 
 .accordion-question p {
@@ -540,16 +530,19 @@ Accordion (Checkbox) - 배정호 작업
 
 .accordion-answer {
   width: 100%;
-  height: 0;
+  max-height: 0;
   padding: 0 20px;
   overflow: hidden;
   opacity: 0;
+
   border: 1px solid var(--gray);
   border-radius: var(--radius-s-plus);
   display: flex;
   flex-direction: column;
   gap: 32px;
-  transition: 0.3s ease-out;
+  background: var(--white);
+
+  transition: 0.5s;
 }
 
 .accordion-answer p {
@@ -559,17 +552,17 @@ Accordion (Checkbox) - 배정호 작업
 .accordion-answer li {
   margin-left: 32px;
   list-style: circle;
-  font: var(--caption-m);
+  font: var(--body-m-400);
+}
+
+.accordion-input:checked ~ .accordion-question {
+  background: var(--super-light-gray);
 }
 
 .accordion-input:checked ~ .accordion-answer {
-  height: auto;
+  max-height: 1000px;
   padding: 24px 20px;
   opacity: 1;
-}
-
-.accordion-input:checked + .accordion-question {
-  background: var(--super-light-gray);
 }
 
 .accordion-input:checked + .accordion-question span {
@@ -590,7 +583,7 @@ Accordion (Checkbox) - 배정호 작업
 /* #region FixedButton */
 
 /* =======================
-고정버튼 - 배정호 작업
+고정 ui - 배정호 작업
 ======================= */
 
 .fixed-ui {
@@ -600,15 +593,6 @@ Accordion (Checkbox) - 배정호 작업
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.fixed-button {
-  width: 75px;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
 }
 
 /* =======================

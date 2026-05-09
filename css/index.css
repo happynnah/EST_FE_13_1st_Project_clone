@@ -164,10 +164,10 @@ hero-section 최예빈 작업
   justify-content: center;
 }
 .hero-section .cta-btn-main:hover {
-    background-color: var(--primary-hover);
+  background-color: var(--primary-hover);
 }
 .hero-section .cta-btn-main:active {
-    background-color: var(--primary-active);
+  background-color: var(--primary-active);
 }
 .hero-section .btn-sub {
   background: var(--main-button);
@@ -181,10 +181,10 @@ hero-section 최예빈 작업
   gap: 8px;
 }
 .hero-section .btn-sub:hover {
-    background: var(--main-button-hover);
+  background: var(--main-button-hover);
 }
 .hero-section .btn-sub:active {
-    background: var(--main-button-active);
+  background: var(--main-button-active);
 }
 
 /* 아이콘 폰트 스타일 추가 */
@@ -352,6 +352,7 @@ hero-section 최예빈 작업
 
 .testimonial-section .testimonial-item {
   flex: 1 1 0;
+  padding: 32px;
 }
 
 .testimonial-section {
@@ -392,7 +393,7 @@ hero-section 최예빈 작업
   font: var(--caption-m);
 }
 
-/* FAQ 섹션 */
+/* FAQ & NEWS 섹션 */
 
 .faq-section .faq-news-section h2 {
   font: var(--heading-l);
@@ -404,9 +405,12 @@ hero-section 최예빈 작업
   align-items: start;
 }
 
-/* News 섹션 */
+.faq-section,
+.news-section {
+  align-items: start;
+}
 
-.news-section .news-section {
+/* .news-section .news-section {
   align-items: start;
 }
 
@@ -420,11 +424,6 @@ hero-section 최예빈 작업
 
 .news-section .news-list img {
   border-radius: 16px;
-}
-
-.news-section .news-item {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--medium-gray-30);
 }
 
 
@@ -447,13 +446,7 @@ hero-section 최예빈 작업
 
 .news-section .news-item:first-of-type {
   padding-top: 0;
-}
-
-.news-section .news-item:last-of-type {
-  border: none;
-}
-
-
+} */
 
 /* =======================
 전환 보조 자료 그룹 종료 
@@ -536,7 +529,6 @@ hero-section 최예빈 작업
   transition: 0.3s ease;
 }
 
-
 /* hover만 색상 추가 변경 */
 
 .final-cta-button-normal {
@@ -551,9 +543,6 @@ hero-section 최예빈 작업
 .final-cta-button-normal:active {
   background: var(--secondary-active);
 }
-
-  
-
 
 /* =======================
 최종 CTA 섹션 종료 */
@@ -751,24 +740,17 @@ Footer 종료
 고정 버튼 스타일 - 배정호 작업
 ======================= */
 
-.fixed-text {
+.btn-sm a {
   color: var(--white);
+  font-size: 48px;
 }
 
-.contact-us-button {
+.contact-btn {
   background: var(--secondary);
 }
 
-.contact-us-button a {
-  font-size: 48px;
-}
-
-.top-button {
+.top-btn {
   background: var(--button-container);
-}
-
-.top-button a {
-  font-size: 48px;
 }
 
 /* =======================
