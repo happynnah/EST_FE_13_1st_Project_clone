@@ -9,35 +9,35 @@ button compnents - 이민호 작성
 Button Base Component 
 ======================= */
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-}
+.btn { display: inline-flex; align-items: center; justify-content: center; border: none; text-decoration: none; cursor: pointer; transition: 0.2s ease; }
 
 /* 크기/모양 */
 
-.btn-md {
-  padding: 10px 20px;
-  border-radius: var(--radius-s-plus);
-  font: var(--label-l);
-}
+.btn-md { padding: 10px 20px; border-radius: var(--radius-s-plus); font: var(--label-l); }
 
-.btn-rounded {
-  padding: 8px 24px;
-  border-radius: 50px;
-  font: var(--body-m-plus-500);
-}
+.btn-rounded { padding: 8px 24px; border-radius: 50px; font: var(--body-m-plus-500); }
 
-.btn-sm {
-  width: 75px;
-  height: 75px;
-  padding: 0;
-  border-radius: var(--radius-m-plus);
-}
+.btn-sm { width: 75px; height: 75px; padding: 0; border-radius: var(--radius-m-plus); }
+
+/* 색상 */
+
+.btn-primary { background: var(--primary); color: var(--white); }
+
+.btn-primary:hover { background: var(--primary-hover); }
+
+.btn-primary:active { background: var(--primary-active); }
+
+.btn-sub { background: var(--white); color: var(--primary); }
+
+.btn-sub:hover { background: var(--white-hover); }
+
+.btn-sub:active { background: var(--white-active); }
+
+.btn-ghost { background: var(--gray-100); color: var(--gray-700); }
+
+.btn-ghost:hover { background: var(--gray-200); }
+
+.btn-ghost:active { background: var(--gray-300); }
 
 /* =======================
 버튼 컴포넌트 종료
