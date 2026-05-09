@@ -2,27 +2,72 @@
 
 /* header작성 - 이민호 작성 */
 
-header {width:100%; height: 96px; display:flex; align-items:center; background: var(--secondary);overflow: hidden;}
+header {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  background: var(--secondary);
+  overflow: hidden;
+}
 
-header .header-inner { height:52px; display:flex; margin: 0 auto; justify-content: space-between; align-items: center;}
+header .header-inner {
+  height: 52px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.logo img {display: block; width:180px; height:24px;}
+.logo img {
+  display: block;
+  width: 180px;
+  height: 24px;
+}
 
-nav .list {display:flex; align-items:center; gap:24px;}
+nav .list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 
-nav a {color:var(--white-alpha-70); text-decoration: none; transition: 0.2s ease;}
+nav a {
+  color: var(--white-alpha-70);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
 
-nav a:hover {color:var(--white);}
+nav a:hover {
+  color: var(--white);
+}
 
-nav a.active {color:var(--white); padding-bottom: 3px; border-bottom: 2px solid var(--white);}
+nav a.active {
+  color: var(--white);
+  padding-bottom: 3px;
+  border-bottom: 2px solid var(--white);
+}
 
-header .btn {height: 52px; transition: 0.2s ease;}
+header .btn {
+  height: 52px;
+  transition: 0.2s ease;
+}
 
-header .btn-sub {padding:10px 20px; border-radius: 12px; background:var(--main-button);color:var(--title-black);}
+header .btn-sub {
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: var(--main-button);
+  color: var(--title-black);
+}
 
-header .btn-sub:hover {background:var(--main-hover); color:var(--title-black);}
+header .btn-sub:hover {
+  background: var(--main-hover);
+  color: var(--title-black);
+}
 
-header .btn-sub:active {background:var(--main-active); color:var(--title-black);}
+header .btn-sub:active {
+  background: var(--main-active);
+  color: var(--title-black);
+}
 
 /* header 종료 */
 
@@ -47,8 +92,6 @@ hero-section 최예빈 작업
 } */
 
 /* 2. 히어로 섹션 전체 설정 */
-
-
 
 .hero-section {
   width: 100%;
@@ -311,15 +354,22 @@ hero-section 최예빈 작업
 }
 .testimonial-section .section-header h2 {
   font: var(--heading-l);
+  color: var(--title-black);
 }
 .testimonial-section .section-header p {
   font: var(--heading-s);
+  color: var(--main-black);
 }
 
 .testimonial-section .testimonial-list {
   display: flex;
   gap: 24px;
   margin-bottom: 32px;
+}
+
+.testimonial-card .testimonial-text,
+.testimonial-card .student-metadata {
+  color: var(--main-black);
 }
 
 .testimonial-section .testimonial-item {
@@ -333,8 +383,13 @@ hero-section 최예빈 작업
 
 /* 지원자격 섹션 */
 
+.requirements-section .container section {
+  max-width: 600px;
+}
+
 .requirements-section .requirements-intro {
-  margin-right: 24px;
+  box-sizing: border-box;
+  padding-right: 56px;
 }
 
 .requirements-section .requirements-summary-list {
@@ -377,48 +432,18 @@ hero-section 최예빈 작업
   align-items: start;
 }
 
+.faq-list {
+  padding-left: 8px;
+}
+
 .faq-section,
 .news-section {
   align-items: start;
 }
 
-/* .news-section .news-section {
-  align-items: start;
+.news-item {
+  margin-left: 8px;
 }
-
-.news-section h2 {
-  padding-left: 16px;
-}
-
-.news-section .news-list {
-  padding-left: 32px;
-}
-
-.news-section .news-list img {
-  border-radius: 16px;
-}
-
-
-.news-section .news-item .news-link {
-  gap: 24px;
-}
-.news-section .news-item .news-category {
-  color: var(--crimson);
-}
-.news-section .news-item .news-title {
-  color: var(--primary);
-}
-.news-section .news-item .news-date {
-  color: var(--medium-gray);
-}
-
-.news-section .news-content {
-  gap: 4px;
-}
-
-.news-section .news-item:first-of-type {
-  padding-top: 0;
-} */
 
 /* =======================
 전환 보조 자료 그룹 종료 
@@ -513,70 +538,146 @@ footer css작성 - 이민호 작성
 ======================= */
 
 /* footer */
-footer { background: var(--super-light-gray); }
+footer {
+  background: var(--super-light-gray);
+}
 
 /* container */
-footer .container { padding: 64px 0 48px; }
+footer .container {
+  padding: 64px 0 48px;
+}
 
 /* top */
-.footer-top { justify-content: space-between; align-items: flex-start; gap: 48px; }
+.footer-top {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+}
 
 /* brand */
-.footer-brand { width: 264px; gap: 24px; }
+.footer-brand {
+  width: 264px;
+  gap: 24px;
+}
 
 /* logo */
-.footer-brand .logo { align-items: center; gap: 8px; }
+.footer-brand .logo {
+  align-items: center;
+  gap: 8px;
+}
 
-.footer-brand .logo .material-icons { font-size: 24px; color: var(--primary); }
+.footer-brand .logo .material-icons {
+  font-size: 24px;
+  color: var(--primary);
+}
 
-.footer-brand .logo h2 { font: var(--heading-x-x-s); color: var(--title-black); }
+.footer-brand .logo h2 {
+  font: var(--heading-x-x-s);
+  color: var(--title-black);
+}
 
 /* text */
-.footer-brand p { font: var(--body-m-400); color: var(--dark-gray); }
+.footer-brand p {
+  font: var(--body-m-400);
+  color: var(--dark-gray);
+}
 
 /* icons */
-.footer-brand .icons { gap: 6px; }
+.footer-brand .icons {
+  gap: 6px;
+}
 
-.footer-brand .icons .material-icons { font-size: 24px; color: var(--medium-gray); }
+.footer-brand .icons .material-icons {
+  font-size: 24px;
+  color: var(--medium-gray);
+}
 
 /* nav */
-.footer-nav { width: 264px; gap: 24px; }
+.footer-nav {
+  width: 264px;
+  gap: 24px;
+}
 
 /* title */
-.footer-nav h3 { font: var(--heading-x-x-s); color: var(--near-black); text-transform: capitalize; }
+.footer-nav h3 {
+  font: var(--heading-x-x-s);
+  color: var(--near-black);
+  text-transform: capitalize;
+}
 
 /* list */
-footer ul { padding: 0; margin: 0; }
+footer ul {
+  padding: 0;
+  margin: 0;
+}
 
-footer li { list-style: none; }
+footer li {
+  list-style: none;
+}
 
-.footer-nav .list { gap: 16px; }
+.footer-nav .list {
+  gap: 16px;
+}
 
 /* link */
-.footer-nav a { font: var(--body-m-400); color: var(--dark-gray); text-decoration: none; transition: 0.2s ease; }
+.footer-nav a {
+  font: var(--body-m-400);
+  color: var(--dark-gray);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
 
-.footer-nav a:hover { color: var(--primary); }
+.footer-nav a:hover {
+  color: var(--primary);
+}
 
 /* follow */
-.footer-nav li.horizontal { align-items: center; gap: 8px; }
+.footer-nav li.horizontal {
+  align-items: center;
+  gap: 8px;
+}
 
-.footer-nav li.horizontal .material-icons { font-size: 20px; color: var(--dark-gray); }
+.footer-nav li.horizontal .material-icons {
+  font-size: 20px;
+  color: var(--dark-gray);
+}
 
 /* divider */
-footer hr { width: 100%; height: 2px; margin: 48px 0; border: none; background: var(--gray); }
+footer hr {
+  width: 100%;
+  height: 2px;
+  margin: 48px 0;
+  border: none;
+  background: var(--gray);
+}
 
 /* bottom */
-.footer-bottom { justify-content: space-between; align-items: center; }
+.footer-bottom {
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* copy */
-.footer-bottom p { font: var(--caption-m); color: var(--medium-gray); }
+.footer-bottom p {
+  font: var(--caption-m);
+  color: var(--medium-gray);
+}
 
 /* legal */
-.legal-links { gap: 32px; }
+.legal-links {
+  gap: 32px;
+}
 
-.legal-links a { font: var(--caption-m); color: var(--medium-gray); text-decoration: none; transition: 0.2s ease; }
+.legal-links a {
+  font: var(--caption-m);
+  color: var(--medium-gray);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
 
-.legal-links a:hover { color: var(--primary); }
+.legal-links a:hover {
+  color: var(--primary);
+}
 /* =======================
 Footer 종료
 ======================= */

@@ -71,6 +71,11 @@ section {
   margin: 0 auto;
 }
 
+hr.container {
+  max-width: 960px;
+  color: var(--main-black);
+}
+
 /* top 이동시 스크롤 부드럽게 - 배정호 */
 html {
   scroll-behavior: smooth;

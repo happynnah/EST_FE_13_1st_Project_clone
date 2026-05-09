@@ -67,7 +67,6 @@ button compnents - 이민호 작성
 .news-item {
   padding: 24px 0;
   border-bottom: 1px solid var(--medium-gray-alpha-30);
-  margin: 0 16px;
 }
 
 .news-item:first-of-type {
@@ -556,6 +555,7 @@ Accordion (Checkbox) - 배정호 작업
 
 .accordion-answer p {
   font: var(--body-m-400);
+  color: var(--main-black);
 }
 
 .accordion-answer li {
