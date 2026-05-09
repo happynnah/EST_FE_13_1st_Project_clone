@@ -422,6 +422,13 @@ hero-section 최예빈 작업
 
 /* FAQ & NEWS 섹션 */
 
+.faq-news-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .faq-section .faq-news-section h2 {
   font: var(--heading-l);
   color: var(--title-black);

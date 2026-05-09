@@ -452,29 +452,29 @@ header nav ul {
 카드 그리드 스타일 - 배정호
 ======================= */
 
-.differentiator-section h3 {
+.card-grid h3 {
   font: var(--heading-m);
   color: var(--title-black);
 }
 
-.differentiator-section .verticlal-card-item h3 {
+.card-grid .verticlal-card-item h3 {
   color: var(--white);
 }
 
-.differentiator-section p {
+.card-grid p {
   font: var(--body-m-plus-400);
   color: var(--main-black);
 }
 
-.differentiator-section .verticlal-card-item p {
+.card-grid .verticlal-card-item p {
   color: var(--white-alpha-70);
 }
 
-.differentiator-section .icon-box {
+.card-grid .icon-box {
   height: 100%;
 }
 
-.differentiator-section .icon-box .material-icons {
+.card-grid .icon-box .material-icons {
   user-select: none;
   font-size: 125px;
   color: var(--white-alpha-60);
