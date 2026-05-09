@@ -527,11 +527,15 @@ Accordion (Checkbox) - 배정호 작업
   background: var(--white);
 }
 
-.accordion-question p {
+.accordion-question .question-text {
   font: var(--body-m-plus-400);
+  min-width: 422px;
+  overflow: hidden;
+  white-space: nowrap; /* 줄바꿈 금지 */
+  text-overflow: ellipsis; /* ... 표시 */
 }
 
-.accordion-question span {
+.accordion-question .material-icons {
   color: var(--medium-gray);
   user-select: none;
 }
@@ -574,7 +578,7 @@ Accordion (Checkbox) - 배정호 작업
   opacity: 1;
 }
 
-.accordion-input:checked + .accordion-question span {
+.accordion-input:checked + .accordion-question .material-icons {
   transform: rotate(180deg);
   color: var(--title-black);
 }
