@@ -74,14 +74,15 @@ hero-section 최예빈 작업
 ======================= */
 
 /* 1. 기본 레이아웃 클래스 */
-.horizontal {
+/* common.css에 이미 있어요 */
+/* .horizontal {
   display: flex;
   flex-direction: row;
 }
 .vertical {
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* 2. 히어로 섹션 전체 설정 */
 .hero-section {
@@ -92,7 +93,7 @@ hero-section 최예빈 작업
   overflow: visible;
 }
 
-.hero-container.horizontal {
+.hero-section .hero-container.horizontal {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
@@ -101,7 +102,7 @@ hero-section 최예빈 작업
 }
 
 /* 4. 왼쪽 텍스트 박스 */
-.hero-content-box.vertical {
+.hero-section .hero-content-box.vertical {
   width: 553px;
   gap: 32px;
   position: relative;
@@ -109,7 +110,7 @@ hero-section 최예빈 작업
 }
 
 /* 뱃지 스타일 */
-.hero-content-box > span:first-child {
+.hero-section .hero-content-box > span:first-child {
   display: inline-flex;
   align-items: center;
   height: 32px;
@@ -122,36 +123,36 @@ hero-section 최예빈 작업
   text-transform: uppercase;
 }
 
-.hero-title {
+.hero-section .hero-title {
   width: 553px;
   font: var(--display-500);
   color: var(--title-black);
   margin: 0;
 }
 
-.hero-subtitle {
+.hero-section .hero-subtitle {
   font: var(--heading-m);
   color: var(--main-black);
 }
 
-.hero-description {
+.hero-section .hero-description {
   font: var(--lead-m);
   color: var(--main-black);
 }
 
-.point-color {
+.hero-section .point-color {
   color: var(--primary);
   font-style: normal;
 }
 
 /* 5. 버튼 그룹 */
-.hero-cta-buttons.horizontal {
+.hero-section .hero-cta-buttons.horizontal {
   align-items: center;
   gap: 12px;
   margin-top: 0;
 }
 
-.cta-btn-main {
+.hero-section .cta-btn-main {
   background-color: var(--primary);
   color: var(--white);
   padding: 10px 32px;
@@ -162,13 +163,13 @@ hero-section 최예빈 작업
   align-items: center;
   justify-content: center;
 }
-.cta-btn-main:hover {
+.hero-section .cta-btn-main:hover {
     background-color: var(--primary-hover);
 }
-.cta-btn-main:active {
+.hero-section .cta-btn-main:active {
     background-color: var(--primary-active);
 }
-.btn-sub {
+.hero-section .btn-sub {
   background: var(--main-button);
   color: var(--title-black);
   padding: 10px 32px;
@@ -179,10 +180,10 @@ hero-section 최예빈 작업
   align-items: center;
   gap: 8px;
 }
-.btn-sub:hover {
+.hero-section .btn-sub:hover {
     background: var(--main-button-hover);
 }
-.btn-sub:active {
+.hero-section .btn-sub:active {
     background: var(--main-button-active);
 }
 
@@ -199,7 +200,7 @@ hero-section 최예빈 작업
   display: inline-block;
 }
 
-.image-box {
+.hero-section .image-box {
   width: 520px;
   min-width: 520px;
   height: 450px;
@@ -212,7 +213,7 @@ hero-section 최예빈 작업
 }
 
 /* 2. 이미지 (유리보다 아래에 배치) */
-.image-box img {
+.hero-section .image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -225,7 +226,7 @@ hero-section 최예빈 작업
 }
 
 /* 3. ★ 유리 속성 튀어나오게 하기 (사진 위로 얹기) */
-.image-box::after {
+.hero-section .image-box::after {
   content: "";
   position: absolute;
   top: 0;
@@ -254,7 +255,7 @@ hero-section 최예빈 작업
 }
 
 /* 7. 통계 카드 */
-.hero-stats-card {
+.hero-section .hero-stats-card {
   position: absolute;
   left: -44px; /* 이미지 밖으로 튀어나오는 위치 */
   bottom: -20px;
@@ -271,7 +272,7 @@ hero-section 최예빈 작업
   z-index: 20;
 }
 
-.card-icon {
+.hero-section .card-icon {
   width: 64px;
   height: 64px;
   background-color: var(--secondary);
@@ -282,13 +283,13 @@ hero-section 최예빈 작업
   color: var(--white);
 }
 
-.card-icon .material-icons {
+.hero-section .card-icon .material-icons {
   font-size: 32px;
   line-height: var(--line-height-full); /* 카드 내 아이콘은 크게 */
 }
 
 /* 8. 카드 내부 텍스트 정렬 */
-.card-text.vertical {
+.hero-section .card-text.vertical {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -296,7 +297,7 @@ hero-section 최예빈 작업
   justify-content: center;
 }
 
-.card-text strong {
+.hero-section .card-text strong {
   display: block;
   font-family: var(--font-gmarket);
   font-size: var(--font-size-36);
@@ -305,12 +306,12 @@ hero-section 최예빈 작업
   font-weight: bold;
 }
 
-.card-text span {
+.hero-section .card-text span {
   font: var(--heading-x-x-s);
   color: var(--main-black);
 }
 
-header .btn:active {
+.hero-section header .btn:active {
   background: var(--primary-active);
 }
 
@@ -359,7 +360,7 @@ header .btn:active {
 
 /* 지원자격 섹션 */
 
-.requirements-intro {
+.requirements-section .requirements-intro {
   margin-right: 24px;
 }
 
@@ -393,19 +394,19 @@ header .btn:active {
 
 /* FAQ 섹션 */
 
-.faq-news-section h2 {
+.faq-section .faq-news-section h2 {
   font: var(--heading-l);
   color: var(--title-black);
   width: 100%;
 }
 
-.faq-section {
+.faq-section .faq-section {
   align-items: start;
 }
 
 /* News 섹션 */
 
-.news-section {
+.news-section .news-section {
   align-items: start;
 }
 
@@ -417,38 +418,38 @@ header .btn:active {
   padding-left: 32px;
 }
 
-.news-list img {
+.news-section .news-list img {
   border-radius: 16px;
 }
 
-.news-item {
+.news-section .news-item {
   padding: 20px 0;
   border-bottom: 1px solid var(--medium-gray-30);
 }
 
 
-.news-item .news-link {
+.news-section .news-item .news-link {
   gap: 24px;
 }
-.news-item .news-category {
+.news-section .news-item .news-category {
   color: var(--crimson);
 }
-.news-item .news-title {
+.news-section .news-item .news-title {
   color: var(--primary);
 }
-.news-item .news-date {
+.news-section .news-item .news-date {
   color: var(--medium-gray);
 }
 
-.news-content {
+.news-section .news-content {
   gap: 4px;
 }
 
-.news-item:first-of-type {
+.news-section .news-item:first-of-type {
   padding-top: 0;
 }
 
-.news-item:last-of-type {
+.news-section .news-item:last-of-type {
   border: none;
 }
 
@@ -477,7 +478,7 @@ header .btn:active {
   justify-content: center;
   width: 100%;
   max-width: 1200px;
-  padding: 59px 60px;
+  padding: 60px;
   box-sizing: border-box;
   background: var(--bright-blue);
   border-radius: 40px;
@@ -490,21 +491,20 @@ header .btn:active {
 }
 
 /* 텍스트 그룹 */
-.text-group.vertical {
+.final-cta-section .text-group.vertical {
   align-items: center;
   gap: 32px; /* 타이틀과 설명 사이 간격 */
 }
 
-.text-group h2 {
+.final-cta-section .text-group h2 {
   font: var(--heading-m);
   color: var(--white);
   text-align: center;
 }
 
-.description-text p {
+.final-cta-section .description-text p {
   font: var(--lead-m);
-  color: var(--white);
-  opacity: 70%;
+  color: var(--white-alpha-70);
   text-align: center;
   line-height: 1.6;
 }
@@ -533,36 +533,30 @@ header .btn:active {
   text-decoration: none;
 
   /* 색상 변화만 부드럽게 적용 (위로 뜨지 않음) */
-  transition: background 0.1s ease;
+  transition: 0.3s ease;
 }
 
-.cta-btn-main {
-  background-color: var(--white);
-  color: var(--primary);
-}
-.cta-btn-main:hover {
-    background-color: var(--white-hover);
-}
-.cta-btn-main:active {
-    background-color: var(--white-active);
-}
-.btn-sub {
+
+/* hover만 색상 추가 변경 */
+
+.final-cta-button-normal {
   background-color: var(--secondary);
   color: var(--white);
 }
 
-/* 마우스 올렸을 때 (Hover) */
-.final-cta-buttons a:hover {
-  background: var(--button-container-hover);
+.final-cta-button-normal:hover {
+  background: var(--secondary-hover);
 }
 
-/* 클릭했을 때 (Active) */
-.final-cta-buttons a:active {
-  background: var(--button-container-active);
+.final-cta-button-normal:active {
+  background: var(--secondary-active);
 }
+
+  
+
 
 /* =======================
-최종 CTA 섹션 종료
+최종 CTA 섹션 종료 */
 
 /* #endregion */
 
