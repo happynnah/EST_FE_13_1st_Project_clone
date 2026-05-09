@@ -54,9 +54,11 @@
                 성장하세요. 현업 전문가의 멘토링과 실전 프로젝트 중심의 몰입형 커리<br />큘럼이 당신을 기다립니다.
               </p>
 
-              <div class="hero-cta-buttons box horizontal">
-                <a href="#" class="cta-btn-main">교육 과정 살펴보기</a>
-                <a href="#" class="btn-sub"> 커리큘럼 보기<span class="material-icons">arrow_right_alt</span></a>
+              <div class="hero-cta-buttons box horizontal gap-l">
+                <a href="#" class="cta-btn-main btn btn-md bg-primary text-white">교육 과정 살펴보기</a>
+                <a href="#" class="btn-sub btn btn-md bg-main-button text-title-black gap-xs">
+                  커리큘럼 보기<span class="material-icons">arrow_right_alt</span></a
+                >
               </div>
             </div>
 
@@ -389,7 +391,7 @@
       <!-- Program Group 종료 -->
 
       <!-- Conversion Support Group - 배정호 작업 -->
-      <section class="conversion-support-group section-group vertical">
+      <section class="conversion-support-group section-group vertical bg-super-light-gray">
         <!-- 후기 섹션 -->
 
         <section class="testimonial-section vertical gap-l">
@@ -491,15 +493,15 @@
             <!-- 후기 섹션 CTA -->
 
             <div class="container vertical align-center">
-              <a href="#" class="testimonial-cta btn btn-md bg-primary text-white label-l">더 많은 후기 보러가기</a>
+              <a href="#" class="testimonial-cta btn btn-md btn-primary label-l bg-primary text-white"
+                >더 많은 후기 보러가기</a
+              >
             </div>
           </div>
         </section>
 
         <!-- 후기 섹션 종료 -->
-
         <hr class="container" />
-
         <!-- 지원자격 섹션 -->
 
         <section class="requirements-section">
@@ -581,17 +583,15 @@
         </section>
 
         <!-- 지원자격 섹션 종료 -->
-
         <hr class="container" />
-
         <!-- FAQ / NEWS 섹션 -->
 
         <section class="faq-news-section">
           <div class="container horizontal">
             <!-- FAQ 섹션 -->
 
-            <section class="faq-section vertical gap-xl">
-              <h2>자주 묻는 질문</h2>
+            <section class="faq-section vertical grow-1 gap-xl">
+              <h2 class="heading-l text-title-black">자주 묻는 질문</h2>
 
               <!-- FAQ 리스트 -->
 
@@ -599,9 +599,31 @@
                 <!-- FAQ 질답1 -->
 
                 <li class="accordion-item box vertical">
-                  <input type="checkbox" id="faq1" class="accordion-input" />
+                  <input type="checkbox" id="faq1" class="accordion-input" checked />
 
                   <label for="faq1" class="accordion-question box horizontal">
+                    <p>Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?</p>
+                    <span class="material-icons">keyboard_arrow_down</span>
+                  </label>
+
+                  <div class="accordion-answer box vertical">
+                    <p>
+                      저희는 사전 설문 내용을 토대로 지원자분들의 사전 지식을 고려하여 커리큘럼을 구성하고 있습니다.
+                    </p>
+
+                    <p>
+                      기존 다수의 비전공자 교육 경험을 바탕으로 강사진과 운영진이 세심한 관리와 교육으로 학습을
+                      도와드립니다.
+                    </p>
+                  </div>
+                </li>
+
+                <!-- FAQ 질답2 -->
+
+                <li class="accordion-item box vertical">
+                  <input type="checkbox" id="faq2" class="accordion-input" />
+
+                  <label for="faq2" class="accordion-question box horizontal">
                     <p>Q. 지원 자격이 있나요?</p>
                     <span class="material-icons">keyboard_arrow_down</span>
                   </label>
@@ -632,31 +654,6 @@
                   </div>
                 </li>
 
-                <!-- FAQ 질답2 -->
-
-                <li class="accordion-item box vertical">
-                  <input type="checkbox" id="faq2" class="accordion-input" />
-
-                  <label for="faq2" class="accordion-question box horizontal">
-                    <p>Q. 다른 기관에서 교육을 받았는데 신청 가능할까요?</p>
-                    <span class="material-icons">keyboard_arrow_down</span>
-                  </label>
-
-                  <div class="accordion-answer box vertical">
-                    <p>
-                      ➡️ 나의 이전 교육과정 조회 방법<br />
-                      고용24 로그인 → 나의 정보 → 나의 훈련 이력
-                    </p>
-
-                    <p>
-                      위와 같이 확인 후 이전 KDT 과정 수강 이력&#40;수료, 하차, 포기 모두 포함&#41;이 있다면, 신청이
-                      불가한 것은 아니나 자비 부담금이 발생합니다.
-                    </p>
-
-                    <p>그 외에 K-디지털트레이닝 이외의 과정을 수강하신 경우 문제없이 수강신청 가능합니다.</p>
-                  </div>
-                </li>
-
                 <!-- FAQ 질답3 -->
 
                 <li class="accordion-item box vertical">
@@ -683,19 +680,22 @@
                   <input type="checkbox" id="faq4" class="accordion-input" />
 
                   <label for="faq4" class="accordion-question box horizontal">
-                    <p>Q. 사전 지식이 없는 비전공자도 수업을 따라갈 수 있을까요?</p>
+                    <p>Q. 다른 기관에서 교육을 받았는데 신청 가능할까요?</p>
                     <span class="material-icons">keyboard_arrow_down</span>
                   </label>
 
                   <div class="accordion-answer box vertical">
                     <p>
-                      저희는 사전 설문 내용을 토대로 지원자분들의 사전 지식을 고려하여 커리큘럼을 구성하고 있습니다.
+                      ➡️ 나의 이전 교육과정 조회 방법<br />
+                      고용24 로그인 → 나의 정보 → 나의 훈련 이력
                     </p>
 
                     <p>
-                      기존 다수의 비전공자 교육 경험을 바탕으로 강사진과 운영진이 세심한 관리와 교육으로 학습을
-                      도와드립니다.
+                      위와 같이 확인 후 이전 KDT 과정 수강 이력&#40;수료, 하차, 포기 모두 포함&#41;이 있다면, 신청이
+                      불가한 것은 아니나 자비 부담금이 발생합니다.
                     </p>
+
+                    <p>그 외에 K-디지털트레이닝 이외의 과정을 수강하신 경우 문제없이 수강신청 가능합니다.</p>
                   </div>
                 </li>
 
@@ -723,10 +723,11 @@
               </ul>
             </section>
 
+            <!-- FAQ 섹션 종료 -->
             <!-- NEWS 섹션 -->
 
-            <section class="news-section vertical gap-xl">
-              <h2>새소식</h2>
+            <section class="news-section vertical grow-1 gap-xl">
+              <h2 class="heading-l text-title-black">새소식</h2>
 
               <!-- NEWS 리스트 -->
               <!-- hr삭제, 구분선은 border 사용 -->
@@ -798,6 +799,7 @@
                 </li>
               </ul>
             </section>
+            <!-- NEWS 섹션 종료 -->
           </div>
         </section>
 
@@ -818,8 +820,8 @@
             </div>
             <!-- 버튼 그룹 -->
             <div class="final-cta-buttons box horizontal">
-              <a href="#" class="final-cta-button-main btn-sub btn-md">나에게 맞는 과정 찾기</a>
-              <a href="#" class="final-cta-button-normal btn-ghost btn-md">브로셔 다운로드</a>
+              <a href="#" class="final-cta-button-main btn btn-md bg-white text-primary">나에게 맞는 과정 찾기</a>
+              <a href="#" class="final-cta-button-normal btn btn-md bg-secondary text-white">브로셔 다운로드</a>
             </div>
           </div>
         </div>
@@ -897,12 +899,12 @@
 
     <!-- Fixed UI - 배정호 작업 -->
     <div class="fixed-ui">
-      <div class="contact-us-button fixed-button">
-        <a href="#" class="fixed-text material-icons">chat</a>
+      <div class="contact-btn btn btn-sm">
+        <a href="#" class="material-icons">chat</a>
       </div>
 
-      <div class="top-button fixed-button">
-        <a href="#" class="fixed-text material-icons">arrow_upward</a>
+      <div class="top-btn btn btn-sm">
+        <a href="#" class="material-icons">arrow_upward</a>
       </div>
     </div>
     <!-- Fixed UI 종료 -->
