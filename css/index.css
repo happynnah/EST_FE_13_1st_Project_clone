@@ -704,12 +704,10 @@ Footer 종료
 
 .contact-btn {
   background: var(--secondary);
-  user-select: none;
 }
 
 .top-btn {
   background: var(--button-container);
-  user-select: none;
 }
 
 /* =======================
