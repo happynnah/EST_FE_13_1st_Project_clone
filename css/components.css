@@ -188,16 +188,11 @@ header nav ul {
 
 .card {
   display: flex;
-
   box-sizing: border-box;
-
   padding: 40px;
-
   border: 2px solid var(--secondary-alpha-30);
   border-radius: 24px;
-
   background: var(--white);
-
   gap: 24px;
 }
 
@@ -205,7 +200,7 @@ header nav ul {
 
 .grow-1 {
   flex: 1;
-  min-width: 192px;
+  min-width: 92px;
 }
 
 .grow-2 {
@@ -238,7 +233,7 @@ header nav ul {
 }
 
 .card-tall {
-  height: 600px;
+  min-height: 600px;
 }
 
 .card-extra-tall {
