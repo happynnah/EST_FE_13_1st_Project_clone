@@ -1,7 +1,6 @@
-/* =========================
-   MATERIAL ICONS */
-
 :root {
+  /* #region Color & Effects */
+
   /* =========================
    COLORS
   ========================= */
@@ -24,6 +23,7 @@
 
   --dark-gray: #475569;
   --medium-gray: #94a3b8;
+  --medium-gray-alpha-30: #94a3b84d;
 
   --gray: #e1e3e4;
   --gray-alpha-50: #e1e3e480;
@@ -61,14 +61,7 @@
    GRADIENT
   ========================= */
 
-  --glass-effect: linear-gradient(
-    45deg,
-    #1e4ed8b3 0%,
-    #1e4ed866 24.52%,
-    #1e4ed840 50%,
-    #1e4ed81a 75%,
-    #1e4ed80d 94.72%
-  );
+  --glass-effect: linear-gradient(45deg, #1e4ed8b3 0%, #1e4ed866 25%, #1e4ed840 50%, #1e4ed81a 75%, #1e4ed80d 95%);
 
   /* =========================
    SHADOW
@@ -77,6 +70,10 @@
   --shadow-elevated: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
   --shadow-default: 5px 10px 30px -10px #00000040;
   --button-shadow: inset 0 0 12px 0 #00000099;
+
+  /* #endregion */
+
+  /* #region Fonts */
 
   /* =========================
    FONT FAMILY
@@ -138,7 +135,7 @@
   /* =========================
    TYPOGRAPHY
   ========================= */
-  
+
   --heading-l: 500 36px/64px var(--font-gmarket);
   --heading-l-tight: 500 36px/100% var(--font-gmarket);
   --heading-m: 500 24px/48px var(--font-gmarket);
@@ -152,6 +149,7 @@
   --body-m-400: 400 14px/27px var(--font-pretendard);
   --body-m-500: 500 14px/27px var(--font-pretendard);
 
+  --caption-m-tight: 500 12px/100% var(--font-pretendard);
   --caption-m: 500 12px/27px var(--font-pretendard);
   --caption-s: 500 10px/27px var(--font-pretendard);
 
@@ -162,4 +160,6 @@
   --label-l: 500 20px/32px var(--font-pretendard);
   --label-m-700: 700 18px/auto var(--font-pretendard);
   --label-m-500: 500 16px/auto var(--font-pretendard);
+
+  /* #endregion */
 }

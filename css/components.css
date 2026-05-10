@@ -1,0 +1,615 @@
+/* #region button */
+
+/* =======================
+button compnents - 이민호 작성
+버튼 컴포넌트 - 배정호 수정
+======================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 크기/모양 */
+
+.btn-md {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: var(--radius-s-plus);
+  font: var(--label-l);
+}
+
+.btn-rounded {
+  padding: 8px 24px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font: var(--body-m-plus-500);
+}
+
+.btn-sm {
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: var(--radius-m-plus);
+  align-items: center;
+  width: 75px;
+  height: 75px;
+}
+
+/* 버튼 호버/액티브 시 밝기 */
+
+.btn:hover {
+  filter: brightness(0.85);
+}
+
+.btn:active {
+  filter: brightness(0.7);
+  box-shadow: var(--button-shadow);
+}
+
+/* 버튼 컴포넌트 종료 */
+
+/* #endregion */
+
+/* #region NewsCard */
+
+/* =======================
+뉴스카드 컴포넌트 -최예빈 작업
+뉴스카드 - 배정호 수정
+======================= */
+
+/* 뉴스 리스트 컨테이너 (상단 여백 40) */
+
+.news-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--medium-gray-alpha-30);
+}
+
+.news-item:first-of-type {
+  padding-top: 0;
+}
+.news-item:last-of-type {
+  border-bottom: none;
+}
+
+.news-link {
+  gap: 24px;
+}
+
+.news-link img {
+  max-width: 128px;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--medium-gray-alpha-30);
+  transition: 0.5s ease;
+}
+
+.news-content {
+  gap: 4px;
+}
+
+.news-content * {
+  max-width: 384px;
+  overflow: hidden;
+  white-space: nowrap; /* 줄바꿈 금지 */
+  text-overflow: ellipsis; /* ... 표시 */
+}
+.news-content p {
+  font: var(--caption-m-tight);
+  color: var(--crimson);
+}
+.news-content h3 {
+  font: var(--body-m-plus-500);
+  color: var(--primary);
+}
+.news-content time {
+  font: var(--caption-m-tight);
+  color: var(--medium-gray);
+}
+
+/* 호버 */
+
+.news-item a:hover img {
+  filter: brightness(0.8);
+}
+.news-item a:hover h3 {
+  text-decoration: underline;
+}
+
+/* =======================
+뉴스카드 종료
+======================= */
+
+/* #endregion */
+
+/* #region Nav */
+
+/* =======================
+네비 컴포넌트 -최예빈 작업
+======================= */
+
+/* 네비게이션 그룹 (ul + 버튼) */
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* 메뉴와 우측 버튼 사이 간격 */
+}
+
+/* 메뉴 리스트 (ul) */
+header nav ul {
+  display: flex;
+  gap: 24px; /* 메뉴 아이템 간의 간격 */
+}
+
+/*  네비폰트 흰색 -> 가상배경설정 */
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--label-m-500);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-alpha-70);
+  padding: 8px 0;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+
+/* .nav-item 상태: hover */
+.nav-item:hover a {
+  font-family: var(--label-m-700);
+  color: var(--white);
+  padding-bottom: 3px;
+  box-shadow: 0 3px 0 0 var(--white); /* 밑줄효과 border-bottom은 inside처럼 나타남 */
+}
+
+/* =======================
+네비 컴포넌트 종료
+======================= */
+
+/* #endregion */
+
+/* #region Card */
+
+/* =======================
+기본 카드 컴포넌트 - 김해나 작업
+======================= */
+
+/* =======================
+카드 컴포넌트 - 배정호 수정
+======================= */
+
+/* 카드 컴포넌트 베이스 */
+
+.card {
+  display: flex;
+
+  box-sizing: border-box;
+
+  padding: 40px;
+
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+
+  background: var(--white);
+
+  gap: 24px;
+}
+
+/* 카드 크기 배치 (부모에게 flex 필요) */
+
+.grow-1 {
+  flex: 1;
+  min-width: 192px;
+}
+
+.grow-2 {
+  flex: 2;
+  min-width: 384px;
+}
+
+.grow-3 {
+  flex: 3;
+  min-width: 576px;
+}
+
+.grow-4 {
+  flex: 4;
+  min-width: 768;
+}
+
+/* 카드 높이 */
+
+.card-extra-short {
+  height: 192px;
+}
+
+.card-short {
+  height: 288px;
+}
+
+.card-medium {
+  height: 320px;
+}
+
+.card-tall {
+  height: 600px;
+}
+
+.card-extra-tall {
+  height: 640px;
+}
+
+.card-auto {
+  height: auto;
+}
+
+/* 카드 폰트 아이콘 크기 */
+
+.card-icon-small {
+  font-size: 24px;
+}
+
+.card-icon {
+  font-size: 40px;
+}
+
+.card-icon-big {
+  font-size: 125px;
+}
+
+/* =======================
+카드 컴포넌트 종료
+======================= */
+
+/* #endregion */
+
+/* #region ImageCard */
+
+/* =======================
+이미지 카드 - 오예은 작업
+======================= */
+
+.image-card-big {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 640px;
+
+  background: #fff;
+  border: 2px solid #dbe4ff;
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  box-sizing: border-box;
+}
+
+/* 이미지 */
+.image-card-big .image-frame {
+  width: 100%;
+  height: 288px;
+
+  flex-shrink: 0;
+
+  background: url("../images/FE Dev Track Img.png") center/cover no-repeat;
+}
+
+/* 컨텐츠 */
+.image-card-big .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 344px;
+
+  padding: 24px 40px 40px;
+
+  box-sizing: border-box;
+}
+
+/* 텍스트 그룹 */
+.image-card-big .text-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* 프로그램 정보 */
+.image-card-big .program-information {
+  display: flex;
+  flex-direction: column;
+
+  width: 405px;
+}
+
+/* 분류 */
+.image-card-big .badge {
+  font: var(--body-m);
+
+  color: var(--primary);
+}
+
+/* 제목 */
+.image-card-big .program-title {
+  font: var(--heading-m);
+
+  color: var(--title-black);
+}
+
+/* 설명 */
+.image-card-big .clip-overtext {
+  display: block;
+
+  width: 405px;
+  height: 63px;
+
+  flex-shrink: 0;
+}
+
+.image-card-big .clip-overtext .text-wrapper {
+  margin: 0;
+
+  font: var(--body-m);
+
+  color: var(--main-black);
+}
+
+/* 추가 정보 */
+.image-card-big .additional-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 405px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* 기간 / 시간 */
+.image-card-big .period,
+.image-card-big .class-time {
+  display: flex;
+  align-items: center;
+  height: 27px;
+
+  gap: 12px;
+
+  font-size: 16px;
+  color: var(--title-black);
+}
+
+/* 아이콘 */
+.image-card-big .material-icons {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+/* 버튼 */
+.image-card-big .cta-button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 405px;
+  height: 64px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: var(--primary);
+  color: var(--white);
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* cta버튼  */
+
+.cta-btn-sub {
+  padding: 10px 20px;
+  border-radius: var(--radius-s-plus);
+
+  background-color: var(--white);
+  color: var(--primary);
+
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s ease;
+}
+
+.cta-btn-sub:hover {
+  background-color: var(--white-hover);
+}
+
+/* =======================
+이미지 카드 컴포넌트 종료
+======================= */
+
+/* #endregion */
+
+/* #region CardGrid */
+
+/* =======================
+카드 그리드 스타일 - 배정호
+======================= */
+
+.card-grid h3 {
+  font: var(--heading-m);
+  color: var(--title-black);
+}
+
+.card-grid .verticlal-card-item h3 {
+  color: var(--white);
+}
+
+.card-grid p {
+  font: var(--body-m-plus-400);
+  color: var(--main-black);
+}
+
+.card-grid .verticlal-card-item p {
+  color: var(--white-alpha-70);
+}
+
+.card-grid .icon-box {
+  height: 100%;
+}
+
+.card-grid .icon-box .material-icons {
+  user-select: none;
+  font-size: 125px;
+  color: var(--white-alpha-60);
+  opacity: 0.5;
+}
+
+.horizontal-card-item > span {
+  background: var(--secondary-alpha-10);
+  color: var(--primary);
+  font-size: 40px;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* =======================
+카드 그리드 종료
+======================= */
+
+/* #endregion */
+
+/* #region Accordion */
+
+/* =======================
+Accordion (Checkbox) - 배정호 작업
+======================= */
+
+.accordion {
+  width: 486px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.accordion-question {
+  width: 100%;
+  height: auto;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  justify-content: space-between;
+  background: var(--white);
+}
+
+.accordion-question .question-text {
+  font: var(--body-m-plus-400);
+  min-width: 422px;
+  overflow: hidden;
+  white-space: nowrap; /* 줄바꿈 금지 */
+  text-overflow: ellipsis; /* ... 표시 */
+}
+
+.accordion-question .material-icons {
+  color: var(--medium-gray);
+  user-select: none;
+}
+
+.accordion-answer {
+  width: 100%;
+  max-height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+  opacity: 0;
+
+  border: 1px solid var(--gray);
+  border-radius: var(--radius-s-plus);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: var(--white);
+
+  transition: 0.5s;
+}
+
+.accordion-answer p {
+  font: var(--body-m-400);
+  color: var(--main-black);
+}
+
+.accordion-answer li {
+  margin-left: 32px;
+  list-style: circle;
+  font: var(--body-m-400);
+}
+
+.accordion-input:checked ~ .accordion-question {
+  background: var(--super-light-gray);
+}
+
+.accordion-input:checked ~ .accordion-answer {
+  max-height: 1000px;
+  padding: 24px 20px;
+  opacity: 1;
+}
+
+.accordion-input:checked + .accordion-question .material-icons {
+  transform: rotate(180deg);
+  color: var(--title-black);
+}
+
+.accordion-input:checked + .accordion-question p {
+  font: var(--body-m-plus-500);
+}
+
+/* =======================
+아코디언 컴포넌트 종료
+======================= */
+
+/* #endregion */
+
+/* #region FixedButton */
+
+/* =======================
+고정 ui - 배정호 작업
+======================= */
+
+.fixed-ui {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* =======================
+고정버튼 종료
+======================= */
+
+/* #endregion */
