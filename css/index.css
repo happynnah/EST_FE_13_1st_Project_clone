@@ -403,10 +403,10 @@ hero-section 최예빈 작업
 }
 
 /* 텍스트 그룹 */
-.programs-section-group .image-card-big-item .program-text-group {
+.programs-section-group .image-card-big-item .text-group-box {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 36px;
 }
 
 /* 프로그램 정보 */
@@ -418,7 +418,7 @@ hero-section 최예빈 작업
 
 /* 분류 */
 .programs-section-group .image-card-big-item .badge-item {
-  font: var(--body-m);
+  font: var(--body-m-400);
   color: var(--primary);
 }
 
@@ -432,13 +432,12 @@ hero-section 최예빈 작업
 .programs-section-group .image-card-big-item .clip-overtext-box {
   display: block;
   width: 405px;
-  height: 63px;
   flex-shrink: 0;
 }
 
 .programs-section-group .image-card-big-item .clip-overtext-box .text-wrapper-item {
   margin: 0;
-  font: var(--body-m);
+  font: var(--body-m-plus-400);
   color: var(--main-black);
 }
 
