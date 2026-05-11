@@ -736,19 +736,33 @@ hero-section 최예빈 작업
 
 /* 차별화 요소 섹션 */
 
+.differentiator-section .container.horizontal.card-tall {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 24px;
+  height: 600px;
+  align-items: stretch;
+}
+.differentiator-section .outer-card-box {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 24px;
+}
+.differentiator-section .inner-card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+}
+
 .differentiator-section .inner-card-box .card-item {
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
 }
-.differentiator-section .inner-card-box .card-item h3 {
-  padding-top: 25px;
-}
+
 .differentiator-section .vertical-card-item {
-  width: 384px;
   flex: none;
   padding: 40px;
-  box-sizing: border-box;
 }
 .differentiator-section .vertical-card-item .card-icon-big {
   color: var(--white-alpha-60);
