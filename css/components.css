@@ -215,7 +215,7 @@ header nav ul {
 
 .grow-4 {
   flex: 4;
-  min-width: 768px;
+  min-width: 768;
 }
 
 /* 카드 높이 */
@@ -507,6 +507,7 @@ Accordion (Checkbox) - 배정호 작업
   height: auto;
   padding: 12px 20px;
   cursor: pointer;
+  gap: 32px;
 
   box-sizing: border-box;
   border: 1px solid var(--gray);
