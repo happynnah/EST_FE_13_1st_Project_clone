@@ -22,11 +22,11 @@
 
 | 이름   | 역할           | 주요 담당                                          | GitHub                                                        | 연락                    |
 | ------ | -------------- | -------------------------------------------------- | ------------------------------------------------------------- | ----------------------- |
-| 배정호 | 팀장 · FE 리드 | Support Section<br>공통 클래스 작성<br>QA·코드리뷰 | [@raspbsb](https://github.com/raspbsb)                        | (예) unionbjh@naver.com |
-| 이민호 | FE · UI/디자인 | Header·Footer<br>CSS변수 작성                      | [@minho0391](https://github.com/minho0391)                    | minh05@naver.com       |
-| 김해나 | FE · UI/디자인 | Trust Section<br>컴포넌트 작성                     | [@dhdpdms0712-oss](https://github.com/dhdpdms0712-oss)        | happynnah@gmail.com       |
-| 오예은 | FE · UI/디자인 | Program Section<br>컴포넌트 작성                   | [@https://github.com/happynnah](https://github.com/happynnah) | -----@-----       |
-| 최예빈 | FE · UI/디자인 | Hero·Final CTA Section<br>컴포넌트 작성            | [@yebin-1129](https://github.com/yebin-1129)                  | cyb11299@gmail.com       |
+| 배정호 | 팀장 · FE 리드 | Support Section<br>공통 클래스 작성<br>QA·코드리뷰    | [@raspbsb](https://github.com/raspbsb)                            | unionbjh@naver.com |
+| 이민호 | FE · UI/디자인 | Header·Footer<br>CSS변수 작성                      | [@minho0391](https://github.com/minho0391)                         | minh05@naver.com       |
+| 김해나 | FE · UI/디자인 | Trust Section<br>컴포넌트 작성                      | [@happynnah](https://github.com/happynnah)                        | happynnah@gmail.com       |
+| 오예은 | FE · UI/디자인 | Program Section<br>컴포넌트 작성                    | [@dhdpdms0712-oss](https://github.com/dhdpdms0712-oss)            | -----@-----       |
+| 최예빈 | FE · UI/디자인 | Hero·Final CTA Section<br>컴포넌트 작성             | [@yebin-1129](https://github.com/yebin-1129)                      | cyb11299@gmail.com       |
 
 ### 1.3 🗓️ 마일스톤
 
