@@ -507,6 +507,8 @@ Accordion (Checkbox) - 배정호 작업
   height: auto;
   padding: 12px 20px;
   cursor: pointer;
+
+  box-sizing: border-box;
   border: 1px solid var(--gray);
   border-radius: var(--radius-s-plus);
   background: var(--white);
@@ -526,7 +528,7 @@ Accordion (Checkbox) - 배정호 작업
 
 .accordion-answer {
   width: 100%;
-  max-height: 0;
+  box-sizing: border-box;
   padding: 20px 20px 30px 20px;
   overflow: hidden;
   gap: 32px;
