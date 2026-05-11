@@ -555,19 +555,12 @@ hero-section 최예빈 작업
   justify-content: center;
   gap: 8px;
 }
-<<<<<<< HEAD
 .programs-section-group .icon-vertical-card-tag-blue .text-group-blue h3{
   font: var(--heading-s);
   color: var(--white);
 }
 .programs-section-group .icon-vertical-card-tag-blue .text-group-blue p{
   font: var(--body-m);
-=======
-.icon-vertical-card-tag-blue .text-group-blue h3 {
-  color: var(--white);
-}
-.icon-vertical-card-tag-blue .text-group-blue p {
->>>>>>> origin/Dev
   color: var(--white-alpha-70);
 }
 
@@ -641,19 +634,11 @@ hero-section 최예빈 작업
   font: var(--caption-m);
 }
 
-<<<<<<< HEAD
 .programs-section-group .icon-vertical-card .list-status ul li:nth-child(2){
 color: var(--primary);
 }
 .programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2){
 color: var(--main-black);
-=======
-.icon-vertical-card .list-status ul li:nth-child(2) {
-  color: var(--primary);
-}
-.icon-vertical-card .list-status-black ul li:nth-child(2) {
-  color: var(--main-black);
->>>>>>> origin/Dev
 }
 /* 프로그램 그룹 끝 - 오예은 작업 */
 
