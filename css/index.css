@@ -350,7 +350,6 @@ hero-section 최예빈 작업
 .programs-section-group .section-header-box {
   align-items: center;
   width: 100%;
-  text-align: center;
 }
 
 .programs-section-group .section-title-item {
@@ -406,7 +405,7 @@ hero-section 최예빈 작업
 .programs-section-group .image-card-big-item .text-group-box {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 36px;
 }
 
 /* 프로그램 정보 */
@@ -418,7 +417,7 @@ hero-section 최예빈 작업
 
 /* 분류 */
 .programs-section-group .image-card-big-item .badge-item {
-  font: var(--body-m);
+  font: var(--body-m-400);
   color: var(--primary);
 }
 
@@ -432,13 +431,12 @@ hero-section 최예빈 작업
 .programs-section-group .image-card-big-item .clip-overtext-box {
   display: block;
   width: 405px;
-  height: 63px;
   flex-shrink: 0;
 }
 
 .programs-section-group .image-card-big-item .clip-overtext-box .text-wrapper-item {
   margin: 0;
-  font: var(--body-m);
+  font: var(--body-m-plus-400);
   color: var(--main-black);
 }
 
@@ -453,6 +451,10 @@ hero-section 최예빈 작업
   list-style: none;
 }
 
+.programs-section-group .additional-information-list {
+  font: var(--body-m-plus-400);
+}
+
 /* 기간 / 시간 */
 .programs-section-group .image-card-big-item .period-item,
 .programs-section-group .image-card-big-item .class-time-item {
@@ -461,7 +463,7 @@ hero-section 최예빈 작업
   height: 27px;
   gap: 12px;
   font-size: 16px;
-  color: var(--title-black);
+  color: var(--body-m-plus-400);
 }
 
 /* 아이콘 */
@@ -479,6 +481,7 @@ hero-section 최예빈 작업
   height: 64px;
   border: none;
   border-radius: 12px;
+  font: var(--label-l);
   background: var(--primary);
   color: var(--white);
   font-size: 18px;
@@ -496,7 +499,7 @@ hero-section 최예빈 작업
   border: 2px solid var(--secondary-alpha-30);
   border-radius: 24px;
   background: var(--white);
-  padding: 32px;
+  padding: 30px;
   gap: var(--line-height-27);
   box-sizing: border-box;
 }
@@ -510,7 +513,7 @@ hero-section 최예빈 작업
   border: 2px solid var(--secondary-alpha-30);
   border-radius: 24px;
   background: var(--bright-blue);
-  padding: 32px;
+  padding: 30px;
   gap: var(--line-height-27);
   box-sizing: border-box;
 }
@@ -535,32 +538,32 @@ hero-section 최예빈 작업
   justify-content: center;
 }
 
-.programs-section-group .text-group {
+.programs-section-group .program-text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
-.programs-section-group .text-group h3 {
+.programs-section-group .program-text-group h3 {
   font: var(--heading-s);
   color: var(--title-black);
 }
-.programs-section-group .text-group p {
-  font: var(--body-m);
+.programs-section-group .program-text-group .description {
+  font: var(--body-m-400);
   color: var(--main-black);
 }
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue {
+.programs-section-group .icon-vertical-card-tag-blue .program-text-group-blue {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue h3 {
+.programs-section-group .icon-vertical-card-tag-blue .program-text-group-blue h3 {
   font: var(--heading-s);
   color: var(--white);
 }
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue p {
-  font: var(--body-m);
+.programs-section-group .icon-vertical-card-tag-blue .program-text-group-blue .description {
+  font: var(--body-m-400);
   color: var(--white-alpha-70);
 }
 
@@ -615,30 +618,57 @@ hero-section 최예빈 작업
   box-sizing: border-box;
 }
 
-.programs-section-group .icon-vertical-card .text-group {
+.programs-section-group .icon-vertical-card .program-text-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.programs-section-group .cate-btn {
+  height: 43px;
+  padding: 8px 24px;
+  font: var(--body-m-plus-500);
+  color: var(--main-black);
+  background: var(--main-button);
+  border-radius: 50px;
+}
+.programs-section-group .cate-btn-blue {
+  height: 43px;
+  padding: 8px 24px;
+  font: var(--body-m-plus-500);
+  color: var(--white);
+  background: var(--primary);
+  border-radius: 50px;
 }
 
 .programs-section-group .icon-vertical-card .list-status ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: var(--caption-m);
 }
 .programs-section-group .icon-vertical-card .list-status-black ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: var(--caption-m);
 }
-
+.programs-section-group .icon-vertical-card .list-status ul li:nth-child(1) {
+  font: var(--caption-m);
+  color: var(--main-black);
+}
 .programs-section-group .icon-vertical-card .list-status ul li:nth-child(2) {
+  font: var(--body-m-500);
   color: var(--primary);
 }
-.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2) {
+.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(1) {
+  font: var(--caption-m);
   color: var(--main-black);
+}
+.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2) {
+  font: var(--body-m-500);
+  color: var(--main-black);
+}
+.programs-section-group .section-footer-box {
+  width: 178px;
+  padding: 10px 32px;
 }
 /* 프로그램 그룹 끝 - 오예은 작업 */
 
@@ -660,8 +690,13 @@ hero-section 최예빈 작업
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 32px;
+}
+
+.text-group > h2,
+.text-group > p {
+  text-align: center;
 }
 
 .trust-section .text-group .data-box {
@@ -682,7 +717,7 @@ hero-section 최예빈 작업
 }
 
 .trust-section .data-list li {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -690,9 +725,9 @@ hero-section 최예빈 작업
   align-items: center;
 }
 
-.trust-section .data-list li:not(:last-child) {
+/* .trust-section .data-list li:not(:last-child) {
   border-right: 1px solid rgba(225, 227, 228, 0.6);
-}
+} */
 
 .trust-section .data-list strong {
   display: block;
