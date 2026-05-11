@@ -3,6 +3,9 @@
 /* header작성 - 이민호 작성 */
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 100%;
   min-height: 96px;
   display: flex;
@@ -11,6 +14,8 @@ header {
   top: 0;
   z-index: 100;
   background: var(--secondary);
+  overflow: hidden;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 header .header-inner {
@@ -35,20 +40,15 @@ nav .list {
 
 nav a {
   display: inline-block;
+  font: var(--heading-x-s);
   color: var(--white-alpha-70);
-  border-bottom: 2px solid transparent;
+
   transition: 0.2s ease;
 }
-
-nav a:hover {
+nav .intro {
   color: var(--white);
-}
-
-.intro:active,
-.intro:focus {
-  color: var(--white);
-  transform: translateY(-3px);
-  border-bottom: 2px solid var(--white);
+  border-bottom: 3px solid var(--white);
+  padding-bottom: 4px;
 }
 
 header .btn {
@@ -335,14 +335,6 @@ hero-section 최예빈 작업
 /* #region Program */
 
 /* 프로그램 그룹 - 오예은 작업 */
-.vertical {
-  display: flex;
-  flex-direction: column;
-}
-.horizontal {
-  display: flex;
-  flex-direction: row;
-}
 
 .programs-section-group {
   background: var(--white);
@@ -354,17 +346,12 @@ hero-section 최예빈 작업
   align-items: center;
   gap: 32px;
 }
-.section-header-box {
+.programs-section-group .section-header-box {
   align-items: center;
   width: 100%;
   text-align: center;
 }
-.all-courses-list {
-  gap: 24px;
-}
-.curriculum-list-list {
-  gap: 24px;
-}
+
 .programs-section-group .section-title-item {
   font: var(--heading-l);
   color: var(--title-black);
@@ -375,161 +362,131 @@ hero-section 최예빈 작업
   color: var(--main-black);
 }
 
-.programs-section-group .program-card-wrapper-box {
-  gap: 24px;
-}
+
 /* 대표 인기 코스 섹션 - 이미지 카드 */
-.image-card-big-item {
+.programs-section-group .image-card-big-item {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
-
   height: 640px;
-
   background: #fff;
   border: 2px solid #dbe4ff;
   border-radius: 24px;
-
   overflow: hidden;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
   box-sizing: border-box;
 }
 
 /* 이미지 */
-.image-card-big-item .image-frame-box {
+.programs-section-group .image-card-big-item .image-frame-box {
   width: 100%;
   height: 288px;
-
   flex-shrink: 0;
   overflow: hidden;
 }
 
-.image-card-big-item .image-frame-box img {
+.programs-section-group .image-card-big-item .image-frame-box img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   display: block;
 }
 
 /* 컨텐츠 */
-.image-card-big-item .content-box {
+.programs-section-group .image-card-big-item .content-box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   height: 344px;
-
   padding: 24px 40px 40px;
-
   box-sizing: border-box;
 }
 
 /* 텍스트 그룹 */
-.image-card-big-item .text-group-box {
+.programs-section-group .image-card-big-item .text-group-box {
   display: flex;
   flex-direction: column;
-
   gap: 24px;
 }
 
 /* 프로그램 정보 */
-.image-card-big-item .program-information-box {
+.programs-section-group .image-card-big-item .program-information-box {
   display: flex;
   flex-direction: column;
-
   width: 405px;
 }
 
 /* 분류 */
-.image-card-big-item .badge-item {
+.programs-section-group .image-card-big-item .badge-item {
   font: var(--body-m);
-
   color: var(--primary);
 }
 
 /* 제목 */
-.image-card-big-item .program-title-item {
+.programs-section-group .image-card-big-item .program-title-item {
   font: var(--heading-m);
-
   color: var(--title-black);
 }
 
 /* 설명 */
-.image-card-big-item .clip-overtext-box {
+.programs-section-group .image-card-big-item .clip-overtext-box {
   display: block;
-
   width: 405px;
   height: 63px;
-
   flex-shrink: 0;
 }
 
-.image-card-big-item .clip-overtext-box .text-wrapper-item {
+.programs-section-group .image-card-big-item .clip-overtext-box .text-wrapper-item {
   margin: 0;
-
   font: var(--body-m);
-
   color: var(--main-black);
 }
 
 /* 추가 정보 */
-.image-card-big-item .additional-information-list {
+.programs-section-group .image-card-big-item .additional-information-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 405px;
-
   padding: 0;
   margin: 0;
-
   list-style: none;
 }
 
 /* 기간 / 시간 */
-.image-card-big-item .period-item,
-.image-card-big-item .class-time-item {
+.programs-section-group .image-card-big-item .period-item,
+.programs-section-group .image-card-big-item .class-time-item {
   display: flex;
   align-items: center;
   height: 27px;
-
   gap: 12px;
-
   font-size: 16px;
   color: var(--title-black);
 }
 
 /* 아이콘 */
-.image-card-big-item .material-icons {
+.programs-section-group .image-card-big-item .material-icons {
   font-size: 20px;
   color: var(--primary);
 }
 
 /* 버튼 */
-.image-card-big-item .cta-button-main-item {
+.programs-section-group .image-card-big-item .cta-button-main-item {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 405px;
   height: 64px;
-
   border: none;
   border-radius: 12px;
-
   background: var(--primary);
   color: var(--white);
-
   font-size: 18px;
   font-weight: 600;
-
   cursor: pointer;
 }
 /* 커리큘럼 섹션 - 아이콘 카드 */
-.icon-vertical-card-tag {
+.programs-section-group .icon-vertical-card-tag {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -543,7 +500,7 @@ hero-section 최예빈 작업
   gap: var(--line-height-27);
   box-sizing: border-box;
 }
-.icon-vertical-card-tag-blue {
+.programs-section-group .icon-vertical-card-tag-blue {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -557,7 +514,7 @@ hero-section 최예빈 작업
   gap: var(--line-height-27);
   box-sizing: border-box;
 }
-.icon-box-small {
+.programs-section-group .icon-box-small {
   width: 48px;
   height: 48px;
   color: var(--primary);
@@ -567,7 +524,7 @@ hero-section 최예빈 작업
   align-items: center;
   justify-content: center;
 }
-.icon-vertical-card-tag-blue .icon-box-small-blue {
+.programs-section-group .icon-vertical-card-tag-blue .icon-box-small-blue {
   width: 48px;
   height: 48px;
   color: var(--white);
@@ -578,41 +535,51 @@ hero-section 최예빈 작업
   justify-content: center;
 }
 
-.icon-vertical-card-tag .text-group {
+.programs-section-group .text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
-.icon-vertical-card-tag-blue .text-group-blue {
+.programs-section-group .text-group h3{
+  font: var(--heading-s);
+  color: var(--title-black);
+}
+.programs-section-group .text-group p{
+  font: var(--body-m);
+  color: var(--main-black);
+}
+.programs-section-group .icon-vertical-card-tag-blue .text-group-blue {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
-.icon-vertical-card-tag-blue .text-group-blue h3 {
+.programs-section-group .icon-vertical-card-tag-blue .text-group-blue h3{
+  font: var(--heading-s);
   color: var(--white);
 }
-.icon-vertical-card-tag-blue .text-group-blue p {
+.programs-section-group .icon-vertical-card-tag-blue .text-group-blue p{
+  font: var(--body-m);
   color: var(--white-alpha-70);
 }
 
-.icon-box-small .material-icons {
+.programs-section-group .icon-box-small .material-icons {
   font-size: 24px;
 }
 
-.icon-vertical-card-tag .list-group ul {
+.programs-section-group .icon-vertical-card-tag .list-group ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-.icon-vertical-card-tag-blue .list-group-blue ul {
+.programs-section-group .icon-vertical-card-tag-blue .list-group-blue ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.icon-vertical-card-tag .list-group li {
+.programs-section-group .icon-vertical-card-tag .list-group li {
   padding: 0 8px;
   background: var(--main-button-alpha-50);
   border-radius: 4px;
@@ -622,7 +589,7 @@ hero-section 최예빈 작업
   align-items: center;
   justify-content: center;
 }
-.icon-vertical-card-tag-blue .list-group-blue li {
+.programs-section-group .icon-vertical-card-tag-blue .list-group-blue li {
   padding: 0 8px;
   background: var(--main-button-alpha-50);
   border-radius: 4px;
@@ -634,7 +601,7 @@ hero-section 최예빈 작업
 }
 
 /* 전체 교육 과정 섹션 - 아이콘 카드 */
-.icon-vertical-card {
+.programs-section-group .icon-vertical-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -648,30 +615,30 @@ hero-section 최예빈 작업
   box-sizing: border-box;
 }
 
-.icon-vertical-card .text-group {
+.programs-section-group .icon-vertical-card .text-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.icon-vertical-card .list-status ul {
+.programs-section-group .icon-vertical-card .list-status ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font: var(--caption-m);
 }
-.icon-vertical-card .list-status-black ul {
+.programs-section-group .icon-vertical-card .list-status-black ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font: var(--caption-m);
 }
 
-.icon-vertical-card .list-status ul li:nth-child(2) {
-  color: var(--primary);
+.programs-section-group .icon-vertical-card .list-status ul li:nth-child(2){
+color: var(--primary);
 }
-.icon-vertical-card .list-status-black ul li:nth-child(2) {
-  color: var(--main-black);
+.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2){
+color: var(--main-black);
 }
 /* 프로그램 그룹 끝 - 오예은 작업 */
 
