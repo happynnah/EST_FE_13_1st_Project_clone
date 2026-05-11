@@ -71,9 +71,13 @@ section {
   margin: 0 auto;
 }
 
-hr.container {
+hr.divider {
+  width: 100%;
   max-width: 960px;
-  color: var(--main-black);
+  height: 1px;
+  background: var(--medium-gray);
+  opacity: 0.6;
+  border: 0;
 }
 
 /* top 이동시 스크롤 부드럽게 - 배정호 */
