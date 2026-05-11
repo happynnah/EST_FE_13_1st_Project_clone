@@ -22,11 +22,11 @@
 
 | 이름   | 역할           | 주요 담당                                          | GitHub                                                        | 연락                    |
 | ------ | -------------- | -------------------------------------------------- | ------------------------------------------------------------- | ----------------------- |
-| 배정호 | 팀장 · FE 리드 | Support Section<br>공통 클래스 작성<br>QA·코드리뷰 | [@raspbsb](https://github.com/raspbsb)                        | (예) unionbjh@naver.com |
-| 이민호 | FE · UI/디자인 | Header·Footer<br>CSS변수 작성                      | [@minho0391](https://github.com/minho0391)                    | minh05@naver.com       |
-| 김해나 | FE · UI/디자인 | Trust Section<br>컴포넌트 작성                     | [@dhdpdms0712-oss](https://github.com/dhdpdms0712-oss)        | happynnah@gmail.com       |
-| 오예은 | FE · UI/디자인 | Program Section<br>컴포넌트 작성                   | [@https://github.com/happynnah](https://github.com/happynnah) | -----@-----       |
-| 최예빈 | FE · UI/디자인 | Hero·Final CTA Section<br>컴포넌트 작성            | [@yebin-1129](https://github.com/yebin-1129)                  | cyb11299@gmail.com       |
+| 배정호 | 팀장 · FE 리드 | Support Section<br>공통 클래스 작성<br>QA·코드리뷰    | [@raspbsb](https://github.com/raspbsb)                            | unionbjh@naver.com |
+| 이민호 | FE · UI/디자인 | Header·Footer<br>CSS변수 작성                      | [@minho0391](https://github.com/minho0391)                         | minh05@naver.com       |
+| 김해나 | FE · UI/디자인 | Trust Section<br>컴포넌트 작성                      | [@happynnah](https://github.com/happynnah)                        | happynnah@gmail.com       |
+| 오예은 | FE · UI/디자인 | Program Section<br>컴포넌트 작성                    | [@dhdpdms0712-oss](https://github.com/dhdpdms0712-oss)            | dhdpdms0712@gmail.com       |
+| 최예빈 | FE · UI/디자인 | Hero·Final CTA Section<br>컴포넌트 작성             | [@yebin-1129](https://github.com/yebin-1129)                      | cyb11299@gmail.com       |
 
 ### 1.3 🗓️ 마일스톤
 
@@ -100,10 +100,10 @@ gantt
     디자인 제출             :done, milestone, b4, 2026-05-06, 1d
 
     section 퍼블리싱
-    Github 설정               :c1, 2026-05-06, 1d
-    컴포넌트 제작               :c2, 2026-05-06, 3d
-    HTML 구현                   :c3, 2026-05-06, 3d
-    공통 레이아웃 구축          :c4, 2026-05-07, 3d
+    Github 설정               :done, c1, 2026-05-06, 1d
+    컴포넌트 제작               :done, c2, 2026-05-06, 3d
+    HTML 구현                   :done, c3, 2026-05-06, 3d
+    공통 레이아웃 구축          :done, c4, 2026-05-07, 3d
     세부 스타일 생성            :c5, 2026-05-08, 4d
     인터랙션 적용              :c6, 2026-05-09, 3d
 
@@ -112,28 +112,6 @@ gantt
     README.md 작성 및 배포      :d2, 2026-05-11, 2d
     구현 발표               :milestone, d3, 2026-05-12, 1d
 ```
-
-### 1.5 주요 기능
-
-#### 👤 사용자/관리자 관리
-
-- Supabase Auth를 이용한 이메일 기반 로그인
-- 관리자 계정만 프로젝트 등록/수정/삭제 가능
-- RLS(Row Level Security) 정책 적용
-
-#### 📂 프로젝트 관리
-
-- 프로젝트 등록(제목, 설명, 대표 이미지, 상세 이미지, URL, 리뷰 등)
-- 이미지 업로드(Supabase Storage)
-- 목록/상세 페이지 구현
-- 썸네일과 상세 이미지 구분 저장
-
-#### 🔍 부가 기능
-
-- 검색/필터(기술스택, 카테고리 등)
-- 페이지네이션 또는 무한 스크롤
-- 반응형 레이아웃(모바일·태블릿·데스크톱 대응)
-- SEO 및 OG 태그 자동 생성
 
 ---
 

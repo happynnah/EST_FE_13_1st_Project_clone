@@ -499,15 +499,7 @@ Accordion (Checkbox) - 배정호 작업
 .accordion {
   width: 486px;
   height: auto;
-  display: flex;
-  flex-direction: column;
   gap: 16px;
-}
-
-.accordion-input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .accordion-question {
@@ -517,14 +509,11 @@ Accordion (Checkbox) - 배정호 작업
   cursor: pointer;
   border: 1px solid var(--gray);
   border-radius: var(--radius-s-plus);
-  display: flex;
-  justify-content: space-between;
   background: var(--white);
 }
 
 .accordion-question .question-text {
   font: var(--body-m-plus-400);
-  min-width: 422px;
   overflow: hidden;
   white-space: nowrap; /* 줄바꿈 금지 */
   text-overflow: ellipsis; /* ... 표시 */
@@ -538,18 +527,13 @@ Accordion (Checkbox) - 배정호 작업
 .accordion-answer {
   width: 100%;
   max-height: 0;
-  padding: 0 20px;
+  padding: 20px 20px 30px 20px;
   overflow: hidden;
-  opacity: 0;
+  gap: 32px;
 
   border: 1px solid var(--gray);
   border-radius: var(--radius-s-plus);
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
   background: var(--white);
-
-  transition: 0.5s;
 }
 
 .accordion-answer p {
@@ -563,22 +547,16 @@ Accordion (Checkbox) - 배정호 작업
   font: var(--body-m-400);
 }
 
-.accordion-input:checked ~ .accordion-question {
+.accordion-item[open] .accordion-question {
   background: var(--super-light-gray);
 }
 
-.accordion-input:checked ~ .accordion-answer {
-  max-height: 1000px;
-  padding: 24px 20px;
-  opacity: 1;
-}
-
-.accordion-input:checked + .accordion-question .material-icons {
+.accordion-item[open] .accordion-question .material-icons {
   transform: rotate(180deg);
   color: var(--title-black);
 }
 
-.accordion-input:checked + .accordion-question p {
+.accordion-item[open] .accordion-question p {
   font: var(--body-m-plus-500);
 }
 
@@ -601,6 +579,7 @@ Accordion (Checkbox) - 배정호 작업
   display: flex;
   flex-direction: column;
   gap: 30px;
+  z-index: 2;
 }
 
 /* =======================
