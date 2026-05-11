@@ -233,7 +233,7 @@ header nav ul {
 }
 
 .card-tall {
-  min-height: 600px;
+  height: 600px;
 }
 
 .card-extra-tall {

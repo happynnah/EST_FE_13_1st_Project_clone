@@ -731,15 +731,31 @@ hero-section 최예빈 작업
 
 .trust-section .data-list strong {
   display: block;
+  font-weight: var(--weight-bold);
 }
 
 /* 차별화 요소 섹션 */
 
-.differentiator-section .verticlal-card-item .card-icon-big {
+.differentiator-section .inner-card-box .card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.differentiator-section .inner-card-box .card-item h3 {
+  padding-top: 25px;
+}
+.differentiator-section .vertical-card-item {
+  width: 384px;
+  flex: none;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.differentiator-section .vertical-card-item .card-icon-big {
   color: var(--white-alpha-60);
+  opacity: 0.5;
 }
 
-.differentiator-section .verticlal-card-item p {
+.differentiator-section .vertical-card-item p {
   color: var(--white-alpha-70);
 }
 
@@ -763,16 +779,20 @@ hero-section 최예빈 작업
 .employment-status-section .employment-status-column {
   display: flex;
   align-items: center;
-  width: 992px;
-  padding: 64px 104px;
+  justify-content: center;
+  width: 100%;
+  max-width: 992px;
+  padding: 30px 0;
+  gap: 80px;
 }
 
 .employment-status-section .employment-status-column:first-child {
   justify-content: space-between;
+  padding-top: 64px;
 }
 
-.employment-status-section .employment-status-column:not(:first-child) {
-  justify-content: space-around;
+.employment-status-section .employment-status-column:last-child {
+  padding-bottom: 64px;
 }
 
 .employment-status-section .logo-box img {
