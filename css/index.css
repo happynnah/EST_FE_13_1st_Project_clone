@@ -91,26 +91,23 @@ hero-section 최예빈 작업
 .hero-section {
   width: 100%;
   background-color: var(--white);
-  /* ★ 헤더 밑으로 내리기: 상단 패딩을 160px~180px 정도로 넉넉히 줍니다 */
-  padding: 180px 0 100px 0;
+  padding: 96px 0;
   overflow: visible;
-}
-
-.hero-section .hero-container.horizontal {
-  max-width: 1200px;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   gap: 78px;
 }
 
 /* 4. 왼쪽 텍스트 박스 */
-.hero-section .hero-content-box.vertical {
+.hero-section .hero-content-box {
   width: 553px;
+  min-width: 553px;
+  flex-shrink: 0;
   gap: 32px;
   position: relative;
   z-index: 10;
 }
+
 
 /* 뱃지 스타일 */
 .hero-section .hero-content-box > span:first-child {
