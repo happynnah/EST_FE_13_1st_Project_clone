@@ -3,6 +3,9 @@
 /* header작성 - 이민호 작성 */
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 100%;
   min-height: 96px;
   display: flex;
@@ -11,6 +14,8 @@ header {
   top: 0;
   z-index: 100;
   background: var(--secondary);
+  overflow: hidden;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 header .header-inner {
@@ -35,20 +40,15 @@ nav .list {
 
 nav a {
   display: inline-block;
+  font: var(--heading-x-s);
   color: var(--white-alpha-70);
-  border-bottom: 2px solid transparent;
+
   transition: 0.2s ease;
 }
-
-nav a:hover {
+nav .intro {
   color: var(--white);
-}
-
-.intro:active,
-.intro:focus {
-  color: var(--white);
-  transform: translateY(-3px);
-  border-bottom: 2px solid var(--white);
+  border-bottom: 3px solid var(--white);
+  padding-bottom: 4px;
 }
 
 header .btn {
