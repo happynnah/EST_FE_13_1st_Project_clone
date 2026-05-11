@@ -349,7 +349,7 @@ hero-section 최예빈 작업
 .programs-section-group .section-header-box {
   align-items: center;
   width: 100%;
-  text-align: center;
+  
 }
 
 .programs-section-group .section-title-item {
@@ -403,7 +403,7 @@ hero-section 최예빈 작업
 }
 
 /* 텍스트 그룹 */
-.programs-section-group .image-card-big-item .text-group-box {
+.programs-section-group .image-card-big-item .program-text-group {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -461,7 +461,7 @@ hero-section 최예빈 작업
   height: 27px;
   gap: 12px;
   font-size: 16px;
-  color: var(--title-black);
+  color: var(--body-m-plus-400);
 }
 
 /* 아이콘 */
@@ -479,6 +479,7 @@ hero-section 최예빈 작업
   height: 64px;
   border: none;
   border-radius: 12px;
+  font: var(--label-l);
   background: var(--primary);
   color: var(--white);
   font-size: 18px;
@@ -535,39 +536,32 @@ hero-section 최예빈 작업
   justify-content: center;
 }
 
-.programs-section-group .text-group {
+.programs-section-group .program-text-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
-.programs-section-group .text-group h3{
+.programs-section-group .program-text-group h3{
   font: var(--heading-s);
   color: var(--title-black);
 }
-.programs-section-group .text-group p{
+.programs-section-group .program-text-group .description{
   font: var(--body-m);
   color: var(--main-black);
 }
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue {
+.programs-section-group .icon-vertical-card-tag-blue .program-text-group-blue {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 8px;
 }
-<<<<<<< HEAD
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue h3{
+.programs-section-group .icon-vertical-card-tag-blue .program-text-group-blue h3{
   font: var(--heading-s);
   color: var(--white);
 }
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue p{
+.programs-section-group .icon-vertical-card-tag-blue .program-text-group-blue .description{
   font: var(--body-m);
-=======
-.icon-vertical-card-tag-blue .text-group-blue h3 {
-  color: var(--white);
-}
-.icon-vertical-card-tag-blue .text-group-blue p {
->>>>>>> origin/Dev
   color: var(--white-alpha-70);
 }
 
@@ -622,38 +616,57 @@ hero-section 최예빈 작업
   box-sizing: border-box;
 }
 
-.programs-section-group .icon-vertical-card .text-group {
+.programs-section-group .icon-vertical-card .program-text-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.programs-section-group .cate-btn{
+  height: 43px;
+  padding: 8px 24px;
+  font: var(--body-m-plus-500);
+  color: var(--main-black);
+  background: var(--main-button);
+  border-radius: 50px;
+}
+.programs-section-group .cate-btn-blue{
+  height: 43px;
+  padding: 8px 24px;
+  font: var(--body-m-plus-500);
+  color: var(--white);
+  background: var(--primary);
+  border-radius: 50px;
 }
 
 .programs-section-group .icon-vertical-card .list-status ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: var(--caption-m);
 }
 .programs-section-group .icon-vertical-card .list-status-black ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.programs-section-group .icon-vertical-card .list-status ul li:nth-child(1){
   font: var(--caption-m);
+  color: var(--main-black);
 }
-
-<<<<<<< HEAD
 .programs-section-group .icon-vertical-card .list-status ul li:nth-child(2){
-color: var(--primary);
-}
-.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2){
-color: var(--main-black);
-=======
-.icon-vertical-card .list-status ul li:nth-child(2) {
+  font: var(--body-m-500);
   color: var(--primary);
 }
-.icon-vertical-card .list-status-black ul li:nth-child(2) {
+.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(1){
+  font: var(--caption-m);
   color: var(--main-black);
->>>>>>> origin/Dev
+}
+.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2){
+  font: var(--body-m-500);
+  color: var(--main-black);
+}
+.programs-section-group .section-footer-box{
+  width: 178px;
+  padding: 10px 32px;
 }
 /* 프로그램 그룹 끝 - 오예은 작업 */
 
@@ -675,7 +688,7 @@ color: var(--main-black);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 32px;
 }
 
