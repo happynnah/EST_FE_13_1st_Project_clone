@@ -1042,23 +1042,21 @@ footer css작성 - 이민호 작성
 /* footer */
 footer {
   width: 100%;
-  background: var(--white);
-}
-
-footer .container {
-  gap: 48px;
-  padding: 80px 0 0;
+  background: var(--super-light-gray);
 }
 
 /* top */
 .footer-top {
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: start;
+  padding: 64px 0;
+  gap: 48px;
 }
 
 /* brand */
-.footer-brand {
+.footer-category {
   gap: 24px;
+  flex: 1;
 }
 
 .footer-brand .logo {
@@ -1066,20 +1064,19 @@ footer .container {
   gap: 8px;
 }
 
-.footer-brand .logo .material-icons {
-  font-size: 32px;
-  line-height: 1;
-  color: var(--primary);
-}
-
 .footer-brand .logo h2 {
-  font: var(--title-s);
+  font: var(--heading-x-s);
   color: var(--title-black);
 }
 
+.footer-brand .logo .material-icons {
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--primary);
+}
+
 .footer-brand p {
-  max-width: 280px;
-  font: var(--body-s);
+  font: var(--body-m-500);
   color: var(--main-black);
 }
 
@@ -1102,7 +1099,9 @@ footer .container {
 }
 
 .footer-nav h3 {
-  font: var(--label-m-700);
+  font: var(--body-m-plus-500);
+  font-weight: 700;
+  text-transform: capitalize;
   color: var(--title-black);
 }
 
