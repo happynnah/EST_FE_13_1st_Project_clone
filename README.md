@@ -133,7 +133,7 @@ gantt
 
 ### 2.2 배포 URL
 
-- **Production**: https://raspbsb.github.io/EST_FE_13_1st_Project//
+- **Production**: [https://raspbsb.github.io/EST_FE_13_1st_Project//](https://happynnah.github.io/EST_FE_13_1st_Project_clone/)
 
 ### 2.3 📚 개발 컨벤션 가이드
 
